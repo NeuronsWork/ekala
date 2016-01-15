@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+.mi-cuenta {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #8acac8;
+  font-style: italic;
+  padding: 10px;
+  z-index: 9999; }
+  .mi-cuenta a {
+    color: #5c6670;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 300; }
+    .mi-cuenta a:last-child {
+      padding-left: 10px; }
+
+.brand {
+  margin-top: -30px; }
+
+.navbar {
+  margin-bottom: 0 !important;
+  min-height: 45px !important;
+  border: 0px !important; }
+
+#navbar {
+  border-bottom: 1px solid #64c8c8;
+  padding: 0; }
+  #navbar li {
+    padding-right: 5px; }
+    #navbar li a {
+      background-color: #f0fafa;
+      font-family: 'Lato', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #5c6670; }
+    #navbar li:last-child {
+      padding-right: 0; }
+
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -ms-border-radius: 0 6px 6px 6px;
+  -o-border-radius: 0 6px 6px 6px; }
+
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;
+  height: 0;
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0; }
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #555; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: underline; }
+
+#carousel {
+  margin-bottom: 5px; }
+
+.carousel .carousel-indicators {
+  left: initial !important;
+  right: 10px !important;
+  width: auto !important;
+  bottom: 0 !important; }
+  .carousel .carousel-indicators li {
+    background: transparent url("../../assets/img/icon-slider.png") no-repeat center !important;
+    width: 9px !important;
+    height: 13px !important;
+    border: 0px !important; }
+  .carousel .carousel-indicators .active {
+    background: transparent url("../../assets/img/icon-slider-hover.png") no-repeat center !important; }
+.carousel .carousel-inner .item .carousel-caption {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important; }
+  .carousel .carousel-inner .item .carousel-caption .tenor {
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 34px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fff; }
+
+.lst-products .item {
+  cursor: pointer; }
+  .lst-products .item .row {
+    padding-right: 3px; }
+  .lst-products .item .info {
+    background: #d9c3ab;
+    color: #5c6670;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 3px);
+    padding: 5px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 500; }
+    .lst-products .item .info a {
+      background-color: #fff;
+      border-radius: 50px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      font-family: 'Lato', sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 21px;
+      padding: 1px 2px 3px;
+      color: #a2dede; }
+      .lst-products .item .info a:hover, .lst-products .item .info a:focus {
+        text-decoration: none; }
+.lst-products .hidden-lg .info {
+  padding-right: 5px;
+  padding-left: 5px; }
+.lst-products .carousel-item .carousel .item .info {
+  bottom: 2px !important;
+  padding: 8px 5px 7px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 300; }
+  .lst-products .carousel-item .carousel .item .info a {
+    background-color: #fff;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 1px 2px 3px;
+    color: #a2dede; }
+    .lst-products .carousel-item .carousel .item .info a:hover, .lst-products .carousel-item .carousel .item .info a:focus {
+      text-decoration: none; }
+
+footer {
+  color: #5c6670;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  footer a {
+    color: #5c6670;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 500; }
+    footer a img {
+      width: 24px; }
+
+@media screen and (max-width: 767px) {
+  #carousel {
+    margin-bottom: 10px; }
+    #carousel .carousel-inner .item .carousel-caption {
+      height: 100%;
+      padding-bottom: 0;
+      padding-top: 0; }
+      #carousel .carousel-inner .item .carousel-caption .tenor {
+        font-size: 100%;
+        font-style: italic;
+        line-height: 120%;
+        font-weight: 500;
+        padding-left: 0;
+        padding-right: 0; }
+
+  .lst-products .item {
+    margin-bottom: 3px; }
+    .lst-products .item .img-responsive {
+      width: 100%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  #carousel {
+    margin-bottom: 10px; }
+    #carousel .carousel-inner .item .carousel-caption {
+      height: 100%;
+      padding-bottom: 0;
+      padding-top: 0; }
+      #carousel .carousel-inner .item .carousel-caption .tenor {
+        font-size: 160%;
+        font-style: italic;
+        line-height: 120%;
+        font-weight: 500;
+        padding-left: 0;
+        padding-right: 0; }
+
+  .lst-products .item {
+    margin-bottom: 5px; }
+    .lst-products .item .img-responsive {
+      width: 100%; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 956px !important; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 956px !important; } }
+
+/*# sourceMappingURL=ekala.css.map */
