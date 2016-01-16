@@ -193,6 +193,32 @@ footer{
           }
 }
 // RESPONSIVE
+@media screen and (max-width: 321px) {
+          #carousel{
+                    .carousel-inner{
+                              .item{
+                                        .carousel-caption{
+                                                  .tenor{
+                                                            font-size: 80% !important;
+                                                            line-height: 120%;
+                                                            font-weight: 500; }
+                                        }
+                              }
+                    }
+          }
+          .lst-products{
+                    .item{
+                              .info{
+                                   @include fontLato(15px !important, 500);
+                                   padding-right: 10px !important;
+                                   a{
+                                             right: 4px;
+                                             top: 9px;
+                                   }
+                              }
+                    }
+          }
+}
 @media screen and (max-width: 767px) {
           .navbar-toggle{
                     margin-top: 0 !important;
@@ -234,7 +260,7 @@ footer{
                                                   padding-bottom: 0;
                                                   padding-top: 0;
                                                   .tenor{
-                                                            font-size: 100%;
+                                                            font-size: 140%;
                                                             font-style: italic;
                                                             line-height: 120%;
                                                             font-weight: 500;

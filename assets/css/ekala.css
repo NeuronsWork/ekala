@@ -181,6 +181,20 @@ footer {
     footer a img {
       width: 24px; }
 
+@media screen and (max-width: 321px) {
+  #carousel .carousel-inner .item .carousel-caption .tenor {
+    font-size: 80% !important;
+    line-height: 120%;
+    font-weight: 500; }
+
+  .lst-products .item .info {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px !important;
+    font-weight: 500;
+    padding-right: 10px !important; }
+    .lst-products .item .info a {
+      right: 4px;
+      top: 9px; } }
 @media screen and (max-width: 767px) {
   .navbar-toggle {
     margin-top: 0 !important;
@@ -218,7 +232,7 @@ footer {
       padding-bottom: 0;
       padding-top: 0; }
       #carousel .carousel-inner .item .carousel-caption .tenor {
-        font-size: 100%;
+        font-size: 140%;
         font-style: italic;
         line-height: 120%;
         font-weight: 500;
