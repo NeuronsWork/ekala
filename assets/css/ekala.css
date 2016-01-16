@@ -203,6 +203,14 @@ footer {
       padding: 5px 0;
       margin-top: 0px !important; }
 
+  .dropdown-menu {
+    position: relative !important;
+    margin-bottom: 15px !important;
+    box-shadow: none !important;
+    width: 100% !important; }
+    .dropdown-menu:after {
+      visibility: hidden; }
+
   #carousel {
     margin-bottom: 10px; }
     #carousel .carousel-inner .item .carousel-caption {
