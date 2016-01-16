@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "http://localhost/ekala/"
+          proxy: "http://localhost/neuronswork/ekala/"
           }
         }
       },
