@@ -24,6 +24,9 @@
                     &:last-child{
                               padding-left: 10px; }
           }
+          .navbar-header{
+                    float: left;
+          }
 }
 // BRAND
 .brand{
@@ -47,28 +50,38 @@
           }
 }
 
-.dropdown-submenu {
-          position:relative; }
-.dropdown-submenu>.dropdown-menu {
-          top:0;
-          left:100%;
-          margin-top:-6px;margin-left:-1px;
-          @include borderRadius(0 6px 6px 6px); }
-.dropdown-submenu > a:after {
-          border-color: transparent transparent transparent #333;
-          border-style: solid;
-          border-width: 5px 0 5px 5px;
+.dropdown-menu{
+     margin: 1px 0 0 !important;
+     border: 0px !important;
+     @include borderRadius(0 !important);
+     width: calc(100% - 5px);
+     li{
+          padding-right: 0 !important;
+          a{
+               padding: 7px 5px;
+               background-color: #fff !important;
+               @include fontLato(13px !important, 500 !important);
+               text-align: center !important;
+               text-transform: capitalize;
+               &:hover, &:focus{
+                    background-color: #f0fafa !important; }
+          }
+     }
+     &:after{
+          bottom: 100%;
+          left: 50%;
+          border: solid transparent;
           content: " ";
-          display: block;
-          float: right;
           height: 0;
-          margin-right: -10px;
-          margin-top: 5px;
-          width: 0; }
-.dropdown-submenu:hover>a:after {
-          border-left-color:#555; }
-.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
-          text-decoration: underline; }
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(100, 200, 200, 0);
+          border-bottom-color: #64c8c8;
+          border-width: 10px;
+          margin-left: -10px;
+     }
+}
 
 // CAROUSEL
 #carousel{
@@ -181,6 +194,29 @@ footer{
 }
 // RESPONSIVE
 @media screen and (max-width: 767px) {
+          .navbar-toggle{
+                    margin-top: 0 !important;
+                    padding: 2px 0px !important;
+                    .icon-bar{
+                             width: 26px !important;
+                             height: 4px !important;
+                             background-color: #e1f2f2;
+                    }
+          }
+          header{
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                    .mi-cuenta{
+                              background-color: #f0fafa; }
+                    .navbar{
+                              min-height: auto !important;
+                              #navbar li{
+                                        padding-right: 0px !important; }
+                    }
+                    .brand{
+                              padding: 5px 0;
+                              margin-top: 0px !important; }
+          }
           #carousel{
                     margin-bottom: 10px;
                     .carousel-inner{
