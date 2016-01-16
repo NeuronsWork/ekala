@@ -11,18 +11,57 @@
           -webkit-border-radius: $radius;
           -ms-border-radius: $radius;
           -o-border-radius: $radius; }
+// LOGIN
+#login{
+     background-color: #e0f4f3;
+     display: none;
+     width: 100%;
+     position: relative;
+          > div{
+                    padding: 15px 0;
+                    button.login{
+                              background-color: transparent;
+                              border: 0;
+                              color: #a3a8ac;
+                              @include fontLato(20px, 500); }
+                    form{
+                              .form-group{
+                                        margin-bottom: 5px;
+                                        .control-label{
+                                                  text-align: right;
+                                                  color: #8acac8;
+                                                  font-style: italic;
+                                                  @include fontLato(17px, 500);}
+                                        .form-control{
+                                                  @include borderRadius(0px !important);
+                                                  border: 0; }
+                                        .btn{
+                                                  background-color: #a2dede;
+                                                  color: #fff;
+                                                  font-style: italic;
+                                                  letter-spacing: .18rem;
+                                                  border: 0;
+                                                  @include borderRadius(0px !important); }
+                                        a{
+                                                  font-style: italic;
+                                                  letter-spacing: .18rem;
+                                                  padding-right: 10px;
+                                                  color: #8acac8; }
+                              }
+                    }
+          }
+}
 // MI CUENTA
 .mi-cuenta{
-          @include fontLato(15px, 700);
-          color: #8acac8;
           font-style: italic;
           padding: 10px;
           z-index: 9999;
           a{
-                    color: #5c6670;
-                    @include fontLato(15px, 300);
-                    &:last-child{
-                              padding-left: 10px; }
+                    color: #8acac8;
+                    @include fontLato(15px, 700);
+                    &:nth-child(3){
+                              color: #5c6670;
+                              @include fontLato(15px, 300); }
           }
           .navbar-header{
                     float: left;
@@ -295,6 +334,10 @@ footer{
                > div{
                     text-align: center !important;
                     padding: 2px 0;
+                    a{
+                         img{
+                              width: 36px; }
+                    }
                }
           }
 }
