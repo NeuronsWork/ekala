@@ -277,6 +277,12 @@ footer{
                               width: 100%; }
                     }
           }
+          footer{
+               > div{
+                    text-align: center !important;
+                    padding: 2px 0;
+               }
+          }
 }
 @media (min-width: 768px) and (max-width: 991px){
           #carousel{

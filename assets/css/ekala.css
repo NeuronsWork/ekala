@@ -242,7 +242,11 @@ footer {
   .lst-products .item {
     margin-bottom: 3px; }
     .lst-products .item .img-responsive {
-      width: 100%; } }
+      width: 100%; }
+
+  footer > div {
+    text-align: center !important;
+    padding: 2px 0; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #carousel {
     margin-bottom: 10px; }
