@@ -181,7 +181,7 @@ footer {
     footer a img {
       width: 24px; }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 360px) {
   #carousel .carousel-inner .item .carousel-caption .tenor {
     font-size: 80% !important;
     line-height: 120%;
@@ -195,6 +195,11 @@ footer {
     .lst-products .item .info a {
       right: 4px;
       top: 9px; } }
+@media (min-width: 361px) and (max-width: 480px) {
+  #carousel .carousel-inner .item .carousel-caption .tenor {
+    font-size: 100% !important;
+    line-height: 120%;
+    font-weight: 500; } }
 @media screen and (max-width: 767px) {
   .navbar-toggle {
     margin-top: 0 !important;
