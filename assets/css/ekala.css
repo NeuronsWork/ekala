@@ -157,6 +157,54 @@
     padding-left: 20px;
     color: #fff; }
 
+.register h3 {
+  border-bottom: 1px solid #d9c3ab;
+  color: #d9c3ab;
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 27px;
+  font-weight: 300; }
+.register .form-group {
+  position: relative;
+  float: left;
+  color: #a3a8ac;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+  .register .form-group .control-label {
+    color: #8acac8;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+  .register .form-group .form-control {
+    border-color: #d9c3ab;
+    margin-bottom: 5px;
+    border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important; }
+  .register .form-group button.btn {
+    font-style: italic;
+    color: #fff;
+    background-color: #a2dede;
+    border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 700; }
+.register .terminos {
+  border-top: 1px solid #d9c3ab;
+  color: #d9c3ab;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500; }
+
 .lst-products .item {
   cursor: pointer; }
   .lst-products .item .row {
