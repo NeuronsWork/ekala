@@ -172,7 +172,7 @@
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300 !important; }
   .register .form-group .control-label {
     color: #8acac8;
     font-family: 'Lato', sans-serif;
@@ -187,9 +187,8 @@
     -ms-border-radius: 0px !important;
     -o-border-radius: 0px !important; }
   .register .form-group button.btn {
-    font-style: italic;
     color: #fff;
-    background-color: #a2dede;
+    background-color: #8acac8;
     border-radius: 0px !important;
     -moz-border-radius: 0px !important;
     -webkit-border-radius: 0px !important;
@@ -197,13 +196,79 @@
     -o-border-radius: 0px !important;
     font-family: 'Lato', sans-serif;
     font-size: 28px;
-    font-weight: 700; }
+    font-weight: 500; }
+  .register .form-group .radio {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+    .register .form-group .radio label {
+      font-weight: 300 !important; }
 .register .terminos {
   border-top: 1px solid #d9c3ab;
   color: #d9c3ab;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 500; }
+
+.information {
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  .information h2 {
+    color: #d9c3ab;
+    font-family: 'Lato', sans-serif;
+    font-size: 27px;
+    font-weight: 500; }
+  .information h3 {
+    color: #8acac8;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500; }
+  .information p {
+    color: #a3a9ac;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+    .information p img {
+      margin-right: 20px; }
+  .information .sub-menu ul {
+    margin-top: 20px; }
+    .information .sub-menu ul li > a, .information .sub-menu ul li > .active {
+      color: #8acac8;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 300; }
+      .information .sub-menu ul li > a:hover, .information .sub-menu ul li > a:focus, .information .sub-menu ul li > .active:hover, .information .sub-menu ul li > .active:focus {
+        font-style: italic;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 500; }
+  .information .products h2 {
+    margin-bottom: 60px; }
+  .information .products .info-products {
+    background-color: #f9f9f9;
+    padding: 10px 20px; }
+    .information .products .info-products p {
+      text-align: justify !important; }
+    .information .products .info-products h4 {
+      color: #8acac8;
+      margin: 30px 0 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 500; }
+  .information .sidebar-submenu .row {
+    padding-right: 15px !important; }
+  .information .sidebar-submenu ul li {
+    padding: 3px 0;
+    border-bottom: 1px solid #8acac8; }
+    .information .sidebar-submenu ul li:first-child {
+      border-top: 1px solid #8acac8; }
+    .information .sidebar-submenu ul li a {
+      color: #5e676f;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 500; }
+      .information .sidebar-submenu ul li a:hover, .information .sidebar-submenu ul li a:focus {
+        color: #8acac8; }
 
 .lst-products .item {
   cursor: pointer; }

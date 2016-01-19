@@ -1,6 +1,5 @@
 //fonts
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
-
 @mixin fontLato($size, $weight) {
           font-family: 'Lato', sans-serif;
           font-size: $size;
@@ -88,7 +87,6 @@
                               padding-right: 0; }
           }
 }
-
 .dropdown-menu{
           margin: 1px 0 0 !important;
           border: 0px !important;
@@ -121,7 +119,6 @@
                     margin-left: -10px;
           }
 }
-
 // CAROUSEL
 #carousel{
           margin-bottom: 5px; }
@@ -177,7 +174,7 @@
                     float: left;
                     color: #a3a8ac;
                     width: 100%;
-                    @include fontLato(16px, 300);
+                    @include fontLato(16px, 300 !important);
                     .control-label{
                               color: #8acac8;
                               @include fontLato(16px, 300); }
@@ -186,16 +183,84 @@
                               margin-bottom: 5px;
                               @include borderRadius(0px !important); }
                     button.btn{
-                              font-style: italic;
                               color: #fff;
-                              background-color: #a2dede;
+                              background-color: #8acac8;
                               @include borderRadius(0px !important);
-                              @include fontLato(28px, 700); }
+                              @include fontLato(28px, 500); }
+                    .radio{
+                              padding-right: 0 !important;
+                              padding-left: 0 !important;
+                              label{
+                                   font-weight: 300 !important; }
+                    }
           }
           .terminos{
                     border-top: 1px solid #d9c3ab;
                     color: #d9c3ab;
                     @include fontLato(14px, 500); }
+}
+// INFORMATION
+.information{
+          padding-top: 30px;
+          padding-bottom: 50px;
+          h2{
+                    color: #d9c3ab;
+                    @include fontLato(27px, 500); }
+          h3{
+                    color: #8acac8;
+                    margin-bottom: 20px;
+                    @include fontLato(24px, 500); }
+          p{
+                    color: #a3a9ac;
+                    @include fontLato(16px, 300);
+                    img{
+                              margin-right: 20px;
+                    }
+          }
+          .sub-menu{
+                    ul{
+                              margin-top: 20px;
+                              li > a, li > .active{
+                                        color: #8acac8;
+                                        @include fontLato(16px, 300);
+                                        &:hover, &:focus{
+                                                  font-style: italic;
+                                                  @include fontLato(16px, 500); }
+                              }
+                    }
+          }
+          .products{
+                    h2{
+                              margin-bottom: 60px; }
+                    .info-products{
+                              background-color: #f9f9f9;
+                              padding: 10px 20px;
+                              p{
+                                        text-align: justify !important; }
+                              h4{
+                                        color: #8acac8;
+                                        margin: 30px 0 0;
+                                        @include fontLato(16px, 500); }
+                    }
+          }
+          .sidebar-submenu{
+                    .row{
+                              padding-right: 15px !important; }
+                    ul{
+                              li{
+                                        padding: 3px 0;
+                                        border-bottom: 1px solid #8acac8;
+                                        &:first-child{
+                                                  border-top: 1px solid #8acac8; }
+                                        a{
+                                                  color: #5e676f;
+                                                  @include fontLato(14px, 500);
+                                                  &:hover, &:focus{
+                                                            color: #8acac8; }
+                                        }
+                              }
+                    }
+          }
 }
 // LST-PRODUCTS
 .lst-products{
