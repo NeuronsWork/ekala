@@ -302,6 +302,28 @@
       font-weight: 500; }
       .information .sidebar-submenu ul li a:hover, .information .sidebar-submenu ul li a:focus {
         color: #8acac8; }
+  .information .sidebar-feature .item-feature h6, .information .sidebar-feature .item-feature a {
+    color: #a3a8ac;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300; }
+  .information .info-category .item-category {
+    margin-bottom: 10px; }
+    .information .info-category .item-category hr {
+      border-top: 5px solid #f0fafa;
+      border-bottom: none; }
+    .information .info-category .item-category h3 {
+      text-align: center;
+      border-bottom: 0; }
+      .information .info-category .item-category h3 a {
+        color: #64c8c8;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        font-weight: 500; }
+      .information .info-category .item-category h3:after {
+        border-color: transparent !important; }
 
 .lst-products .item {
   cursor: pointer; }
@@ -392,7 +414,25 @@ footer {
     font-size: 20px; }
   .information .products .info-products .relations .item .number-spinner {
     width: 65%;
-    float: left; } }
+    float: left; }
+  .information .products .sidebar-feature .item-feature {
+    margin-bottom: 10px; }
+    .information .products .sidebar-feature .item-feature img {
+      width: 30%;
+      float: left;
+      padding-right: 5px;
+      display: inline-block; }
+    .information .products .sidebar-feature .item-feature h6 {
+      float: right;
+      color: #8acac8;
+      text-align: justify;
+      font-size: 12px;
+      display: inline-block;
+      width: 70%;
+      margin: 5px 0; }
+      .information .products .sidebar-feature .item-feature h6 a {
+        color: #8acac8;
+        font-size: 12px; } }
 @media (min-width: 361px) and (max-width: 480px) {
   #carousel .carousel-inner .item .carousel-caption .tenor {
     font-size: 100% !important;
@@ -480,6 +520,9 @@ footer {
     .information .products .info-products .relations h4 {
       margin: 10px 0 20px;
       padding: 0 15px; }
+  .information .sidebar-feature {
+    padding: 20px 0;
+    background-color: #f8fcfc; }
 
   footer > div {
     text-align: center !important;

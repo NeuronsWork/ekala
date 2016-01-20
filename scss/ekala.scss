@@ -295,6 +295,33 @@
                               }
                     }
           }
+          .sidebar-feature{
+                    .item-feature{
+                              h6, a{
+                                        color: #a3a8ac;
+                                        text-align: center;
+                                        @include fontLato(20px, 300); }
+                    }
+          }
+          .info-category{
+                    .item-category{
+                              margin-bottom: 10px;
+                              hr{
+                                        border-top: 5px solid #f0fafa;
+                                        border-bottom: none;
+                              }
+                              h3{
+                                        text-align: center;
+                                        border-bottom: 0;
+                                        a{
+                                                  color: #64c8c8;
+                                                  text-decoration: none;
+                                                  @include fontLato(15px, 500); }
+                                        &:after{
+                                                  border-color: transparent !important; }
+                              }
+                    }
+          }
 }
 // LST-PRODUCTS
 .lst-products{
@@ -384,17 +411,40 @@ footer{
                                    padding-right: 10px !important;
                                    a{
                                              right: 4px;
-                                             top: 9px;
-                                   }
+                                             top: 9px; }
                               }
                     }
           }
           .information{
                     h3{
                               font-size: 20px; }
-                    .products .info-products .relations .item .number-spinner{
-                              width: 65%;
-                              float: left; }
+                    .products{
+                              .info-products .relations .item .number-spinner{
+                                        width: 65%;
+                                        float: left; }
+                              .sidebar-feature{
+                                        .item-feature{
+                                                  margin-bottom: 10px;
+                                                  img{
+                                                            width: 30%;
+                                                            float: left;
+                                                            padding-right: 5px;
+                                                            display: inline-block; }
+                                                  h6{
+                                                            float: right;
+                                                            color: #8acac8;
+                                                            text-align: justify;
+                                                            font-size: 12px;
+                                                            display: inline-block;
+                                                            width: 70%;
+                                                            margin: 5px 0;
+                                                            a{
+                                                                      color: #8acac8;
+                                                                      font-size: 12px; }
+                                                  }
+                                        }
+                              }
+                    }
           }
 }
 @media (min-width: 361px) and (max-width: 480px){
@@ -410,9 +460,11 @@ footer{
                               }
                     }
           }
-          .information .products .info-products .relations .item .number-spinner{
-                    width: 65%;
-                    float: left; }
+          .information{
+                    .products .info-products .relations .item .number-spinner{
+                              width: 65%;
+                              float: left; }
+          }
 }
 @media screen and (max-width: 767px) {
           .container{
@@ -509,6 +561,9 @@ footer{
                                         }
                               }
                     }
+                    .sidebar-feature{
+                              padding: 20px 0;
+                              background-color: #f8fcfc; }
           }
           footer{
                > div{
