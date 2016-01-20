@@ -1,5 +1,6 @@
-//fonts
+// FONTS
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+// VARIABLES
 @mixin fontLato($size, $weight) {
           font-family: 'Lato', sans-serif;
           font-size: $size;
@@ -13,6 +14,22 @@
 // GLOBAL
 .img-center{
           margin: 0 auto; }
+.number-spinner{
+          width: 50%;
+          color: #8acac8;
+          float: left;
+          .input-group-btn{
+                    vertical-align: top; }
+          .btn{
+                    background-color: transparent;
+                    padding: 0; }
+          .form-control{
+                    padding: 0;
+                    height: auto !important;
+                    background-color: transparent !important;
+                    box-shadow: none !important;
+                    border: 0 !important; }
+}
 // LOGIN
 #login{
      background-color: #e0f4f3;
@@ -53,7 +70,7 @@
                     }
           }
 }
-// MI CUENTA
+// MY ACCOUNT
 .mi-cuenta{
           font-style: italic;
           padding: 10px;
@@ -247,7 +264,7 @@
                                         color: #8acac8;
                                         @include fontLato(27px, 300); }
                     }
-                    .info-products{
+                    .info-products, .info-product{
                               background-color: #f9f9f9;
                               padding: 10px 20px;
                               p{
@@ -256,31 +273,101 @@
                                         color: #8acac8;
                                         margin: 30px 0 20px;
                                         @include fontLato(16px, 500); }
-                              .relations{
+                              .relations, .comments{
                                         .item{
+                                                  hr{
+                                                            border-top: 0;
+                                                            border-bottom: 5px solid #f0fafa;
+                                                  }
                                                   h5{
                                                             color: #8acac8;
                                                             @include fontLato(15px, 300); }
                                                   .price{
-                                                            color: #7c848c;
+                                                            color: #a3a8ac;
                                                             @include fontLato(15px, 300); }
-                                                  .number-spinner{
-                                                            width: 50%;
-                                                            color: #8acac8;
-                                                            .input-group-btn{
-                                                                      vertical-align: top; }
-                                                            .btn{
-                                                                      background-color: transparent;
-                                                                      padding: 0; }
-                                                            .form-control{
-                                                                      padding: 0;
-                                                                      height: auto !important;
-                                                                      background-color: transparent !important;
-                                                                      box-shadow: none !important;
-                                                                      border: 0 !important; }
-                                                  }
                                                   a > img{
                                                             width: 24px; }
+                                        }
+                              }
+                    }
+                    .info-product{
+                              background-color: transparent !important;
+                              .link-fav{
+                                        border-left: 1px solid #8acac8;
+                                        padding: 0 10px;
+                                        margin-left: 10px;
+                                        margin-top: 10px;
+                                        margin-bottom: 10px;
+                                        color: #8acac8;
+                                        @include fontLato(15px, 500); }
+                              .mrg{
+                                        margin: 10px 0;
+                              }
+                              .info{
+                                        h4{
+                                                  margin: 0 0 10px; }
+                                        ul{
+                                                  padding-left: 20px;
+                                                  li{
+                                                            color: #a3a9ac;
+                                                            display: block;
+                                                            position: relative;
+                                                            font-weight: 300;
+                                                            &:after{
+                                                                      content: "•";
+                                                                      position: absolute;
+                                                                      color: #8acac8;
+                                                                      top: 0;
+                                                                      right: 102%;
+                                                                      font-size: 15px;
+                                                                      line-height: 20px;
+                                                            }
+                                                  }
+                                        }
+                              }
+                              .redes{
+                                        margin: 10px 0;
+                                        a{
+                                                  img{
+                                                            height: 24px;
+                                                  }
+                                        }
+                              }
+                              .relations, .comments{
+                                        h4{
+                                                  text-align: center;
+                                                  padding: 5px 0;
+                                                  margin: 10px;
+                                                  border-bottom: 1px solid #8acac8; }
+                                        .item{
+                                                  .number-spinner{
+                                                            float: left; }
+                                        }
+                              }
+                              .comments{
+                                        h4{
+                                              margin-bottom: 0; }
+                                         form.form-horizontal{
+                                                  .control-label{
+                                                            padding-top: 0;
+                                                            padding-left: 0;
+                                                            padding-right: 10px; }
+                                         }
+                                        .form-group > div[class*='col-']{
+                                                  padding-right: 10px;
+                                                  padding-left: 10px; }
+                                        .form-control, .btn{
+                                                  background-color: #fef9f4;
+                                                  border: 0px;
+                                                  @include borderRadius(0px !important); }
+                                        .btn{
+                                                  min-width: 100%;
+                                                  color: #d9c3ab;
+                                                  @include fontLato(15px, 500); }
+                                        .item{
+                                                  h6{
+                                                            color: #8acac8;
+                                                            @include fontLato(16px, 300); }
                                         }
                               }
                     }

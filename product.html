@@ -117,12 +117,12 @@
                                                                       </div>
                                                             </div>
                                                   </sidebar>
-                                                  <div class="col-md-10 col-sm-12 col-xs-12 lst-subcategory">
+                                                  <div class="col-md-10 col-sm-12 col-xs-12 info-product">
                                                             <h3>Aceite esencial de albahaca</h3>
                                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                                       <img src="upload/producs-1.jpg" class="img-responsive img-center">
-                                                                      <div class="col-md-12 col-sm-12 col-xs-12 text-left">
-                                                                                <div class="row">S/ 9.00 | <a href="#">favorito</a></div>
+                                                                      <div class="col-md-12 col-sm-12 col-xs-12 text-left mrg">
+                                                                                <div class="row">S/ 9.00 <a href="#" class="link-fav">favorito <img src="assets/img/icon-favoritos.png"></a></div>
                                                                       </div>
                                                                       <div class="col-md-12 col-sm-12 col-xs-12 text-right">
                                                                                 <div class="row">
@@ -135,21 +135,23 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a href="#"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a href="#">Añadir <img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                                       <div class="col-md-12 col-sm-12 col-xs-12 redes">
-                                                                                <a href="#"><img src="assets/img/fb.svg" alt=""></a>
-                                                                                <a href="#"><img src="assets/img/pt.svg" alt=""></a>
-                                                                                <a href="#"><img src="assets/img/tw.svg" alt=""></a>
+                                                                                <div class="row">
+                                                                                          <a href="#"><img src="assets/img/fb.svg" alt=""></a>
+                                                                                          <a href="#"><img src="assets/img/pt.svg" alt=""></a>
+                                                                                          <a href="#"><img src="assets/img/tw.svg" alt=""></a>
+                                                                                </div>
                                                                       </div>
                                                             </div>
                                                             <div class="col-md-8 col-sm-8 col-xs-12">
-                                                                      <div class="info-product">
+                                                                      <div class="info">
                                                                                 <h4>Descripción</h4>
                                                                                 <p>Sus propiedades son muchas, destacando su potente poder expectorante además de ser un excelente antibiótico natural.</p>
                                                                                 <h4>Especificaciones en envase:</h4>
-                                                                                <ul>
+                                                                                <ul class="list-unstyled">
                                                                                           <li>150 ml</li>
                                                                                           <li>Compuestos: Acetato de bornilo, canfeno, a-pineno</li>
                                                                                           <li>Producto Importado</li>
@@ -160,16 +162,35 @@
                                                             <div class="col-md-12 comments">
                                                                       <div class="row">
                                                                                 <h4>Comentarios:</h4>
+                                                                                <form class="form-horizontal col-md-12" action="product_submit" method="get" accept-charset="utf-8">
+                                                                                          <div class="form-group">
+                                                                                          <div class="col-sm-10">
+                                                                                               <input type="text" class="form-control" id="inputEmail3" placeholder="Comentario...">
+                                                                                          </div>
+                                                                                          <label class="col-sm-2 control-label">
+                                                                                                    <button type="submit" class="btn btn-default">Enviar</button>
+                                                                                          </label>
+                                                                                          </div>
+                                                                                </form>
+                                                                                <div class="col-md-12 item">
+                                                                                          <h6>Erika:</h6>
+                                                                                          <p>Sus propiedades son muchas, destacando su potente poder expectorante además de ser un excelente antibiótico natural.</p>
+                                                                                </div>
+                                                                                <div class="col-md-12 item">
+                                                                                          <h6>Enrique:</h6>
+                                                                                          <p>Sus propiedades son muchas, destacando su potente poder expectorante además de ser un excelente antibiótico natural.</p>
+                                                                                </div>
                                                                       </div>
                                                             </div>
                                                             <!-- COMMENTS -->
                                                             <!-- RELATIONS -->
                                                             <div class="col-md-12 relations">
                                                                       <div class="row">
-                                                                                <h4>Producto relacionado:</h4>
+                                                                                <h4>Producto relacionados:</h4>
                                                                                 <!-- ITEM-RELATIONS -->
                                                                                 <div class="item col-md-4 col-sm-4 col-xs-6">
-                                                                                          <img src="upload/producs-1.jpg" class="img-responsive">
+                                                                                          <hr>
+                                                                                          <img src="upload/producs-1.jpg" class="img-responsive img-center">
                                                                                           <h5>Aceite esencial de <strong>Albahaca</strong> (150 ml)</h5>
                                                                                           <div class="col-md-6 col-sm-6 col-xs-5 text-left">
                                                                                                     <div class="row">S/ 9.00</div>
@@ -192,7 +213,8 @@
                                                                                 <!-- /ITEM-RELATIONS -->
                                                                                 <!-- ITEM-RELATIONS -->
                                                                                 <div class="item col-md-4 col-sm-4 col-xs-6">
-                                                                                          <img src="upload/producs-1.jpg" class="img-responsive">
+                                                                                          <hr>
+                                                                                          <img src="upload/producs-1.jpg" class="img-responsive img-center">
                                                                                           <h5>Aceite esencial de <strong>Albahaca</strong> (150 ml)</h5>
                                                                                           <div class="col-md-6 col-sm-6 col-xs-5 text-left">
                                                                                                     <div class="row">S/ 9.00</div>
@@ -215,7 +237,8 @@
                                                                                 <!-- /ITEM-RELATIONS -->
                                                                                 <!-- ITEM-RELATIONS -->
                                                                                 <div class="item col-md-4 col-sm-4 col-xs-6">
-                                                                                          <img src="upload/producs-1.jpg" class="img-responsive">
+                                                                                          <hr>
+                                                                                          <img src="upload/producs-1.jpg" class="img-responsive img-center">
                                                                                           <h5>Aceite esencial de <strong>Albahaca</strong> (150 ml)</h5>
                                                                                           <div class="col-md-6 col-sm-6 col-xs-5 text-left">
                                                                                                     <div class="row">S/ 9.00</div>
