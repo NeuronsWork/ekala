@@ -308,6 +308,13 @@
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 300; }
+  .information .sidebar-feature .item-feature h5 {
+    display: none;
+    color: #a3a8ac;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300; }
   .information .info-category .item-category {
     margin-bottom: 10px; }
     .information .info-category .item-category hr {
@@ -423,14 +430,15 @@ footer {
       padding-right: 5px;
       display: inline-block; }
     .information .products .sidebar-feature .item-feature h6 {
-      float: right;
+      display: none; }
+    .information .products .sidebar-feature .item-feature h5 {
+      display: block;
       color: #8acac8;
       text-align: justify;
+      font-family: 'Lato', sans-serif;
       font-size: 12px;
-      display: inline-block;
-      width: 70%;
-      margin: 5px 0; }
-      .information .products .sidebar-feature .item-feature h6 a {
+      font-weight: 300; }
+      .information .products .sidebar-feature .item-feature h5 a {
         color: #8acac8;
         font-size: 12px; } }
 @media (min-width: 361px) and (max-width: 480px) {

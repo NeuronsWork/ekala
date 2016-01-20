@@ -301,6 +301,12 @@
                                         color: #a3a8ac;
                                         text-align: center;
                                         @include fontLato(20px, 300); }
+                              h5{
+                                        display: none;
+                                        color: #a3a8ac;
+                                        text-align: center;
+                                        @include fontLato(20px, 300);
+                              }
                     }
           }
           .info-category{
@@ -431,13 +437,12 @@ footer{
                                                             padding-right: 5px;
                                                             display: inline-block; }
                                                   h6{
-                                                            float: right;
+                                                            display: none; }
+                                                  h5{
+                                                            display: block;
                                                             color: #8acac8;
                                                             text-align: justify;
-                                                            font-size: 12px;
-                                                            display: inline-block;
-                                                            width: 70%;
-                                                            margin: 5px 0;
+                                                            @include fontLato(12px, 300);
                                                             a{
                                                                       color: #8acac8;
                                                                       font-size: 12px; }
