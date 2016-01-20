@@ -389,9 +389,16 @@ footer{
                               }
                     }
           }
+          .information{
+                    h3{
+                              font-size: 20px; }
+                    .products .info-products .relations .item .number-spinner{
+                              width: 65%;
+                              float: left; }
+          }
 }
 @media (min-width: 361px) and (max-width: 480px){
-     #carousel{
+          #carousel{
                     .carousel-inner{
                               .item{
                                         .carousel-caption{
@@ -403,6 +410,9 @@ footer{
                               }
                     }
           }
+          .information .products .info-products .relations .item .number-spinner{
+                    width: 65%;
+                    float: left; }
 }
 @media screen and (max-width: 767px) {
           .container{
@@ -463,6 +473,41 @@ footer{
                               margin-bottom: 3px;
                               .img-responsive{
                               width: 100%; }
+                    }
+          }
+          .information{
+                    h3{
+                              font-weight: 300;
+                              border-bottom: 1px solid #8acac8;
+                              &:after{
+                                        top: 30%;
+                                        right: 15px;
+                                        border: solid transparent;
+                                        content: " ";
+                                        height: 0;
+                                        width: 0;
+                                        position: absolute;
+                                        pointer-events: none;
+                                        border-color: rgba(138, 202, 200, 0);
+                                        border-top-color: #8acac8;
+                                        border-width: 10px;
+                                        margin-left: -10px; }
+                    }
+                    .products{
+                              h2{
+                                        margin-bottom: 20px;
+                                        padding:0 15px;
+                              }
+                              .info-products{
+                                        padding: 10px 0px;
+                                        img{
+                                                  margin-bottom: 20px; }
+                                        .relations{
+                                                  h4{
+                                                            margin: 10px 0 20px;
+                                                            padding: 0 15px; }
+                                        }
+                              }
                     }
           }
           footer{
