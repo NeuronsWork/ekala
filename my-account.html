@@ -106,26 +106,26 @@
                                                   <div class="col-md-10 col-sm-12 col-xs-12 my-account">
                                                             <h3>Mis datos</h3>
                                                             <div class="col-md-6 col-sm-6 col-xs-12 register">
-                                                                      <form action="my-account_submit" method="get" accept-charset="utf-8">
+                                                                      <form class="form-horizontal" action="my-account_submit" method="get" accept-charset="utf-8">
                                                                                 <div class="form-group">
                                                                                           <label class="control-label">Nombre</label>
                                                                                           <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombre...">
                                                                                           <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos...">
                                                                                 </div>
                                                                                 <div class="form-group">
-                                                                                          <button type="submit" class="btn pull-right">Guardar</button>
+                                                                                          <button type="submit" class="btn btn-link pull-right">Guardar</button>
                                                                                 </div>
                                                                       </form>
-                                                                      <form action="my-account_submit" method="get" accept-charset="utf-8">
+                                                                      <form class="form-horizontal" action="my-account_submit" method="get" accept-charset="utf-8">
                                                                                 <div class="form-group">
                                                                                           <label class="control-label" for="email">Correo electrónico</label>
                                                                                           <input class="form-control" id="email" name="email" placeholder="Correo electrónico..."></input>
                                                                                 </div>
                                                                                 <div class="form-group">
-                                                                                          <button type="submit" class="btn pull-right">Guardar</button>
+                                                                                          <button type="submit" class="btn btn-link pull-right">Guardar</button>
                                                                                 </div>
                                                                       </form>
-                                                                      <form action="my-account_submit" method="get" accept-charset="utf-8">
+                                                                      <form class="form-horizontal" action="my-account_submit" method="get" accept-charset="utf-8">
                                                                                 <div class="form-group">
                                                                                           <label class="control-label" for="pwd">Cambio de Contraseña</label>
                                                                                           <input class="form-control" id="pwd-old" name="pwd-old" placeholder="contraseña antigua..."></input>
@@ -133,27 +133,30 @@
                                                                                           <input class="form-control" id="pwd2" name="pwd2" placeholder="repetir contraseña nueva..."></input>
                                                                                 </div>
                                                                                 <div class="form-group">
-                                                                                          <button type="submit" class="btn pull-right">Cambiar</button>
+                                                                                          <button type="submit" class="btn btn-link pull-right">Cambiar</button>
                                                                                 </div>
                                                                       </form>
-                                                                      <form action="my-account_submit" method="get" accept-charset="utf-8">
-                                                                                <div class="radio">
-                                                                                          <label>
-                                                                                                    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>
-                                                                                                    NO permitir que me envíen correos electronicos.
-                                                                                          </label>
-                                                                                </div>
-                                                                                <div class="form-group"><hr></div>
-                                                                                <div class="radio">
-                                                                                          <label>
-                                                                                                    <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2" checked>
-                                                                                                    Permitir que me envíen correos electrónicos con noticias, consejos y avisos sobre:
-                                                                                          </label>
+                                                                      <form class="form-horizontal" action="my-account_submit" method="get" accept-charset="utf-8">
+                                                                                <div class="form-group">
+                                                                                          <label class="control-label" for="">Preferencias</label>
+                                                                                          <div class="radio">
+                                                                                                    <label>
+                                                                                                              <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
+                                                                                                              <strong>NO permitir que me envíen correos electronicos.</strong>
+                                                                                                    </label>
+                                                                                          </div>
+                                                                                          <hr>
+                                                                                          <div class="radio">
+                                                                                                    <label>
+                                                                                                              <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+                                                                                                              <strong>Permitir que me envíen correos electrónicos con noticias, consejos y avisos sobre:</strong>
+                                                                                                    </label>
+                                                                                          </div>
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                           <div class="radio col-md-5 col-sm-12 col-xs-12">
                                                                                                     <label>
-                                                                                                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                                                              <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios1" value="option3">
                                                                                                               Terapias:
                                                                                                     </label>
                                                                                           </div>
@@ -169,7 +172,7 @@
                                                                                           </div>
                                                                                           <div class="radio col-md-5 col-sm-12 col-xs-12">
                                                                                                     <label>
-                                                                                                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked>
+                                                                                                              <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios2" value="option4">
                                                                                                               Talleres:
                                                                                                     </label>
                                                                                           </div>
@@ -184,7 +187,7 @@
                                                                                           </div>
                                                                                           <div class="radio col-md-5 col-sm-12 col-xs-12">
                                                                                                     <label>
-                                                                                                              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
+                                                                                                              <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios3" value="option5">
                                                                                                               Cursos:
                                                                                                     </label>
                                                                                           </div>
@@ -199,19 +202,19 @@
                                                                                           </div>
                                                                                           <div class="radio col-md-12 col-sm-12 col-xs-12">
                                                                                                     <label>
-                                                                                                              <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked>
+                                                                                                              <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios4" value="option6">
                                                                                                               Sesiones por skype
                                                                                                     </label>
                                                                                           </div>
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                           <hr>
-                                                                                </div>
-                                                                                <div class="radio">
-                                                                                          <label>
-                                                                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                                                                    Acepto los términos y condiciones
-                                                                                          </label>
+                                                                                          <div class="radio">
+                                                                                                    <label class="terms">
+                                                                                                              <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option7">
+                                                                                                              Acepto los términos y condiciones
+                                                                                                    </label>
+                                                                                          </div>
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                           <button type="submit" class="btn pull-right">Aceptar</button>
