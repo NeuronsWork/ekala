@@ -391,11 +391,18 @@
       border-top: 1px solid #8acac8; }
     .information .sidebar-submenu ul li a {
       color: #5e676f;
+      text-decoration: none;
       font-family: 'Lato', sans-serif;
       font-size: 14px;
       font-weight: 500; }
       .information .sidebar-submenu ul li a:hover, .information .sidebar-submenu ul li a:focus {
         color: #8acac8; }
+    .information .sidebar-submenu ul li .active {
+      color: #8acac8; }
+  .information .sidebar-submenu .list-account li {
+    border-bottom: 1px solid #d9c3ab; }
+    .information .sidebar-submenu .list-account li:first-child {
+      border-top: 1px solid #d9c3ab; }
   .information .sidebar-feature .item-feature h6, .information .sidebar-feature .item-feature a {
     color: #a3a8ac;
     text-align: center;
@@ -481,6 +488,13 @@
         margin-top: 0;
         border-top-color: #D9C3AB;
         border-top-width: 17px; }
+  .information .my-account h3 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #8acac8;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500; }
 
 .lst-products .item {
   cursor: pointer; }

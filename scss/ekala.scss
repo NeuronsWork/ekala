@@ -389,10 +389,20 @@
                                                   border-top: 1px solid #8acac8; }
                                         a{
                                                   color: #5e676f;
+                                                  text-decoration: none;
                                                   @include fontLato(14px, 500);
                                                   &:hover, &:focus{
                                                             color: #8acac8; }
                                         }
+                                        .active{
+                                                  color: #8acac8; }
+                              }
+                    }
+                    .list-account{
+                              li{
+                                        border-bottom: 1px solid #d9c3ab;
+                                        &:first-child{
+                                                  border-top: 1px solid #d9c3ab; }
                               }
                     }
           }
@@ -486,6 +496,13 @@
                                         }
                               }
                     }
+          }
+          .my-account{
+                    h3{
+                              margin: 0 0 20px;
+                              text-align: center;
+                              color: #8acac8;
+                              @include fontLato(20px, 500); }
           }
 }
 // LST-PRODUCTS
