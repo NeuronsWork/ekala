@@ -315,6 +315,12 @@
       font-family: 'Lato', sans-serif;
       font-size: 15px;
       font-weight: 500; }
+    .information .products .info-product .add {
+      color: #7c848c;
+      font-style: italic;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 300; }
     .information .products .info-product .mrg {
       margin: 10px 0; }
     .information .products .info-product .info h4 {
@@ -338,13 +344,16 @@
       margin: 10px 0; }
       .information .products .info-product .redes a img {
         height: 24px; }
-    .information .products .info-product .relations h4, .information .products .info-product .comments h4 {
-      text-align: center;
-      padding: 5px 0;
-      margin: 10px;
-      border-bottom: 1px solid #8acac8; }
-    .information .products .info-product .relations .item .number-spinner, .information .products .info-product .comments .item .number-spinner {
+    .information .products .info-product .relations, .information .products .info-product .comments {
+      position: relative;
       float: left; }
+      .information .products .info-product .relations h4, .information .products .info-product .comments h4 {
+        text-align: center;
+        padding: 5px 0;
+        margin: 10px;
+        border-bottom: 1px solid #8acac8; }
+      .information .products .info-product .relations .item .number-spinner, .information .products .info-product .comments .item .number-spinner {
+        float: left; }
     .information .products .info-product .comments h4 {
       margin-bottom: 0; }
     .information .products .info-product .comments form.form-horizontal .control-label {
@@ -604,6 +613,14 @@ footer {
       .information .products .sidebar-feature .item-feature h5 a {
         color: #8acac8;
         font-size: 12px; }
+  .information .products .info-product {
+    padding: 0; }
+    .information .products .info-product h3 {
+      border-bottom: 0px; }
+      .information .products .info-product h3:after {
+        border-top-color: transparent; }
+    .information .products .info-product .relations .item {
+      padding: 0 5px; }
 
   .lst-subcategory {
     padding: 0 !important; }
@@ -629,7 +646,11 @@ footer {
 
   .information .products .info-products .relations .item .number-spinner {
     width: 65%;
-    float: left; } }
+    float: left; }
+  .information .products .info-product h3 {
+    border-bottom: 0px; }
+    .information .products .info-product h3:after {
+      border-top-color: transparent; } }
 @media screen and (max-width: 767px) {
   .container {
     padding-right: 0 !important;
@@ -701,7 +722,7 @@ footer {
       margin-left: -10px; }
   .information .products h2 {
     margin-bottom: 20px;
-    padding: 0 15px; }
+    padding: 0; }
   .information .products .info-products {
     padding: 10px 0px; }
     .information .products .info-products img {
@@ -712,6 +733,10 @@ footer {
   .information .sidebar-feature {
     padding: 20px 0;
     background-color: #f8fcfc; }
+  .information .info-product h3 {
+    border-bottom: 0px; }
+    .information .info-product h3:after {
+      border-top-color: transparent; }
 
   footer {
     padding-top: 20px !important;

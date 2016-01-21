@@ -300,6 +300,10 @@
                                         margin-bottom: 10px;
                                         color: #8acac8;
                                         @include fontLato(15px, 500); }
+                              .add{
+                                        color: #7c848c;
+                                        font-style: italic;
+                                        @include fontLato(15px, 300); }
                               .mrg{
                                         margin: 10px 0;
                               }
@@ -334,6 +338,8 @@
                                         }
                               }
                               .relations, .comments{
+                                        position: relative;
+                                        float: left;
                                         h4{
                                                   text-align: center;
                                                   padding: 5px 0;
@@ -628,6 +634,18 @@ footer{
                                                   }
                                         }
                               }
+                              .info-product{
+                                        padding: 0;
+                                        h3{
+                                                  border-bottom: 0px;
+                                                  &:after{
+                                                            border-top-color: transparent; }
+                                        }
+                                        .relations{
+                                                  .item{
+                                                            padding: 0 5px; }
+                                        }
+                              }
                     }
           }
           .lst-subcategory{
@@ -665,9 +683,18 @@ footer{
                     }
           }
           .information{
-                    .products .info-products .relations .item .number-spinner{
-                              width: 65%;
-                              float: left; }
+                    .products{
+                              .info-products .relations .item .number-spinner{
+                                        width: 65%;
+                                        float: left; }
+                              .info-product{
+                                        h3{
+                                                  border-bottom: 0px;
+                                                  &:after{
+                                                            border-top-color: transparent; }
+                                        }
+                              }
+                    }
           }
 }
 @media screen and (max-width: 767px) {
@@ -753,8 +780,7 @@ footer{
                     .products{
                               h2{
                                         margin-bottom: 20px;
-                                        padding:0 15px;
-                              }
+                                        padding: 0; }
                               .info-products{
                                         padding: 10px 0px;
                                         img{
@@ -769,6 +795,13 @@ footer{
                     .sidebar-feature{
                               padding: 20px 0;
                               background-color: #f8fcfc; }
+                    .info-product{
+                              h3{
+                                        border-bottom: 0px;
+                                        &:after{
+                                                  border-top-color: transparent; }
+                              }
+                    }
           }
           footer{
                     padding-top: 20px !important;
