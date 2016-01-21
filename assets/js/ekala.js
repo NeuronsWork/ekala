@@ -1,4 +1,5 @@
 $(function(){
+        $('#purchaseHistory').stacktable();
         $(".dropdown").hover(
                 function() {
                         $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");

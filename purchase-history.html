@@ -98,36 +98,57 @@
                                                                       <ul class="list-unstyled list-account">
                                                                                 <li><a href="#">Mis datos</a></li>
                                                                                 <li><a href="#">Favoritos</a></li>
-                                                                                <li><a href="#" class="active">Mi Carrito</a></li>
-                                                                                <li><a href="#">Historial de compras</a></li>
+                                                                                <li><a href="#">Mi Carrito</a></li>
+                                                                                <li><a href="#" class="active">Historial de compras</a></li>
                                                                       </ul>
-                                                            </div>
-                                                            <div class="row marginTopBottom">
-                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
-                                                                                <img src="upload/car-01.png" class="img-responsive img-center">
-                                                                                <h6>Regalos para sentirse bien</h6>
-                                                                                <h5>Para regalos</h5>
-                                                                      </div>
-                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
-                                                                                <img src="upload/car-02.png" class="img-responsive img-center">
-                                                                                <h6>Entrega a domicilio</h6>
-                                                                                <h5>Envio a domicilio</h5>
-                                                                      </div>
-                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
-                                                                                <img src="upload/car-03.png" class="img-responsive img-center">
-                                                                                <h6>Recojo en tienda</h6>
-                                                                                <h5>Recojo en tienda</h5>
-                                                                      </div>
-                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
-                                                                                <img src="upload/car-04.png" class="img-responsive img-center">
-                                                                                <h6>Resolvemos tus preguntas: <a href="mailto:info@ekala.pe">info@ekala.pe</a></h6>
-                                                                                <h5><a href="mailto:info@ekala.pe">info@ekala.pe</a></h5>
-                                                                      </div>
                                                             </div>
                                                   </sidebar>
                                                   <div class="col-md-10 col-sm-12 col-xs-12 lst-subcategory favorites">
-                                                            <h3>Mi carrito<img src="assets/img/cart-empty.png"></h3>
-                                                            <p class="text-center"><strong>El carrito está vacio</strong></p>
+                                                            <h3>Historial de compras</h3>
+                                                            <table class="table" id="purchaseHistory" cellspacing="10">
+                                                                      <thead>
+                                                                                <tr>
+                                                                                          <td>#</td>
+                                                                                          <td>Comprobante</td>
+                                                                                          <td>Día de pago</td>
+                                                                                          <td>Nº de operacion</td>
+                                                                                          <td>Importe</td>
+                                                                                          <td>Estado</td>
+                                                                                          <td></td>
+                                                                                </tr>
+                                                                      </thead>
+                                                                      <tbody>
+                                                                                <tr>
+                                                                                          <td>1</td>
+                                                                                          <td>E - 000125</td>
+                                                                                          <td>18/11/2015</td>
+                                                                                          <td>00-1589436784545-1</td>
+                                                                                          <td>S/33.00</td>
+                                                                                          <td class="paid">Pagado</td>
+                                                                                          <td><a href="#">ver</a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                          <td>2</td>
+                                                                                          <td>E - 000125</td>
+                                                                                          <td>18/11/2015</td>
+                                                                                          <td>00-1589436784545-1</td>
+                                                                                          <td>S/33.00</td>
+                                                                                          <td>Entregado</td>
+                                                                                          <td><a href="#">ver</a></td>
+                                                                                </tr>
+                                                                      </tbody>
+                                                            </table>
+                                                            <p class="text-justify">*Los estados de su orden son los siguientes:</p>
+                                                            <ul class="list-unstyled">
+                                                                      <li><strong>Pendiente:</strong> Cuando envía el número de operación del pago.</li>
+                                                                      <li><strong>Pagado:</strong> Este proceso puede demorar hasta 24 si se hace mediante transferencia interbancaria.</li>
+                                                                      <li><strong>Enviado:</strong> Cuando ya despachamos los productos: vía mensajería o vía e-mail, según se requiera.</li>
+                                                                      <li><strong>Entregado:</strong>  Cuando se confirma la recepción del envio por parte del cliente.</li>
+                                                            </ul>
+                                                            <p>El tiempo necesario para completar este proceso está incluido en el tiempo de entrega total que figura
+                                                            en su orden de compra. Este proceso continua de forma automática. Para resolver sus dudas o preguntas
+                                                            puede comunicarse con nostros desde el formulario de contacto, gustosamente le atenderemos.
+                                                            </p>
                                                   </div>
                                         </div>
                               </div>
@@ -150,6 +171,7 @@
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
                     <script src="assets/js/bootstrap.min.js"></script>
+                    <script src="assets/js/stacktable.js"></script>
                     <script src="assets/js/ekala.js"></script>
           </body>
 </html>
