@@ -544,8 +544,7 @@ input[type="radio"]:checked{
                                                             border-left-width: 1px;
                                                             margin-top: 0;
                                                             border-top-color: #D9C3AB;
-                                                            border-top-width: 17px;
-                                                  }
+                                                            border-top-width: 17px; }
                                         }
                               }
                     }
@@ -556,6 +555,24 @@ input[type="radio"]:checked{
                               text-align: center;
                               color: #8acac8;
                               @include fontLato(20px, 500); }
+          }
+}
+// FAVORITES
+.favorites{
+          h3{
+                    text-align: center;
+                    margin: 0 0 10px; }
+          .alert{
+                    padding: 0px 15px !important;
+                    border: 0 !important;
+                    margin-bottom: 0 !important;
+                    @include borderRadius(0px !important);
+                    .close{
+                              position: absolute;
+                              top: 30px;
+                              right: 20px;
+                              font-weight: 300;
+                              color: #64c8c8; }
           }
 }
 // LST-PRODUCTS

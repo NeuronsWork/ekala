@@ -558,6 +558,25 @@ input[type="radio"]:checked {
     font-size: 20px;
     font-weight: 500; }
 
+.favorites h3 {
+  text-align: center;
+  margin: 0 0 10px; }
+.favorites .alert {
+  padding: 0px 15px !important;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border-radius: 0px !important; }
+  .favorites .alert .close {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-weight: 300;
+    color: #64c8c8; }
+
 .lst-products .item {
   cursor: pointer; }
   .lst-products .item .row {
