@@ -876,8 +876,24 @@ footer {
       footer > div a img {
         width: 36px; }
 
-  .table tbody tr td {
-    border: 0px !important; } }
+  .table {
+    border-spacing: 0 !important; }
+    .table tbody tr:first-child th {
+      display: none; }
+    .table tbody tr td.st-key {
+      border-bottom: 0 !important;
+      border-top: 0 !important;
+      border-right: 0 !important;
+      border-left: 2px solid #d9c3ab !important; }
+    .table tbody tr td.st-val {
+      border-bottom: 0 !important;
+      border-top: 0 !important;
+      border-left: 0 !important;
+      border-right: 2px solid #d9c3ab !important; }
+    .table tbody tr th {
+      border-top: 2px solid #d9c3ab !important;
+      border-right: 2px solid #d9c3ab;
+      border-left: 2px solid #d9c3ab; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #carousel {
     margin-bottom: 10px; }

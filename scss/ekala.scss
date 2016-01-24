@@ -941,10 +941,27 @@ footer{
                     }
           }
           .table{
+                    border-spacing: 0 !important;
                     tbody{
+                              tr:first-child{
+                                        th{
+                                                  display: none; }
+                              }
                               tr{
-                                        td{
-                                                  border: 0px !important;
+                                        td.st-key{
+                                                  border-bottom: 0 !important;
+                                                  border-top: 0 !important;
+                                                  border-right: 0 !important;
+                                                  border-left: 2px solid #d9c3ab !important; }
+                                        td.st-val{
+                                                  border-bottom: 0 !important;
+                                                  border-top: 0 !important;
+                                                  border-left: 0 !important;
+                                                  border-right: 2px solid #d9c3ab !important; }
+                                        th{
+                                                  border-top: 2px solid #d9c3ab !important;
+                                                  border-right: 2px solid #d9c3ab;
+                                                  border-left: 2px solid #d9c3ab;
                                         }
                               }
                     }

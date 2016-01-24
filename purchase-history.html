@@ -104,7 +104,7 @@
                                                             </div>
                                                   </sidebar>
                                                   <div class="col-md-10 col-sm-12 col-xs-12 lst-subcategory favorites">
-                                                            <h3>Historial de compras</h3>
+                                                            <div class="col-md-12 col-sm-12 col-xs-12"><h3>Historial de compras</h3></div>
                                                             <table class="table" id="purchaseHistory" cellspacing="10">
                                                                       <thead>
                                                                                 <tr>
@@ -129,6 +129,15 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                           <td>2</td>
+                                                                                          <td>E - 000125</td>
+                                                                                          <td>18/11/2015</td>
+                                                                                          <td>00-1589436784545-1</td>
+                                                                                          <td>S/33.00</td>
+                                                                                          <td>Entregado</td>
+                                                                                          <td><a href="#">ver</a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                          <td>3</td>
                                                                                           <td>E - 000125</td>
                                                                                           <td>18/11/2015</td>
                                                                                           <td>00-1589436784545-1</td>
@@ -168,10 +177,15 @@
                     </footer>
                     <!-- /FOOTER -->
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                    <script src="assets/js/jquery.min.js"></script>
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
                     <script src="assets/js/bootstrap.min.js"></script>
                     <script src="assets/js/stacktable.js"></script>
                     <script src="assets/js/ekala.js"></script>
+                    <script>
+                              $(document).ready(function(){
+                                        $('#purchaseHistory').stacktable();
+                              })
+                    </script>
           </body>
 </html>
