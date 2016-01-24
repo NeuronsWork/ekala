@@ -14,7 +14,17 @@ $(function(){
 
         $( ".login" ).click(function() {
                 $( "#login" ).toggle( "showOrHide", function() {
-                // Animation complete.
+                });
+        });
+
+        $(".recoveryPwd").bind('click', function(){
+                $("#login").toggle("showOrHide", function(){});
+                $("#recoveryPwd").toggle("ShowOrhide", function(){
+                });
+        });
+
+        $(".recoveryPwd1").bind('click', function(){
+                $("#recoveryPwd").toggle("ShowOrhide", function(){
                 });
         });
 

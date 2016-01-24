@@ -70,14 +70,14 @@ input[type="radio"]:checked{
                     border: 0 !important; }
 }
 // LOGIN
-#login{
+#login, #recoveryPwd{
      background-color: #e0f4f3;
      display: none;
      width: 100%;
      position: relative;
           > div{
                     padding: 15px 0;
-                    button.login{
+                    button.login, button.recoveryPwd1{
                               background-color: transparent;
                               border: 0;
                               color: #a3a8ac;
@@ -92,7 +92,15 @@ input[type="radio"]:checked{
                                                   @include fontLato(17px, 500);}
                                         .form-control{
                                                   @include borderRadius(0px !important);
-                                                  border: 0; }
+                                                  border: 0;
+                                        }
+                                        .form-control:invalid + label::after{
+                                                  position: absolute;
+                                                  color: red;
+                                                  bottom: 0;
+                                                  right: 0;
+                                                  content: "⨉";
+                                        }
                                         .btn{
                                                   background-color: #a2dede;
                                                   color: #fff;
