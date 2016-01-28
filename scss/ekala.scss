@@ -69,6 +69,8 @@ input[type="radio"]:checked{
                     box-shadow: none !important;
                     border: 0 !important; }
 }
+.i{
+          font-style: italic; }
 // LOGIN
 #login, #recoveryPwd{
      background-color: #e0f4f3;
@@ -618,7 +620,7 @@ input[type="radio"]:checked{
           }
 }
 // FAVORITES
-.favorites, .products-services{
+.favorites, .products-services, .cart{
           h3{
                     text-align: center;
                     margin: 0 0 10px; }
@@ -641,6 +643,22 @@ input[type="radio"]:checked{
                     width: 100%;
                     position: relative;
                     float: left;
+                    section{
+                              width: 100%;
+                              position: relative;
+                              float: left;
+                              padding: 15px 0;
+                              display: block; }
+                    .border-section{
+                              border-bottom: 1px solid #8acac8; }
+                    .cart-send{
+                              background-color: #a4a9af;
+                              padding: 20px 0 10px;
+                              .btn{
+                                        color: #fff !important;
+                                        border: 0 !important;
+                                        background-color: #8acac8 !important; }
+                    }
                     .form-group{
                               .form-control{
                                         border: 2px solid #8acac8;
@@ -688,6 +706,92 @@ input[type="radio"]:checked{
                                                   border-bottom: 2px solid #8acac8 !important;
                                                   border-right: 2px solid #8acac8 !important;
                                                   border-left: 0 !important; }
+                              }
+                    }
+          }
+}
+.cart{
+          form{
+                    .price{
+                              font-size: 20px; }
+                    section{
+                              .cart-igv{
+                                        position: relative;
+                                        float: left;
+                                        width: 100%;
+                                        display: block;
+                                        padding-bottom: 15px;
+                                        color: #8acac8; }
+                              .cart-sin-igv, .discount, .subtotal, .igv{
+                                        position: relative;
+                                        float: left;
+                                        width: 100%;
+                                        display: block;
+                                        padding: 2px 0;
+                                        color: #a3a8ac; }
+                              .total-cost{
+                                        position: relative;
+                                        float: left;
+                                        width: 100%;
+                                        display: block;
+                                        font-size: 28px;
+                                        color: #8acac8; }
+                    }
+                    .address, .delivery-place{
+                              .form-group{
+                                        .extra > .more-info{
+                                                  display: none; }
+                                        .radio{
+                                                  label{
+                                                            color: #737373;
+                                                            p{
+                                                                      padding: 5px 0;
+                                                                      line-height: 15px;
+                                                                      margin-bottom: 0;
+                                                                      color: #8acac8; }
+                                                  }
+                                        }
+                              }
+                    }
+                    .factura-boleta{
+                              padding: 0 15px;
+                              .form-group{
+                                        > div:first-child{
+                                                  padding-right: 15px !important; }
+                                        > div:last-child{
+                                                  padding-left: 15px !important; }
+                                        .form-control{
+                                                  margin-bottom: 5px;
+                                                  margin-top: 5px;
+                                                  width: 100%; }
+                              }
+                    }
+                    .form-group{
+                              line-height: 40px;
+                              color: #8acac8;
+                              width: 100%;
+                              float: left;
+                              position: relative;
+                              padding: 0 !important;
+                              div[class*="col-"]{
+                                        padding: 0 !important; }
+                    }
+                    .alert{
+                              padding-left: 0;
+                              padding-right: 0;
+                              .close{
+                                        right: 0;
+                              }
+                    }
+                    .products{
+                              .price{
+                                        line-height: 100px;
+                                        .number-spinner{
+                                                  margin-top: 40px; }
+                                        .btn{
+                                                  border: 0; }
+                                        .form-control{
+                                                  padding: 0; }
                               }
                     }
           }

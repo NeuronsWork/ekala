@@ -66,6 +66,9 @@ input[type="radio"]:checked {
     box-shadow: none !important;
     border: 0 !important; }
 
+.i {
+  font-style: italic; }
+
 #login, #recoveryPwd {
   background-color: #e0f4f3;
   display: none;
@@ -615,10 +618,10 @@ input[type="radio"]:checked {
     font-size: 20px;
     font-weight: 500; }
 
-.favorites h3, .products-services h3 {
+.favorites h3, .products-services h3, .cart h3 {
   text-align: center;
   margin: 0 0 10px; }
-.favorites .alert, .products-services .alert {
+.favorites .alert, .products-services .alert, .cart .alert {
   padding: 0px 15px !important;
   border: 0 !important;
   margin-bottom: 0 !important;
@@ -627,18 +630,33 @@ input[type="radio"]:checked {
   -ms-border-radius: 0px !important;
   -o-border-radius: 0px !important;
   border-radius: 0px !important; }
-  .favorites .alert .close, .products-services .alert .close {
+  .favorites .alert .close, .products-services .alert .close, .cart .alert .close {
     position: absolute;
     top: 30px;
     right: 20px;
     font-weight: 300;
     color: #64c8c8; }
-.favorites form, .products-services form {
+.favorites form, .products-services form, .cart form {
   margin-bottom: 30px;
   width: 100%;
   position: relative;
   float: left; }
-  .favorites form .form-group .form-control, .products-services form .form-group .form-control {
+  .favorites form section, .products-services form section, .cart form section {
+    width: 100%;
+    position: relative;
+    float: left;
+    padding: 15px 0;
+    display: block; }
+  .favorites form .border-section, .products-services form .border-section, .cart form .border-section {
+    border-bottom: 1px solid #8acac8; }
+  .favorites form .cart-send, .products-services form .cart-send, .cart form .cart-send {
+    background-color: #a4a9af;
+    padding: 20px 0 10px; }
+    .favorites form .cart-send .btn, .products-services form .cart-send .btn, .cart form .cart-send .btn {
+      color: #fff !important;
+      border: 0 !important;
+      background-color: #8acac8 !important; }
+  .favorites form .form-group .form-control, .products-services form .form-group .form-control, .cart form .form-group .form-control {
     border: 2px solid #8acac8;
     padding: 8px 12px;
     height: 37px;
@@ -647,7 +665,7 @@ input[type="radio"]:checked {
     -ms-border-radius: 0px !important;
     -o-border-radius: 0px !important;
     border-radius: 0px !important; }
-  .favorites form .form-group .btn, .products-services form .form-group .btn {
+  .favorites form .form-group .btn, .products-services form .form-group .btn, .cart form .form-group .btn {
     color: #8acac8;
     border: 2px solid #8acac8;
     background-color: #fff;
@@ -659,36 +677,101 @@ input[type="radio"]:checked {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: 700; }
-.favorites .table, .products-services .table {
+.favorites .table, .products-services .table, .cart .table {
   border-spacing: 0 !important; }
-  .favorites .table thead th, .products-services .table thead th {
+  .favorites .table thead th, .products-services .table thead th, .cart .table thead th {
     text-transform: uppercase;
     color: #333;
     border-bottom: 0 !important;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: 700; }
-  .favorites .table tbody tr td, .products-services .table tbody tr td {
+  .favorites .table tbody tr td, .products-services .table tbody tr td, .cart .table tbody tr td {
     padding-top: 20px; }
-    .favorites .table tbody tr td img, .products-services .table tbody tr td img {
+    .favorites .table tbody tr td img, .products-services .table tbody tr td img, .cart .table tbody tr td img {
       margin-top: -10px;
       margin-right: 10px; }
-  .favorites .table tbody tr .td-first, .products-services .table tbody tr .td-first {
+  .favorites .table tbody tr .td-first, .products-services .table tbody tr .td-first, .cart .table tbody tr .td-first {
     color: #8acac8;
     border-top: 2px solid #8acac8 !important;
     border-bottom: 2px solid #8acac8 !important;
     border-left: 2px solid #8acac8 !important;
     border-right: 0 !important; }
-  .favorites .table tbody tr .td-middle, .products-services .table tbody tr .td-middle {
+  .favorites .table tbody tr .td-middle, .products-services .table tbody tr .td-middle, .cart .table tbody tr .td-middle {
     border-top: 2px solid #8acac8 !important;
     border-bottom: 2px solid #8acac8 !important;
     border-left: 0 !important;
     border-right: 0 !important; }
-  .favorites .table tbody tr .td-last, .products-services .table tbody tr .td-last {
+  .favorites .table tbody tr .td-last, .products-services .table tbody tr .td-last, .cart .table tbody tr .td-last {
     border-top: 2px solid #8acac8 !important;
     border-bottom: 2px solid #8acac8 !important;
     border-right: 2px solid #8acac8 !important;
     border-left: 0 !important; }
+
+.cart form .price {
+  font-size: 20px; }
+.cart form section .cart-igv {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: block;
+  padding-bottom: 15px;
+  color: #8acac8; }
+.cart form section .cart-sin-igv, .cart form section .discount, .cart form section .subtotal, .cart form section .igv {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: block;
+  padding: 2px 0;
+  color: #a3a8ac; }
+.cart form section .total-cost {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: block;
+  font-size: 28px;
+  color: #8acac8; }
+.cart form .address .form-group .extra > .more-info, .cart form .delivery-place .form-group .extra > .more-info {
+  display: none; }
+.cart form .address .form-group .radio label, .cart form .delivery-place .form-group .radio label {
+  color: #737373; }
+  .cart form .address .form-group .radio label p, .cart form .delivery-place .form-group .radio label p {
+    padding: 5px 0;
+    line-height: 15px;
+    margin-bottom: 0;
+    color: #8acac8; }
+.cart form .factura-boleta {
+  padding: 0 15px; }
+  .cart form .factura-boleta .form-group > div:first-child {
+    padding-right: 15px !important; }
+  .cart form .factura-boleta .form-group > div:last-child {
+    padding-left: 15px !important; }
+  .cart form .factura-boleta .form-group .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%; }
+.cart form .form-group {
+  line-height: 40px;
+  color: #8acac8;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 !important; }
+  .cart form .form-group div[class*="col-"] {
+    padding: 0 !important; }
+.cart form .alert {
+  padding-left: 0;
+  padding-right: 0; }
+  .cart form .alert .close {
+    right: 0; }
+.cart form .products .price {
+  line-height: 100px; }
+  .cart form .products .price .number-spinner {
+    margin-top: 40px; }
+  .cart form .products .price .btn {
+    border: 0; }
+  .cart form .products .price .form-control {
+    padding: 0; }
 
 .lst-products .item {
   cursor: pointer; }

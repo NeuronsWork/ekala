@@ -1,0 +1,378 @@
+<html lang="en">
+          <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                    <title>Ekala</title>
+
+                    <!-- Bootstrap -->
+                    <link href="assets/css/ekala.min.css" rel="stylesheet">
+                    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                    <!--[if lt IE 9]>
+                    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                    <![endif]-->
+          </head>
+          <body>
+                    <div id="login">
+                              <div class="container" role="alert">
+                                        <button class="login pull-right"><span aria-hidden="true">×</span></button>
+                                        <form action="index_submit" method="get" accept-charset="utf-8" class="form-horizontal pull-right col-md-5 col-sm-12 col-xs-12">
+                                                  <div class="form-group">
+                                                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                                                            <div class="col-sm-9">
+                                                                      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+                                                            </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                                                            <div class="col-sm-9">
+                                                                      <input type="password" class="form-control" id="inputPassword3" placeholder="">
+                                                            </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <div class="col-sm-12 text-right">
+                                                                      <a href="#">Olvidé contraseña</a><button type="submit" class="btn btn-default">Login</button>
+                                                            </div>
+                                                  </div>
+                                        </form>
+                              </div>
+                    </div>
+                    <header class="container">
+                              <!-- Static navbar -->
+                              <div class="col-md-12 text-right mi-cuenta">
+                                        <div class="navbar-header text-center">
+                                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                                            <span class="sr-only">Toggle navigation</span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                  </button>
+                                        </div>
+                                        <a href="#login" class="login">Login</a>  /
+                                        <a href="#registro" class="registro">Registro</a>
+                                        <a href="#"><img src="assets/img/icon-cart.png" alt=""></a>
+                              </div>
+                              <!-- BRAND -->
+                              <h3 class="text-muted col-md-12 text-center brand">
+                                        <a class="" href="#"><img src="assets/img/logo.png" alt=""></a>
+                              </h3>
+                              <!-- /BRAND -->
+                              <!-- NAVIGATION -->
+                              <nav class="navbar col-md-12">
+                                        <div class="row">
+                                                  <div id="navbar" class="navbar-collapse collapse">
+                                                            <ul class="nav nav-justified">
+                                                                      <li class="dropdown">
+                                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">consultorio</a>
+                                                                                <ul class="dropdown-menu">
+                                                                                          <li><a href="#">en que consiste</a></li>
+                                                                                          <li><a href="#">aromaterapia</a></li>
+                                                                                          <li><a href="#">flores de bach</a></li>
+                                                                                          <li><a href="#">coaching gestalt</a></li>
+                                                                                          <li><a href="#">EFT</a></li>
+                                                                                          <li><a href="#">biomagnetismo</a></li>
+                                                                                          <li><a href="#">terapia on-line</a></li>
+                                                                                </ul>
+                                                                      </li>
+                                                                      <li><a href="#">erika eberhardt</a></li>
+                                                                      <li><a href="#">blog</a></li>
+                                                                      <li><a href="#">productos</a></li>
+                                                                      <li><a href="#">contacto</a></li>
+                                                            </ul>
+                                                  </div>
+                                        </div>
+                              </nav>
+                              <!-- /NAVIGATION -->
+                    </header>
+
+                    <main>
+                              <!-- INFORMATION -->
+                              <div class="container information">
+                                        <div class="col-md-12 products">
+                                                  <h2>MI CUENTA</h2>
+                                                  <sidebar class="col-md-3 col-sm-12 col-xs-12 sidebar-submenu sidebar-feature hidden-xs">
+                                                            <div class="row">
+                                                                      <ul class="list-unstyled list-account">
+                                                                                <li><a href="#">Mis datos</a></li>
+                                                                                <li><a href="#">Favoritos</a></li>
+                                                                                <li><a href="#">Mi Carrito</a></li>
+                                                                                <li><a href="#">Historial de compras</a></li>
+                                                                                <li><a href="#" class="active">Mis productos / servicios</a></li>
+                                                                      </ul>
+                                                            </div>
+                                                            <div class="row marginTopBottom">
+                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
+                                                                                <img src="upload/car-01.png" class="img-responsive img-center">
+                                                                                <h6>Regalos para sentirse bien</h6>
+                                                                                <h5>Para regalos</h5>
+                                                                      </div>
+                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
+                                                                                <img src="upload/car-02.png" class="img-responsive img-center">
+                                                                                <h6>Entrega a domicilio</h6>
+                                                                                <h5>Envio a domicilio</h5>
+                                                                      </div>
+                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
+                                                                                <img src="upload/car-03.png" class="img-responsive img-center">
+                                                                                <h6>Recojo en tienda</h6>
+                                                                                <h5>Recojo en tienda</h5>
+                                                                      </div>
+                                                                      <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
+                                                                                <img src="upload/car-04.png" class="img-responsive img-center">
+                                                                                <h6>Resolvemos tus preguntas: <a href="mailto:info@ekala.pe">info@ekala.pe</a></h6>
+                                                                                <h5><a href="mailto:info@ekala.pe">info@ekala.pe</a></h5>
+                                                                      </div>
+                                                            </div>
+                                                  </sidebar>
+                                                  <div class="col-md-9 col-sm-12 col-xs-12 lst-subcategory cart">
+                                                            <div class="row">
+                                                                      <div class="col-md-12 hidden-sm hidden-xs"><h3>Mi carrito<img src="assets/img/cart-empty.png"></h3></div>
+                                                                      <div class="col-md-12">
+                                                                                <div class="row">
+                                                                                          <div class="subMenu hidden-lg hidden-md">
+                                                                                                    <ul class="nav nav-justified">
+                                                                                                              <li><a>Mi carrito<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                                                                                                        <ul style="display: none;">
+                                                                                                                                  <li><a href="#">Mi cuenta</a></li>
+                                                                                                                                  <li><a href="#">Favoritos</a></li>
+                                                                                                                                  <li><a href="#">Historial de compras</a></li>
+                                                                                                                                  <li><a href="#">Mis productos / servicios</a></li>
+                                                                                                                        </ul>
+                                                                                                              </li>
+                                                                                                    </ul>
+                                                                                          </div>
+                                                                                </div>
+                                                                      </div>
+                                                                      <div class="col-md-12">
+                                                                                <div class="row">
+                                                                                          <form action="my-products-services_submit" method="get" accept-charset="utf-8">
+                                                                                                    <section class="border-section">
+                                                                                                              <div class="form-group alert fade in" role="alert">
+                                                                                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                                                                                  <span aria-hidden="true">&times;</span>
+                                                                                                                        </button>
+                                                                                                                        <div class="help-block">Tarjeta de regalo</div>
+                                                                                                                        <div class="col-md-8"><img src="assets/img/tarjeta-regalo.png" class="pull-left">Monto para tarjeta de regalo</div>
+                                                                                                                        <div class="col-md-1 price">=</div>
+                                                                                                                        <div class="col-md-3 price i text-right">S/9.00</div>
+                                                                                                              </div>
+                                                                                                              <div class="form-group products alert fade in" role="alert">
+                                                                                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                                                                                  <span aria-hidden="true">&times;</span>
+                                                                                                                        </button>
+                                                                                                                        <div class="help-block">Aceite esencial de canela</div>
+                                                                                                                        <div class="col-md-2"><img src="upload/producs-1.jpg" class="pull-left img-responsive"></div>
+                                                                                                                        <div class="col-md-3 price">
+                                                                                                                                  <div class="input-group number-spinner">
+                                                                                                                                            <span class="input-group-btn data-dwn">
+                                                                                                                                                      <button type="button" class="btn" data-dir="dwn"><span class="glyphicon glyphicon-triangle-left"></span></button>
+                                                                                                                                            </span>
+                                                                                                                                            <input type="text" class="form-control text-center" value="1" min="1" max="10">
+                                                                                                                                            <span class="input-group-btn data-up">
+                                                                                                                                                      <button type="button" class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
+                                                                                                                                            </span>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-md-3 price">S/9.00</div>
+                                                                                                                        <div class="col-md-1 price">=</div>
+                                                                                                                        <div class="col-md-3 price text-right i">S./ 9.00</div>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                                    <section class="border-section address">
+                                                                                                              <h3>Destinatario</h3>
+                                                                                                              <div class="form-group">
+                                                                                                                        <div class="col-md-6 my-address">
+                                                                                                                                  <div class="radio">
+                                                                                                                                            <label>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios1" value="" data-extra="my-address">
+                                                                                                                                                      Yo lo recibo
+                                                                                                                                            </label>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-md-6 gift">
+                                                                                                                                  <div class="radio">
+                                                                                                                                            <label>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios2" value="" data-extra="gift">
+                                                                                                                                                      <img src="assets/img/icon-regalo.png"> Enviar como regalo
+                                                                                                                                            </label>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="extra">
+                                                                                                                                  <div class="col-md-12 more-info" id="my-address"></div>
+                                                                                                                                  <div class="col-md-12 more-info" id="gift">
+                                                                                                                                            <div class="col-md-8">
+                                                                                                                                                      <div class="form-group">
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Nombre del destinatario...">
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Coreo electrónico del destinatario...">
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Mensaje personal en la tarjeta...">
+                                                                                                                                                                <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar</button></p>
+                                                                                                                                                      </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="col-md-8">Caja y tarjeta de diseño (+ Info)</div>
+                                                                                                                                            <div class="col-md-1 price">=</div>
+                                                                                                                                            <div class="col-md-3 price text-right">S/ 5.00</div>
+                                                                                                                                            <div class="col-md-8">
+                                                                                                                                                      <div class="form-group">
+                                                                                                                                                                <p class="help-block">* Por seguridad, se le enviará al destinatario del regalo un correo
+                                                                                                                                                                electronico (con copia al comprador) avísandole del día estimado de
+                                                                                                                                                                entrega del paquete (este no contendra precios).</p>
+                                                                                                                                                                <p class="help-block">* La boleta/factura detallada será enviada al correo electrónico
+                                                                                                                                                                indicado en la sección “Datos de pago” (abajo).</p>
+                                                                                                                                                      </div>
+                                                                                                                                            </div>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                                    <section class="border-section delivery-place">
+                                                                                                              <h3>Lugar y tiempo de entrega</h3>
+                                                                                                              <div class="form-group">
+                                                                                                                        <div class="col-md-6 place">
+                                                                                                                                  <div class="radio">
+                                                                                                                                            <label>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios1" value="option1" data-extra="place">
+                                                                                                                                                      Recoger en tienda
+                                                                                                                                            </label>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-md-6 delivery">
+                                                                                                                                  <div class="radio">
+                                                                                                                                            <label>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios2" value="option2" data-extra="delivery">
+                                                                                                                                                      Entrega a domicilio
+                                                                                                                                            </label>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="extra">
+                                                                                                                                  <div class="col-md-12 more-info" id="place">
+                                                                                                                                            <p>L - V:    9h - 13h  / 14h - 17h</p>
+                                                                                                                                            <p>S:           9h - 13h</p>
+                                                                                                                                  </div>
+                                                                                                                                  <div class="col-md-12 more-info" id="delivery">
+                                                                                                                                            <div class="col-md-8">
+                                                                                                                                                      <div class="form-group">
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Nombre del destinatario...">
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Coreo electrónico del destinatario...">
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Mensaje personal en la tarjeta...">
+                                                                                                                                                                <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar</button></p>
+                                                                                                                                                      </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="col-md-8">Tiempo:      De 3 a 4 dias laborables.</div>
+                                                                                                                                            <div class="col-md-1 price">=</div>
+                                                                                                                                            <div class="col-md-3 price text-right">S/ 15.00</div>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                                    <section class="amounts border-section">
+                                                                                                              <div class="cart-igv">
+                                                                                                                        <div class="col-md-8 text-right price">Carrito(con IGV):</div>
+                                                                                                                        <div class="col-md-4 text-right price">S/ 18.00</div>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-12 border-section"></div>
+                                                                                                              <div class="cart-sin-igv">
+                                                                                                                        <div class="col-md-8 text-right price">Carrito (sin IGV):</div>
+                                                                                                                        <div class="col-md-4 text-right price">S/ 15.25</div>
+                                                                                                              </div>
+                                                                                                              <div class="discount">
+                                                                                                                        <div class="col-md-8 text-right price">Descuento de Año Nuevo(-5%):</div>
+                                                                                                                        <div class="col-md-4 text-right price">- S/ 0.76</div>
+                                                                                                              </div>
+                                                                                                              <div class="subtotal">
+                                                                                                                        <div class="col-md-8 text-right price">Subtotal:</div>
+                                                                                                                        <div class="col-md-4 text-right price">= S/ 14.49</div>
+                                                                                                              </div>
+                                                                                                              <div class="igv">
+                                                                                                                        <div class="col-md-8 text-right price">IGV (18%):</div>
+                                                                                                                        <div class="col-md-4 text-right price">S/ 2.61</div>
+                                                                                                              </div>
+                                                                                                              <div class="total-cost">
+                                                                                                                        <div class="col-md-8 text-right">Monto total:</div>
+                                                                                                                        <div class="col-md-4 text-right">S/ 17.10</div>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                                    <section class="factura-boleta">
+                                                                                                              <div class="form-group">
+                                                                                                                        <div class="col-md-6" id="my-address">
+                                                                                                                                  <div class="radio">
+                                                                                                                                            <label>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios1" value="option1" checked>
+                                                                                                                                                      Boleto
+                                                                                                                                            </label>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-md-6" id="gift">
+                                                                                                                                  <div class="radio">
+                                                                                                                                            <label>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios2" value="option2">
+                                                                                                                                                      Factura
+                                                                                                                                            </label>
+                                                                                                                                  </div>
+                                                                                                                        </div>
+                                                                                                              </div>
+                                                                                                              <div class="form-group">
+                                                                                                                        <div class="col-md-6">
+                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                        </div>
+                                                                                                                        <div class="col-md-6">
+                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                        </div>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                                    <section class="cart-send">
+                                                                                                              <div class="form-group text-center">
+                                                                                                                        <button type="submit" class="btn">Terminar y pagar</button>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                          </form>
+                                                                                </div>
+                                                                      </div>
+
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </div>
+                              <!-- /INFORMATION -->
+                    </main>
+                    <!-- FOOTER -->
+                    <footer class="container">
+                              <div class="col-md-4 col-sm-4 col-xs-12 text-left">Mail: <a href="mailto:info@ekala.pe">info@ekala.pe</a></div>
+                              <div class="col-md-4 col-sm-4 col-xs-12 text-center">Términos y condiciones</div>
+                              <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                                        <span class="hidden-xs hidden-sm">Síguenos</span>
+                                        <a href="#"><img src="assets/img/fb.svg" alt=""></a>
+                                        <a href="#"><img src="assets/img/yt.svg" alt=""></a>
+                                        <a href="#"><img src="assets/img/pt.svg" alt=""></a>
+                                        <a href="#"><img src="assets/img/tw.svg" alt=""></a>
+                              </div>
+                    </footer>
+                    <!-- /FOOTER -->
+                    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <!-- Include all compiled plugins (below), or include individual files as needed -->
+                    <script src="assets/js/bootstrap.min.js"></script>
+                    <script src="assets/js/ekala.js"></script>
+                    <script>
+                              $(document).ready(function(){
+                                        $(".address").find("input[type='radio']").each(function(){
+                                                  $(this).change(function(){
+                                                            var value = $(".address input[type='radio']:checked").attr('data-extra');
+                                                            $('.address .extra .more-info').removeClass('show');
+                                                            $('#'+value).addClass('show');
+                                                  });
+                                        });
+                                        $(".delivery-place").find("input[type='radio']").each(function(){
+                                                  $(this).change(function(){
+                                                            var value = $(".delivery-place input[type='radio']:checked").attr('data-extra');
+                                                            $('.delivery-place .extra .more-info').removeClass('show');
+                                                            $('#'+value).addClass('show');
+                                                  });
+                                        });
+                              });
+                    </script>
+          </body>
+</html>
