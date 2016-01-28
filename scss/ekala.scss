@@ -186,6 +186,51 @@ input[type="radio"]:checked{
                     margin-left: -10px;
           }
 }
+// SUBMENU
+.subMenu {
+          float:left;
+          position: relative;
+          width: 100%;
+          display: block;
+          padding: 0 15px;
+          margin-bottom: 15px;
+          ul{
+                    position: relative;
+                    margin: 0px;
+                    padding: 0px;
+                    margin-top: 11px;
+                    overflow: hidden;
+                    width: 100%;
+                    li {
+                             margin-bottom: 20px;
+                             color: #8acac8 !important;
+                             line-height: 35px;
+                             @include fontLato(24px !important, 500 !important);
+                              a{
+                                        padding-left: 0;
+                                        text-align: left;
+                                        border-bottom: 1px solid #8acac8;
+                                        &:hover, &:focus{
+                                                  background-color: transparent; }
+                                        span{
+                                                  line-height: 2; }
+                              }
+                              &:hover, &:focus{
+                                        cursor:pointer; }
+                              a{
+                                        text-decoration:none;
+                                        color: #8acac8;
+                                        @include fontLato(23px, 500); }
+                              ul{
+                                        li{
+                                                  line-height: 26px;
+                                                  a{
+                                                            border-bottom: 0; }
+                                        }
+                              }
+                    }
+          }
+}
 // CAROUSEL
 #carousel{
           margin-bottom: 5px; }
@@ -302,14 +347,12 @@ input[type="radio"]:checked{
                     color: #a3a9ac;
                     @include fontLato(16px, 300);
                     img{
-                              margin-right: 20px;
-                    }
+                              margin-right: 20px; }
           }
           ul{
                     li{
                               color: #a3a9ac;
-                              @include fontLato(16px, 300);
-                    }
+                              @include fontLato(16px, 300); }
           }
           .sub-menu{
                     ul{
@@ -575,10 +618,11 @@ input[type="radio"]:checked{
           }
 }
 // FAVORITES
-.favorites{
+.favorites, .products-services{
           h3{
                     text-align: center;
                     margin: 0 0 10px; }
+          // FAVORITES
           .alert{
                     padding: 0px 15px !important;
                     border: 0 !important;
@@ -590,6 +634,62 @@ input[type="radio"]:checked{
                               right: 20px;
                               font-weight: 300;
                               color: #64c8c8; }
+          }
+          // PRODUCTS-SERVICES
+          form{
+                    margin-bottom: 30px;
+                    width: 100%;
+                    position: relative;
+                    float: left;
+                    .form-group{
+                              .form-control{
+                                        border: 2px solid #8acac8;
+                                        padding: 8px 12px;
+                                        height: 37px;
+                                        @include borderRadius(0px !important); }
+                              .btn{
+                                        color: #8acac8;
+                                        border: 2px solid #8acac8;
+                                        background-color: #fff;
+                                        @include borderRadius(0px !important);
+                                        @include fontLato(15px, 700); }
+                    }
+          }
+          .table{
+                    border-spacing: 0 !important;
+                    thead{
+                              th{
+                                        text-transform: uppercase;
+                                        color: #333;
+                                        border-bottom: 0 !important;
+                                        @include fontLato(15px, 700); }
+                    }
+                    tbody{
+                              tr{
+                                        td{
+                                                  padding-top: 20px;
+                                                  img{
+                                                            margin-top: -10px;
+                                                            margin-right: 10px; }
+                                        }
+                                        .td-first{
+                                                  color: #8acac8;
+                                                  border-top: 2px solid #8acac8 !important;
+                                                  border-bottom: 2px solid #8acac8 !important;
+                                                  border-left: 2px solid #8acac8 !important;
+                                                  border-right: 0 !important; }
+                                        .td-middle{
+                                                  border-top: 2px solid #8acac8 !important;
+                                                  border-bottom: 2px solid #8acac8 !important;
+                                                  border-left: 0 !important;
+                                                  border-right: 0 !important; }
+                                        .td-last{
+                                                  border-top: 2px solid #8acac8 !important;
+                                                  border-bottom: 2px solid #8acac8 !important;
+                                                  border-right: 2px solid #8acac8 !important;
+                                                  border-left: 0 !important; }
+                              }
+                    }
           }
 }
 // LST-PRODUCTS
@@ -887,21 +987,7 @@ footer{
           .information{
                     h3{
                               font-weight: 300;
-                              border-bottom: 1px solid #8acac8;
-                              &:after{
-                                        top: 30%;
-                                        right: 15px;
-                                        border: solid transparent;
-                                        content: " ";
-                                        height: 0;
-                                        width: 0;
-                                        position: absolute;
-                                        pointer-events: none;
-                                        border-color: rgba(138, 202, 200, 0);
-                                        border-top-color: #8acac8;
-                                        border-width: 10px;
-                                        margin-left: -10px; }
-                    }
+                              border-bottom: 1px solid #8acac8; }
                     .products{
                               h2{
                                         margin-bottom: 20px;
@@ -970,6 +1056,51 @@ footer{
                                                   border-top: 2px solid #d9c3ab !important;
                                                   border-right: 2px solid #d9c3ab;
                                                   border-left: 2px solid #d9c3ab;
+                                        }
+                              }
+                    }
+          }
+          // SUBMENU
+          .subMenu {
+                    float:left;
+                    position: relative;
+                    width: 100%;
+                    display: block;
+                    padding: 0 15px;
+                    margin-bottom: 15px;
+                    ul{
+                              position: relative;
+                              margin: 0px;
+                              padding: 0px;
+                              margin-top: 11px;
+                              overflow: hidden;
+                              width: 100%;
+                              li {
+                                       margin-bottom: 20px;
+                                       color: #8acac8 !important;
+                                       line-height: 35px;
+                                       @include fontLato(24px !important, 500 !important);
+                                        a{
+                                                  padding-left: 0;
+                                                  text-align: left;
+                                                  border-bottom: 1px solid #8acac8;
+                                                  &:hover, &:focus{
+                                                            background-color: transparent; }
+                                                  span{
+                                                            line-height: 2; }
+                                        }
+                                        &:hover, &:focus{
+                                                  cursor:pointer; }
+                                        a{
+                                                  text-decoration:none;
+                                                  color: #8acac8;
+                                                  @include fontLato(23px, 500); }
+                                        ul{
+                                                  li{
+                                                            line-height: 26px;
+                                                            a{
+                                                                      border-bottom: 0; }
+                                                  }
                                         }
                               }
                     }

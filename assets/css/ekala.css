@@ -193,6 +193,48 @@ input[type="radio"]:checked {
     border-width: 10px;
     margin-left: -10px; }
 
+.subMenu {
+  float: left;
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 0 15px;
+  margin-bottom: 15px; }
+  .subMenu ul {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 11px;
+    overflow: hidden;
+    width: 100%; }
+    .subMenu ul li {
+      margin-bottom: 20px;
+      color: #8acac8 !important;
+      line-height: 35px;
+      font-family: 'Lato', sans-serif;
+      font-size: 24px !important;
+      font-weight: 500 !important; }
+      .subMenu ul li a {
+        padding-left: 0;
+        text-align: left;
+        border-bottom: 1px solid #8acac8; }
+        .subMenu ul li a:hover, .subMenu ul li a:focus {
+          background-color: transparent; }
+        .subMenu ul li a span {
+          line-height: 2; }
+      .subMenu ul li:hover, .subMenu ul li:focus {
+        cursor: pointer; }
+      .subMenu ul li a {
+        text-decoration: none;
+        color: #8acac8;
+        font-family: 'Lato', sans-serif;
+        font-size: 23px;
+        font-weight: 500; }
+      .subMenu ul li ul li {
+        line-height: 26px; }
+        .subMenu ul li ul li a {
+          border-bottom: 0; }
+
 #carousel {
   margin-bottom: 5px; }
 
@@ -573,10 +615,10 @@ input[type="radio"]:checked {
     font-size: 20px;
     font-weight: 500; }
 
-.favorites h3 {
+.favorites h3, .products-services h3 {
   text-align: center;
   margin: 0 0 10px; }
-.favorites .alert {
+.favorites .alert, .products-services .alert {
   padding: 0px 15px !important;
   border: 0 !important;
   margin-bottom: 0 !important;
@@ -585,12 +627,68 @@ input[type="radio"]:checked {
   -ms-border-radius: 0px !important;
   -o-border-radius: 0px !important;
   border-radius: 0px !important; }
-  .favorites .alert .close {
+  .favorites .alert .close, .products-services .alert .close {
     position: absolute;
     top: 30px;
     right: 20px;
     font-weight: 300;
     color: #64c8c8; }
+.favorites form, .products-services form {
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  float: left; }
+  .favorites form .form-group .form-control, .products-services form .form-group .form-control {
+    border: 2px solid #8acac8;
+    padding: 8px 12px;
+    height: 37px;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    border-radius: 0px !important; }
+  .favorites form .form-group .btn, .products-services form .form-group .btn {
+    color: #8acac8;
+    border: 2px solid #8acac8;
+    background-color: #fff;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    border-radius: 0px !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700; }
+.favorites .table, .products-services .table {
+  border-spacing: 0 !important; }
+  .favorites .table thead th, .products-services .table thead th {
+    text-transform: uppercase;
+    color: #333;
+    border-bottom: 0 !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700; }
+  .favorites .table tbody tr td, .products-services .table tbody tr td {
+    padding-top: 20px; }
+    .favorites .table tbody tr td img, .products-services .table tbody tr td img {
+      margin-top: -10px;
+      margin-right: 10px; }
+  .favorites .table tbody tr .td-first, .products-services .table tbody tr .td-first {
+    color: #8acac8;
+    border-top: 2px solid #8acac8 !important;
+    border-bottom: 2px solid #8acac8 !important;
+    border-left: 2px solid #8acac8 !important;
+    border-right: 0 !important; }
+  .favorites .table tbody tr .td-middle, .products-services .table tbody tr .td-middle {
+    border-top: 2px solid #8acac8 !important;
+    border-bottom: 2px solid #8acac8 !important;
+    border-left: 0 !important;
+    border-right: 0 !important; }
+  .favorites .table tbody tr .td-last, .products-services .table tbody tr .td-last {
+    border-top: 2px solid #8acac8 !important;
+    border-bottom: 2px solid #8acac8 !important;
+    border-right: 2px solid #8acac8 !important;
+    border-left: 0 !important; }
 
 .lst-products .item {
   cursor: pointer; }
@@ -838,19 +936,6 @@ footer {
   .information h3 {
     font-weight: 300;
     border-bottom: 1px solid #8acac8; }
-    .information h3:after {
-      top: 30%;
-      right: 15px;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(138, 202, 200, 0);
-      border-top-color: #8acac8;
-      border-width: 10px;
-      margin-left: -10px; }
   .information .products h2 {
     margin-bottom: 20px;
     padding: 0; }
@@ -899,7 +984,49 @@ footer {
     .table tbody tr th {
       border-top: 2px solid #d9c3ab !important;
       border-right: 2px solid #d9c3ab;
-      border-left: 2px solid #d9c3ab; } }
+      border-left: 2px solid #d9c3ab; }
+
+  .subMenu {
+    float: left;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 0 15px;
+    margin-bottom: 15px; }
+    .subMenu ul {
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+      margin-top: 11px;
+      overflow: hidden;
+      width: 100%; }
+      .subMenu ul li {
+        margin-bottom: 20px;
+        color: #8acac8 !important;
+        line-height: 35px;
+        font-family: 'Lato', sans-serif;
+        font-size: 24px !important;
+        font-weight: 500 !important; }
+        .subMenu ul li a {
+          padding-left: 0;
+          text-align: left;
+          border-bottom: 1px solid #8acac8; }
+          .subMenu ul li a:hover, .subMenu ul li a:focus {
+            background-color: transparent; }
+          .subMenu ul li a span {
+            line-height: 2; }
+        .subMenu ul li:hover, .subMenu ul li:focus {
+          cursor: pointer; }
+        .subMenu ul li a {
+          text-decoration: none;
+          color: #8acac8;
+          font-family: 'Lato', sans-serif;
+          font-size: 23px;
+          font-weight: 500; }
+        .subMenu ul li ul li {
+          line-height: 26px; }
+          .subMenu ul li ul li a {
+            border-bottom: 0; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #carousel {
     margin-bottom: 10px; }

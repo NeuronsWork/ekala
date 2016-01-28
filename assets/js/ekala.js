@@ -12,6 +12,10 @@ $(function(){
                 }
         );
 
+        $('.subMenu li').click(function(){
+                $(this).find('ul').slideToggle('slow');
+        });
+
         $( ".login" ).click(function() {
                 $( "#login" ).toggle( "showOrHide", function() {
                 });
