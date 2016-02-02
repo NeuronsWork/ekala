@@ -126,15 +126,11 @@
                                                                                                     <a href="upload/product-big.jpg">
                                                                                                               <img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" />
                                                                                                     </a>
-                                                                                                    <span class="ppy-extcaption">
-                                                                                                    </span>
                                                                                           </li>
                                                                                           <li>
                                                                                                     <a href="upload/product-big.jpg">
                                                                                                               <img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" />
                                                                                                     </a>
-                                                                                                    <span class="ppy-extcaption">
-                                                                                                    </span>
                                                                                           </li>
                                                                                 </ul>
                                                                                 <div class="ppy-outer">
@@ -153,12 +149,11 @@
                                                                                           </div>
                                                                                           <span class="ppy-text"></span>
                                                                                 </div>
-                                                                                <!-- <img src="upload/producs-1.jpg" class="img-responsive img-center"> -->
                                                                       </div>
-                                                                      <div class="col-md-12 col-sm-12 col-xs-12 text-left mrg">
-                                                                                <div class="row">S/ 9.00 <a class="link-fav" data-content='¡Listo! ahora podrás encontrartlo en “Mi cuenta - Favoritos”'>favorito <img src="assets/img/icon-favoritos.png"></a></div>
+                                                                      <div class="col-md-12 col-sm-12 col-xs-12 text-left mrg" id="favorite">
+                                                                                <div class="row">S/ 9.00 <a class="link-fav" data-content='¡Listo! ahora podrás encontrartlo en “Mi cuenta - Favoritos”' data-div="#favorite">favorito <img src="assets/img/icon-favoritos.png"></a></div>
                                                                       </div>
-                                                                      <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+                                                                      <div class="col-md-12 col-sm-12 col-xs-12 text-right" id="cart">
                                                                                 <div class="row">
                                                                                           <div class="input-group number-spinner">
                                                                                                     <span class="input-group-btn data-dwn">
@@ -169,7 +164,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="add addCart" data-content="Tu carrito ha sido actualizado.">Añadir <img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="add addCart" data-content="Tu carrito ha sido actualizado." data-div="#cart">Añadir <img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                                       <div class="col-md-12 col-sm-12 col-xs-12 redes">
@@ -190,6 +185,13 @@
                                                                                           <li>Compuestos: Acetato de bornilo, canfeno, a-pineno</li>
                                                                                           <li>Producto Importado</li>
                                                                                 </ul>
+                                                                                <div class="lst_galery">
+                                                                                          <div class="col-md-3 col-sm-2 col-xs-3"><a href="#"><img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" /></a></div>
+                                                                                          <div class="col-md-3 col-sm-2 col-xs-3"><a href="#"><img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" /></a></div>
+                                                                                          <div class="col-md-3 col-sm-2 col-xs-3"><a href="#"><img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" /></a></div>
+                                                                                          <div class="col-md-3 col-sm-2 col-xs-3"><a href="#"><img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" /></a></div>
+                                                                                          <div class="col-md-3 col-sm-2 col-xs-3"><a href="#"><img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" /></a></div>
+                                                                                </div>
                                                                       </div>
                                                             </div>
                                                             <!-- COMMENTS -->
@@ -201,8 +203,8 @@
                                                                                           <div class="col-sm-10 col-xs-9">
                                                                                                <input type="text" class="form-control" id="inputEmail3" placeholder="Comentario...">
                                                                                           </div>
-                                                                                          <label class="col-sm-2 col-xs-3 control-label">
-                                                                                                    <button type="button" class="btn btn-default addMessage" data-content="¡Gracias por tu comentario! Podrás verlo publicado cuando haya sido revisado por los moderadores.">Enviar</button>
+                                                                                          <label class="col-sm-2 col-xs-3 control-label" id="btn_comment">
+                                                                                                    <button type="button" class="btn btn-default addMessage" data-content="¡Gracias por tu comentario! Podrás verlo publicado cuando haya sido revisado por los moderadores." data-div="#btn_comment">Enviar</button>
                                                                                           </label>
                                                                                           </div>
                                                                                 </form>

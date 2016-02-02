@@ -71,6 +71,10 @@ input[type="radio"]:checked{
           font-style: italic; }
 .addCart, .addMessage, .link-fav{
           cursor: pointer; }
+.preferences .radio input[type=radio]{
+          margin-top: -4px; }
+p{
+          text-align: justify; }
 // LOGIN
 #login, #recoveryPwd{
      background-color: #e0f4f3;
@@ -583,6 +587,7 @@ input[type="radio"]:checked{
           }
           .sidebar-feature{
                     .item-feature{
+                              cursor: pointer;
                               h6, a{
                                         color: #a3a8ac;
                                         text-align: center;
@@ -643,31 +648,17 @@ input[type="radio"]:checked{
                               }
                               a > img{
                                         width: 24px; }
-                              .discount{
+                              .discount, .no-stock, .no-msg{
                                         background-color: #8acac8;
                                         color: #fff;
                                         font-style: italic;
-                                        @include fontLato(13px, 300);
-                                        span{
-                                                  display: block;
-                                                  padding: 2px 5px;
-                                                  background-color: #d9c3ab;
-                                                  &:after{
-                                                            left: 48px;
-                                                            top: 0px;
-                                                            border: solid transparent;
-                                                            content: " ";
-                                                            height: 0;
-                                                            width: 0;
-                                                            position: absolute;
-                                                            pointer-events: none;
-                                                            border-color: rgba(136,183,213,0);
-                                                            border-left-color: #D9C3AB;
-                                                            border-left-width: 1px;
-                                                            margin-top: 0;
-                                                            border-top-color: #D9C3AB;
-                                                            border-top-width: 17px; }
-                                        }
+                                        line-height: 23px;
+                                        @include fontLato(15px, 300); }
+                              .no-stock{
+                                        background-color: #a3a8ac; }
+                              .no-msg{
+                                        background-color: #fff;
+                                        color: #fff;
                               }
                     }
           }
@@ -1000,8 +991,8 @@ input[type="radio"]:checked{
 // ALERTS
 .popupunder{
          width: 250px;
-          position:fixed;
-          bottom: 10px;
+          position:absolute;
+          bottom: 100%;
           right: 10px;
           z-index: 10;
           border: 5px solid #8acac8 !important;
@@ -1031,7 +1022,17 @@ footer{
                               width: 24px; }
           }
 }
-// POPEYE
+// POPEYE / LIST GALERY
+.lst_galery{
+          > div{
+                    a{
+                              margin-bottom: 5px;
+                              display: block;
+                              position: relative;
+                              float: left;
+                              border: 1px solid #82DFDF; }
+          }
+}
 .ppy-outer {
           display: none; }
 .ppy-active .ppy-outer {
@@ -1047,7 +1048,7 @@ footer{
 .ppy-captionwrap {
           overflow: hidden; }
 .ppy-caption{
-          visibility: visible !important;
+          /*visibility: visible !important;*/
           overflow: visible !important;
           position: absolute;
           top: 7px;
@@ -1067,6 +1068,35 @@ footer{
 .ppy-imglist li a img {
           display: block;
           border: 0; }
+.ppy-nav a {
+          display: block;
+          overflow: hidden;
+          background-color: #d9c3ab;
+          color: #fff;
+          height: 24px;
+          float: left;
+          padding: 5px 4px 6px 6px;
+          margin-left: 5px;
+          font-size: 12px;
+          @include borderRadius(5px);
+          &:hover, &:focus{
+                    cursor: pointer;
+          }
+}
+.ppy-active{
+          .ppy-nav a{
+                    height: 20px;
+                    font-size: 10px;
+                    padding: 4px 4px 6px 5px; }
+}
+.ppy-expanded{
+          .ppy-caption{
+                    visibility: visible !important; }
+          .ppy-nav a{
+                    height: 24px;
+                    font-size: 12px;
+                    padding: 5px 4px 6px 6px; }
+}
 #ppy1 .ppy-extcaption {
           width: 240px;
           display: block; }
@@ -1099,21 +1129,6 @@ footer{
           position: absolute;
           top: 0;
           right: 15px; }
-#ppy1 .ppy-nav a {
-          display: block;
-          overflow: hidden;
-          background-color: #d9c3ab;
-          color: #fff;
-          height: 24px;
-          float: left;
-          padding: 5px 4px 6px 6px;
-          margin-left: 5px;
-          font-size: 12px;
-          @include borderRadius(5px);
-          &:hover, &:focus{
-                    cursor: pointer;
-          }
-}
 // RESPONSIVE
 @media screen and (max-width: 360px) {
           #carousel{

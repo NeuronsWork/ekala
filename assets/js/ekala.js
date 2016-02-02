@@ -12,9 +12,15 @@ $(function(){
                 }
         );
 
+        $('.item-feature').click(function(){
+                var ref = $(this).attr('data-href');
+                location.href=ref;
+        });
+
         $('.addCart, .addMessage, .link-fav').bind('click', function(){
                 var content = $(this).attr('data-content');
-                $(this).after(
+                var contentAlert = $(this).attr('data-div');
+                $(contentAlert).append(
                 '<div class="popupunder alert alert-success fade in">'+
                 '<button type="button" class="close close-sm" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button>' +
                 //'Tu carrito ha sido actualizado.' +
