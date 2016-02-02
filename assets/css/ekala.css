@@ -69,6 +69,9 @@ input[type="radio"]:checked {
 .i {
   font-style: italic; }
 
+.addCart, .addMessage, .link-fav {
+  cursor: pointer; }
+
 #login, #recoveryPwd {
   background-color: #e0f4f3;
   display: none;

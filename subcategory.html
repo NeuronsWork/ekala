@@ -137,7 +137,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="addCart"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="addCart" data-content="Tu carrito ha sido actualizado."><img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                             </div>
@@ -161,7 +161,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="addCart"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="addCart" data-content="Tu carrito ha sido actualizado."><img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                             </div>
@@ -185,7 +185,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="addCart"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="addCart" data-content="Tu carrito ha sido actualizado."><img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                             </div>
@@ -209,7 +209,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="addCart"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="addCart" data-content="Tu carrito ha sido actualizado."><img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                             </div>
@@ -233,7 +233,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="addCart"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="addCart" data-content="Tu carrito ha sido actualizado."><img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                             </div>
@@ -262,7 +262,7 @@
                                                                                                               <button class="btn" data-dir="up"><span class="glyphicon glyphicon-triangle-right"></span></button>
                                                                                                     </span>
                                                                                           </div>
-                                                                                          <a class="addCart"><img src="assets/img/icon-cart.png"></a>
+                                                                                          <a class="addCart" data-content="Tu carrito ha sido actualizado."><img src="assets/img/icon-cart.png"></a>
                                                                                 </div>
                                                                       </div>
                                                             </div>
@@ -290,24 +290,5 @@
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
                     <script src="assets/js/bootstrap.min.js"></script>
                     <script src="assets/js/ekala.js"></script>
-                    <script type="text/javascript">
-                              $(document).ready(function(){
-                                        $('.addCart').bind('click', function(){
-                                                  //console.log('sss');
-                                                  //$('.popupunder').alert();
-                                                  $(this).after(
-                                                  '<div class="popupunder alert alert-success fade in">'+
-                                                  '<button type="button" class="close close-sm" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button>' +
-                                                  'Tu carrito ha sido actualizado.' +
-                                                  '</div>');
-                                                  window.setTimeout(function() {
-                                                            $(".alert").fadeTo(4000, 500).slideUp(500, function(){
-                                                                      $(this).remove();
-                                                            });
-                                                  // 500 : Time will remain on the screen
-                                                  }, 500);
-                                        });
-                              });
-                    </script>
           </body>
 </html>

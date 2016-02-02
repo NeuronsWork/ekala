@@ -12,6 +12,21 @@ $(function(){
                 }
         );
 
+        $('.addCart, .addMessage, .link-fav').bind('click', function(){
+                var content = $(this).attr('data-content');
+                $(this).after(
+                '<div class="popupunder alert alert-success fade in">'+
+                '<button type="button" class="close close-sm" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button>' +
+                //'Tu carrito ha sido actualizado.' +
+                content +
+                '</div>');
+                window.setTimeout(function() {
+                        $(".alert").fadeTo(4000, 500).slideUp(500, function(){
+                              $(this).remove();
+                        });
+                }, 500);
+        });
+
         $('.subMenu li').click(function(){
                 $(this).find('ul').slideToggle('slow');
         });
