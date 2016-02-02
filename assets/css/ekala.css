@@ -1036,6 +1036,97 @@ footer {
     footer a img {
       width: 24px; }
 
+.ppy-outer {
+  display: none; }
+
+.ppy-active .ppy-outer {
+  background-color: #fff;
+  display: block; }
+
+.ppy-stage {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  position: relative; }
+
+.ppy-placeholder {
+  position: relative; }
+
+.ppy-caption,
+.ppy-captionwrap {
+  overflow: hidden; }
+
+.ppy-hidden {
+  display: none !important; }
+
+.ppy-imglist {
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+
+.ppy-imglist li {
+  background: #fff;
+  list-style: none;
+  float: left;
+  display: block; }
+
+.ppy-imglist li a img {
+  display: block;
+  border: 0; }
+
+#ppy1 .ppy-extcaption {
+  width: 240px;
+  display: block; }
+
+#ppy1 .ppy-imglist li {
+  width: 240px;
+  height: 270px; }
+
+/* popeye example 1 */
+#ppy1.ppy-active {
+  width: 262px;
+  float: left;
+  margin: 0 20px 10px 0; }
+
+#ppy1 .ppy-stage {
+  width: 240px;
+  height: 173px; }
+
+#ppy1 .ppy-counter {
+  color: #b8cf5a;
+  padding: 0 0 2px 0;
+  margin: 0 0 5px 0;
+  font-size: 0.9em; }
+
+#ppy1 .ppy-loading {
+  background: #fff url(../../assets/img/popeye/loading1.gif) no-repeat center !important; }
+
+#ppy1 .ppy-nav {
+  width: auto;
+  opacity: 100 !important;
+  height: auto;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 15px; }
+
+#ppy1 .ppy-nav a {
+  display: block;
+  overflow: hidden;
+  background-color: #d9c3ab;
+  color: #fff;
+  height: 24px;
+  float: left;
+  padding: 5px 4px 6px 6px;
+  margin-left: 5px;
+  font-size: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  #ppy1 .ppy-nav a:hover, #ppy1 .ppy-nav a:focus {
+    cursor: pointer; }
+
 @media screen and (max-width: 360px) {
   #carousel .carousel-inner .item .carousel-caption .tenor {
     font-size: 80% !important;
@@ -1296,7 +1387,17 @@ footer {
             border-bottom: 0; }
 
   .cart form .factura-boleta .form-group div[class*="col-"] {
-    padding: 0px !important; } }
+    padding: 0px !important; }
+
+  .ppy-placeholder, .ppy-expanded, .ppy-stage, .ppy-active {
+    width: 100% !important; }
+
+  .ppy-expanded {
+    position: relative !important; }
+
+  .ppy-placeholder {
+    height: initial !important;
+    min-height: 173px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #carousel {
     margin-bottom: 10px; }

@@ -120,7 +120,41 @@
                                                   <div class="col-md-10 col-sm-12 col-xs-12 info-product">
                                                             <h3>Aceite esencial de albahaca</h3>
                                                             <div class="col-md-4 col-sm-4 col-xs-12">
-                                                                      <img src="upload/producs-1.jpg" class="img-responsive img-center">
+                                                                      <div class="ppy" id="ppy1">
+                                                                                <ul class="ppy-imglist">
+                                                                                          <li>
+                                                                                                    <a href="upload/product-big.jpg">
+                                                                                                              <img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" />
+                                                                                                    </a>
+                                                                                                    <span class="ppy-extcaption">
+                                                                                                    </span>
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                    <a href="upload/product-big.jpg">
+                                                                                                              <img src="upload/producs-1.jpg" alt="" class="img-responsive img-center" />
+                                                                                                    </a>
+                                                                                                    <span class="ppy-extcaption">
+                                                                                                    </span>
+                                                                                          </li>
+                                                                                </ul>
+                                                                                <div class="ppy-outer">
+                                                                                          <div class="ppy-stage">
+                                                                                                    <div class="ppy-nav">
+                                                                                                              <a class="ppy-prev" title="Previous image"><span class="glyphicon glyphicon-triangle-left"></span></a>
+                                                                                                              <a class="ppy-switch-enlarge" title="Enlarge"><span class="glyphicon glyphicon-th"></span></a>
+                                                                                                              <a class="ppy-switch-compact" title="Close"><span class="glyphicon glyphicon-remove"></span></a>
+                                                                                                              <a class="ppy-next" title="Next image"><span class="glyphicon glyphicon-triangle-right"></span></a>
+                                                                                                    </div>
+                                                                                          </div>
+                                                                                </div>
+                                                                                <div class="ppy-caption">
+                                                                                          <div class="ppy-counter">
+                                                                                                    Image <strong class="ppy-current"></strong> of <strong class="ppy-total"></strong>
+                                                                                          </div>
+                                                                                          <span class="ppy-text"></span>
+                                                                                </div>
+                                                                                <!-- <img src="upload/producs-1.jpg" class="img-responsive img-center"> -->
+                                                                      </div>
                                                                       <div class="col-md-12 col-sm-12 col-xs-12 text-left mrg">
                                                                                 <div class="row">S/ 9.00 <a class="link-fav" data-content='¡Listo! ahora podrás encontrartlo en “Mi cuenta - Favoritos”'>favorito <img src="assets/img/icon-favoritos.png"></a></div>
                                                                       </div>
@@ -285,5 +319,11 @@
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
                     <script src="assets/js/bootstrap.min.js"></script>
                     <script src="assets/js/ekala.js"></script>
+                    <script src="assets/js/ekala_popeye.js"></script>
+                    <script type="text/javascript">
+                              $(document).ready(function () {
+                                        $('#ppy1').popeye();
+                              });
+                    </script>
           </body>
 </html>
