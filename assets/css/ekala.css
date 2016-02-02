@@ -122,6 +122,63 @@ input[type="radio"]:checked {
         padding-right: 10px;
         color: #8acac8; }
 
+#gift p, #delivery p, #place p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #8acac8; }
+#gift .form-group .help-block, #delivery .form-group .help-block, #place .form-group .help-block {
+  line-height: 20px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+#gift .form-select, #delivery .form-select, #place .form-select {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #f0fafa;
+  margin-bottom: 10px;
+  padding: 0 10px 0 0; }
+  #gift .form-select select, #delivery .form-select select, #place .form-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    padding: 0 12px;
+    color: #999;
+    font-style: italic;
+    background-color: #f0fafa;
+    width: 100%;
+    background: linear-gradient(#f0fafa, #f0fafa) no-repeat, linear-gradient(-135deg, rgba(255, 255, 255, 0) 50%, #f0fafa 50%) no-repeat, linear-gradient(-225deg, rgba(255, 255, 255, 0) 50%, #f0fafa 50%) no-repeat, linear-gradient(#8acac8, #8acac8) no-repeat;
+    background-size: 0 100%,15px 18px,15px 15px,15px 40%;
+    background-position: right 17px;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    border-radius: 0px !important; }
+    #gift .form-select select:focus, #delivery .form-select select:focus, #place .form-select select:focus {
+      outline: 0px; }
+#gift .form-control, #delivery .form-control, #place .form-control {
+  margin-bottom: 10px;
+  box-shadow: none;
+  font-style: italic;
+  background-color: #f0fafa;
+  border: 0; }
+#gift .btn, #delivery .btn, #place .btn {
+  border: 0;
+  border-bottom: 1px solid;
+  font-style: italic;
+  color: #a3a8ac;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+  #gift .btn span, #delivery .btn span, #place .btn span {
+    margin-left: 5px;
+    font-size: 12px; }
+
 .mi-cuenta {
   font-style: italic;
   padding: 10px;
@@ -709,6 +766,9 @@ input[type="radio"]:checked {
     border-left: 0 !important; }
 
 .cart form .price {
+  position: relative;
+  float: left;
+  display: block;
   font-size: 20px; }
 .cart form section .cart-igv {
   position: relative;
@@ -731,11 +791,11 @@ input[type="radio"]:checked {
   display: block;
   font-size: 28px;
   color: #8acac8; }
-.cart form .address .form-group .extra > .more-info, .cart form .delivery-place .form-group .extra > .more-info {
+.cart form .address .form-group .extra > .more-info, .cart form .delivery-place .form-group .extra > .more-info, .cart form .factura-boleta .form-group .extra > .more-info {
   display: none; }
-.cart form .address .form-group .radio label, .cart form .delivery-place .form-group .radio label {
+.cart form .address .form-group .radio label, .cart form .delivery-place .form-group .radio label, .cart form .factura-boleta .form-group .radio label {
   color: #737373; }
-  .cart form .address .form-group .radio label p, .cart form .delivery-place .form-group .radio label p {
+  .cart form .address .form-group .radio label p, .cart form .delivery-place .form-group .radio label p, .cart form .factura-boleta .form-group .radio label p {
     padding: 5px 0;
     line-height: 15px;
     margin-bottom: 0;
@@ -750,6 +810,52 @@ input[type="radio"]:checked {
     margin-bottom: 5px;
     margin-top: 5px;
     width: 100%; }
+.cart form .end-and-pay h5 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700; }
+.cart form .end-and-pay li {
+  padding: 0;
+  font-style: italic;
+  color: #5e676f; }
+  .cart form .end-and-pay li span {
+    color: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    padding: 1px 8px 3px;
+    margin-right: 5px;
+    float: left;
+    display: block;
+    background-color: #8acac8; }
+.cart form .end-and-pay li.list {
+  font-style: initial;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 500; }
+.cart form .end-and-pay .btn {
+  width: 100%; }
+.cart form .end-and-pay .info {
+  background-color: #a4a9af;
+  padding: 10px 15px;
+  position: relative;
+  width: 100%;
+  float: left; }
+  .cart form .end-and-pay .info p, .cart form .end-and-pay .info a {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff; }
+  .cart form .end-and-pay .info a {
+    text-decoration: underline; }
+    .cart form .end-and-pay .info a:hover, .cart form .end-and-pay .info a:focus {
+      text-decoration: none; }
 .cart form .form-group {
   line-height: 40px;
   color: #8acac8;
@@ -848,6 +954,69 @@ input[type="radio"]:checked {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 500; }
+
+.modal-content {
+  padding: 50px 50px 20px;
+  border: 5px solid #8acac8 !important;
+  background-color: #fdfbf8 !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border-radius: 0px !important; }
+  .modal-content h3 {
+    color: #8acac8;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 500; }
+  .modal-content p {
+    color: #5e676f;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500; }
+  .modal-content .btn {
+    background-color: #8acac8;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: 700; }
+    .modal-content .btn:focus, .modal-content .btn:hover {
+      color: #fff; }
+
+.popupunder {
+  width: 250px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+  border: 5px solid #8acac8 !important;
+  background-color: #fff !important;
+  padding: 20px;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border-radius: 0px !important; }
+
+.popupunder.alert-success {
+  color: #8acac8;
+  text-align: center;
+  line-height: 23px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 300; }
+
+.popupunder .close {
+  font-size: 16px;
+  position: absolute !important;
+  right: 2px;
+  top: 3px; }
 
 footer {
   color: #5c6670;
@@ -962,7 +1131,19 @@ footer {
   .information .products .info-product h3 {
     border-bottom: 0px; }
     .information .products .info-product h3:after {
-      border-top-color: transparent; } }
+      border-top-color: transparent; }
+
+  .cart-giftCard .col-md-8 {
+    line-height: 20px; }
+
+  .cart h3 {
+    border-bottom: 0 !important; }
+
+  .delivery-place {
+    border-bottom: 0 !important; }
+
+  .cart form .factura-boleta .form-group div[class*="col-"] {
+    padding: 0px !important; } }
 @media screen and (max-width: 767px) {
   .container {
     padding-right: 0 !important;
@@ -1109,7 +1290,10 @@ footer {
         .subMenu ul li ul li {
           line-height: 26px; }
           .subMenu ul li ul li a {
-            border-bottom: 0; } }
+            border-bottom: 0; }
+
+  .cart form .factura-boleta .form-group div[class*="col-"] {
+    padding: 0px !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #carousel {
     margin-bottom: 10px; }

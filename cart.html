@@ -148,23 +148,24 @@
                                                                       <div class="col-md-12">
                                                                                 <div class="row">
                                                                                           <form action="my-products-services_submit" method="get" accept-charset="utf-8">
-                                                                                                    <section class="border-section">
+                                                                                                    <!-- CART & GIFT CARD -->
+                                                                                                    <section class="border-section cart-giftCard">
                                                                                                               <div class="form-group alert fade in" role="alert">
                                                                                                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                                                                                                   <span aria-hidden="true">&times;</span>
                                                                                                                         </button>
                                                                                                                         <div class="help-block">Tarjeta de regalo</div>
-                                                                                                                        <div class="col-md-8"><img src="assets/img/tarjeta-regalo.png" class="pull-left">Monto para tarjeta de regalo</div>
-                                                                                                                        <div class="col-md-1 price">=</div>
-                                                                                                                        <div class="col-md-3 price i text-right">S/9.00</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-8"><img src="assets/img/tarjeta-regalo.png" class="pull-left">Monto para tarjeta de regalo</div>
+                                                                                                                        <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
+                                                                                                                        <div class="col-md-3 col-sm-3 col-xs-3 price i text-right">S/9.00</div>
                                                                                                               </div>
                                                                                                               <div class="form-group products alert fade in" role="alert">
                                                                                                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                                                                                                   <span aria-hidden="true">&times;</span>
                                                                                                                         </button>
                                                                                                                         <div class="help-block">Aceite esencial de canela</div>
-                                                                                                                        <div class="col-md-2"><img src="upload/producs-1.jpg" class="pull-left img-responsive"></div>
-                                                                                                                        <div class="col-md-3 price">
+                                                                                                                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="upload/producs-1.jpg" class="pull-left img-responsive"></div>
+                                                                                                                        <div class="col-md-3 col-sm-3 col-xs-3 price">
                                                                                                                                   <div class="input-group number-spinner">
                                                                                                                                             <span class="input-group-btn data-dwn">
                                                                                                                                                       <button type="button" class="btn" data-dir="dwn"><span class="glyphicon glyphicon-triangle-left"></span></button>
@@ -175,15 +176,17 @@
                                                                                                                                             </span>
                                                                                                                                   </div>
                                                                                                                         </div>
-                                                                                                                        <div class="col-md-3 price">S/9.00</div>
-                                                                                                                        <div class="col-md-1 price">=</div>
-                                                                                                                        <div class="col-md-3 price text-right i">S./ 9.00</div>
+                                                                                                                        <div class="col-md-3 col-sm-3 col-xs-3 price">S/9.00</div>
+                                                                                                                        <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
+                                                                                                                        <div class="col-md-3 col-sm-3 col-xs-3 price text-right i">S./ 9.00</div>
                                                                                                               </div>
                                                                                                     </section>
+                                                                                                    <!-- /CART & GIFT CARD -->
+                                                                                                    <!-- ADDRESS -->
                                                                                                     <section class="border-section address">
                                                                                                               <h3>Destinatario</h3>
                                                                                                               <div class="form-group">
-                                                                                                                        <div class="col-md-6 my-address">
+                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 my-address">
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
                                                                                                                                                       <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios1" value="" data-extra="my-address">
@@ -191,7 +194,7 @@
                                                                                                                                             </label>
                                                                                                                                   </div>
                                                                                                                         </div>
-                                                                                                                        <div class="col-md-6 gift">
+                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 gift">
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
                                                                                                                                                       <input type="radio" class="btn-radio" name="optionsRadios" id="optionsRadios2" value="" data-extra="gift">
@@ -200,20 +203,20 @@
                                                                                                                                   </div>
                                                                                                                         </div>
                                                                                                                         <div class="extra">
-                                                                                                                                  <div class="col-md-12 more-info" id="my-address"></div>
-                                                                                                                                  <div class="col-md-12 more-info" id="gift">
-                                                                                                                                            <div class="col-md-8">
+                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="my-address"></div>
+                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="gift">
+                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-12">
                                                                                                                                                       <div class="form-group">
                                                                                                                                                                 <input type="text" class="form-control" placeholder="* Nombre del destinatario...">
                                                                                                                                                                 <input type="text" class="form-control" placeholder="* Coreo electrónico del destinatario...">
                                                                                                                                                                 <input type="text" class="form-control" placeholder="* Mensaje personal en la tarjeta...">
-                                                                                                                                                                <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar</button></p>
+                                                                                                                                                                <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar <span class="glyphicon glyphicon glyphicon-triangle-bottom"></span></button></p>
                                                                                                                                                       </div>
                                                                                                                                             </div>
-                                                                                                                                            <div class="col-md-8">Caja y tarjeta de diseño (+ Info)</div>
-                                                                                                                                            <div class="col-md-1 price">=</div>
-                                                                                                                                            <div class="col-md-3 price text-right">S/ 5.00</div>
-                                                                                                                                            <div class="col-md-8">
+                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-8">Caja y tarjeta de diseño (+ Info)</div>
+                                                                                                                                            <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
+                                                                                                                                            <div class="col-md-3 col-sm-3 col-xs-3 price text-right">S/ 5.00</div>
+                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-12">
                                                                                                                                                       <div class="form-group">
                                                                                                                                                                 <p class="help-block">* Por seguridad, se le enviará al destinatario del regalo un correo
                                                                                                                                                                 electronico (con copia al comprador) avísandole del día estimado de
@@ -226,10 +229,12 @@
                                                                                                                         </div>
                                                                                                               </div>
                                                                                                     </section>
+                                                                                                    <!-- /ADDRESS -->
+                                                                                                    <!-- DELIVERY-PLACE -->
                                                                                                     <section class="border-section delivery-place">
                                                                                                               <h3>Lugar y tiempo de entrega</h3>
                                                                                                               <div class="form-group">
-                                                                                                                        <div class="col-md-6 place">
+                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 place">
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
                                                                                                                                                       <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios1" value="option1" data-extra="place">
@@ -237,7 +242,7 @@
                                                                                                                                             </label>
                                                                                                                                   </div>
                                                                                                                         </div>
-                                                                                                                        <div class="col-md-6 delivery">
+                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 delivery">
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
                                                                                                                                                       <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios2" value="option2" data-extra="delivery">
@@ -246,86 +251,149 @@
                                                                                                                                   </div>
                                                                                                                         </div>
                                                                                                                         <div class="extra">
-                                                                                                                                  <div class="col-md-12 more-info" id="place">
+                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="place">
                                                                                                                                             <p>L - V:    9h - 13h  / 14h - 17h</p>
                                                                                                                                             <p>S:           9h - 13h</p>
                                                                                                                                   </div>
-                                                                                                                                  <div class="col-md-12 more-info" id="delivery">
-                                                                                                                                            <div class="col-md-8">
+                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs=12 more-info" id="delivery">
+                                                                                                                                            <div class="col-md-8 col-md-8 col-xs-12">
                                                                                                                                                       <div class="form-group">
-                                                                                                                                                                <input type="text" class="form-control" placeholder="* Nombre del destinatario...">
-                                                                                                                                                                <input type="text" class="form-control" placeholder="* Coreo electrónico del destinatario...">
-                                                                                                                                                                <input type="text" class="form-control" placeholder="* Mensaje personal en la tarjeta...">
+                                                                                                                                                                <div class="form-select">
+                                                                                                                                                                          <select name="">
+                                                                                                                                                                               <option value="1">* Elige provincia</option>
+                                                                                                                                                                               <option value="2">Provincia</option>
+                                                                                                                                                                               <option value="3">Provincia</option>
+                                                                                                                                                                               <option value="3">Provincia</option>
+                                                                                                                                                                               <option value="3">Provincia</option>
+                                                                                                                                                                          </select>
+                                                                                                                                                                </div>
+                                                                                                                                                                <div class="form-select">
+                                                                                                                                                                          <select name="">
+                                                                                                                                                                               <option value="1">* Elige ciudad</option>
+                                                                                                                                                                               <option value="2">ciudad 1</option>
+                                                                                                                                                                               <option value="3">ciudad 2</option>
+                                                                                                                                                                               <option value="3">ciudad 3</option>
+                                                                                                                                                                               <option value="3">ciudad 4</option>
+                                                                                                                                                                          </select>
+                                                                                                                                                                </div>
+                                                                                                                                                                <input type="text" class="form-control" placeholder="* Dirección de entrega...">
                                                                                                                                                                 <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar</button></p>
                                                                                                                                                       </div>
                                                                                                                                             </div>
-                                                                                                                                            <div class="col-md-8">Tiempo:      De 3 a 4 dias laborables.</div>
-                                                                                                                                            <div class="col-md-1 price">=</div>
-                                                                                                                                            <div class="col-md-3 price text-right">S/ 15.00</div>
+                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-8">Tiempo:      De 3 a 4 dias laborables.</div>
+                                                                                                                                            <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
+                                                                                                                                            <div class="col-md-3 col-sm-3 col-xs-3 price text-right">S/ 15.00</div>
                                                                                                                                   </div>
                                                                                                                         </div>
                                                                                                               </div>
                                                                                                     </section>
+                                                                                                    <!-- /DELIVERY-PLACE -->
+                                                                                                    <!-- /AMOUNTS -->
                                                                                                     <section class="amounts border-section">
                                                                                                               <div class="cart-igv">
-                                                                                                                        <div class="col-md-8 text-right price">Carrito(con IGV):</div>
-                                                                                                                        <div class="col-md-4 text-right price">S/ 18.00</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Carrito(con IGV):</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">S/ 18.00</div>
                                                                                                               </div>
                                                                                                               <div class="col-md-12 border-section"></div>
                                                                                                               <div class="cart-sin-igv">
-                                                                                                                        <div class="col-md-8 text-right price">Carrito (sin IGV):</div>
-                                                                                                                        <div class="col-md-4 text-right price">S/ 15.25</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Carrito (sin IGV):</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">S/ 15.25</div>
                                                                                                               </div>
                                                                                                               <div class="discount">
-                                                                                                                        <div class="col-md-8 text-right price">Descuento de Año Nuevo(-5%):</div>
-                                                                                                                        <div class="col-md-4 text-right price">- S/ 0.76</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Descuento de Año Nuevo(-5%):</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">- S/ 0.76</div>
                                                                                                               </div>
                                                                                                               <div class="subtotal">
-                                                                                                                        <div class="col-md-8 text-right price">Subtotal:</div>
-                                                                                                                        <div class="col-md-4 text-right price">= S/ 14.49</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Subtotal:</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">= S/ 14.49</div>
                                                                                                               </div>
                                                                                                               <div class="igv">
-                                                                                                                        <div class="col-md-8 text-right price">IGV (18%):</div>
-                                                                                                                        <div class="col-md-4 text-right price">S/ 2.61</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">IGV (18%):</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">S/ 2.61</div>
                                                                                                               </div>
                                                                                                               <div class="total-cost">
-                                                                                                                        <div class="col-md-8 text-right">Monto total:</div>
-                                                                                                                        <div class="col-md-4 text-right">S/ 17.10</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right">Monto total:</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right">S/ 17.10</div>
                                                                                                               </div>
                                                                                                     </section>
+                                                                                                    <!-- /AMOUNTS -->
                                                                                                     <section class="factura-boleta">
                                                                                                               <div class="form-group">
-                                                                                                                        <div class="col-md-6" id="my-address">
+                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 boleta">
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
-                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios1" value="option1" checked>
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios1" value="option1" data-extra="boleta">
                                                                                                                                                       Boleto
                                                                                                                                             </label>
                                                                                                                                   </div>
                                                                                                                         </div>
-                                                                                                                        <div class="col-md-6" id="gift">
+                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 factura">
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
-                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios2" value="option2">
+                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios2" value="option2" data-extra="factura">
                                                                                                                                                       Factura
                                                                                                                                             </label>
                                                                                                                                   </div>
                                                                                                                         </div>
-                                                                                                              </div>
-                                                                                                              <div class="form-group">
-                                                                                                                        <div class="col-md-6">
-                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
-                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
-                                                                                                                        </div>
-                                                                                                                        <div class="col-md-6">
-                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
-                                                                                                                             <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                        <div class="extra">
+                                                                                                                                  <div class="form-group more-info" id="boleta">
+                                                                                                                                            <div class="col-md-6">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                            </div>
+                                                                                                                                            <div class="col-md-6">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                            </div>
+                                                                                                                                  </div>
+                                                                                                                                  <div class="form-group more-info" id="factura">
+                                                                                                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                            </div>
+                                                                                                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="* Datos Boleto/Factura...">
+                                                                                                                                            </div>
+                                                                                                                                  </div>
                                                                                                                         </div>
                                                                                                               </div>
                                                                                                     </section>
                                                                                                     <section class="cart-send">
                                                                                                               <div class="form-group text-center">
-                                                                                                                        <button type="submit" class="btn">Terminar y pagar</button>
+                                                                                                                        <button type="button" class="btn" id="btn-send">Terminar y pagar</button>
+                                                                                                              </div>
+                                                                                                    </section>
+                                                                                                    <section class="end-and-pay">
+                                                                                                              <h5>Terminar y pagar</h5>
+                                                                                                              <ul class="list-unstyled">
+                                                                                                                        <li class="list"><span>1</span>Abre una nueva pestaña en tu navegador (Explorer, Google,Modzila, etc.) e ingresa a tu  banco.</li>
+                                                                                                                        <li class="list"><span>2</span>Realiza un depósito por el monto total a la siguiente cuenta bancaria:</li>
+                                                                                                                        <li class="text-center">Banco: Continental</li>
+                                                                                                                        <li class="text-center">Titular: Es Aromaterapia EIRL</li>
+                                                                                                                        <li class="text-center">RUC: 248461877</li>
+                                                                                                                        <li class="text-center">Nº de cuenta: 15-47896457978 54 98</li>
+                                                                                                                        <li class="text-center">Código interbancario: 01 15478964579785498 1</li>
+                                                                                                                        <li class="list"><span>3</span>Ingresa el número de operación o constancia electrónica que aparece en el voucher:</li>
+                                                                                                              </ul>
+                                                                                                              <div class="col-md-12">
+                                                                                                                        <form action="my-products-services_submit" method="get" accept-charset="utf-8">
+                                                                                                                                  <div class="form-group">
+                                                                                                                                            <div class="col-sm-10">
+                                                                                                                                                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Agregar código de servicio">
+                                                                                                                                            </div>
+                                                                                                                                            <div class="col-sm-2">
+                                                                                                                                                      <button type="submit" class="btn">Agregar</button>
+                                                                                                                                            </div>
+                                                                                                                                  </div>
+                                                                                                                        </form>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-12 info">
+                                                                                                                        <p>* Luego de confirmar la recepcion del pago, le enviaremos un correo electrónico
+                                                                                                                        confirmando la validez del proceso, y procederemos según las condiciones que eligió.</p>
+                                                                                                                        <p>* Puede revisar el estado de su compra desde <a href="#">Mi cuenta</a> > <a href="#">Historial de compra</a>.</p>
                                                                                                               </div>
                                                                                                     </section>
                                                                                           </form>
@@ -351,6 +419,22 @@
                               </div>
                     </footer>
                     <!-- /FOOTER -->
+                    <!-- MODAL -->
+                    <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                              <div class="modal-dialog modal-md">
+                                        <div class="modal-content">
+                                                  <h3 class="text-center">¡Muchas gracias por su compra!</h3>
+                                                  <p class="text-center">A continuación revisaremos los datos y prepararemos su orden para el recojo o envío a domicilio.</p>
+                                                  <p class="text-center">Además, hemos enviado un resumen de la orden al correo electrónico que figura en esta cuenta de usuario.
+                                                  Cualquier duda no dude en comunicarse con nosotros.</p>
+                                                  <p class="text-center">
+                                                            <img src="assets/img/logo.png" class="img-center">
+                                                  </p>
+                                                  <p class="text-right"><button type="button" class="btn" data-dismiss="modal" aria-label="Close">Aceptar</button></p>
+                                        </div>
+                              </div>
+                    </div>
+                    <!-- /MODAL -->
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                     <script src="assets/js/jquery.min.js"></script>
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -358,6 +442,11 @@
                     <script src="assets/js/ekala.js"></script>
                     <script>
                               $(document).ready(function(){
+                                        // MODAL ENVIO
+                                        $('#btn-send').click(function(){
+                                                  $('.bs-example-modal-md').modal('show')
+                                        });
+                                        // INPUT RADIO
                                         $(".address").find("input[type='radio']").each(function(){
                                                   $(this).change(function(){
                                                             var value = $(".address input[type='radio']:checked").attr('data-extra');
@@ -369,6 +458,13 @@
                                                   $(this).change(function(){
                                                             var value = $(".delivery-place input[type='radio']:checked").attr('data-extra');
                                                             $('.delivery-place .extra .more-info').removeClass('show');
+                                                            $('#'+value).addClass('show');
+                                                  });
+                                        });
+                                        $(".factura-boleta").find("input[type='radio']").each(function(){
+                                                  $(this).change(function(){
+                                                            var value = $(".factura-boleta input[type='radio']:checked").attr('data-extra');
+                                                            $('.factura-boleta .extra .more-info').removeClass('show');
                                                             $('#'+value).addClass('show');
                                                   });
                                         });
