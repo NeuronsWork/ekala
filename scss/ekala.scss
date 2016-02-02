@@ -1046,6 +1046,13 @@ footer{
 .ppy-caption,
 .ppy-captionwrap {
           overflow: hidden; }
+.ppy-caption{
+          visibility: visible !important;
+          overflow: visible !important;
+          position: absolute;
+          top: 7px;
+          left: 10px;
+}
 .ppy-hidden {
           display: none !important; }
 .ppy-imglist {
@@ -1071,14 +1078,13 @@ footer{
           width: 262px;
           float: left;
           margin: 0 20px 10px 0; }
-#ppy1 .ppy-outer { }
 #ppy1 .ppy-stage {
           width: 240px;
           height: 173px; }
-#ppy1 .ppy-outer:hover,
-#ppy1.ppy-expanded .ppy-outer {}
+#ppy1.ppy-expanded{
+          border: 5px solid #f0fafa; }
 #ppy1 .ppy-counter {
-          color: #b8cf5a;
+          color: #D9C3AB;
           padding: 0 0 2px 0;
           margin: 0 0 5px 0;
           font-size: 0.9em; }
@@ -1458,8 +1464,7 @@ footer{
           .ppy-placeholder, .ppy-expanded, .ppy-stage, .ppy-active{
                     width: 100% !important; }
           .ppy-expanded{
-                    position: relative !important;
-          }
+                    position: relative !important; }
           .ppy-placeholder{
                     height: initial !important;
                     min-height: 173px; }
