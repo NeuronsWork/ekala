@@ -100,13 +100,13 @@
                                                                                 <li><a href="#">Favoritos</a></li>
                                                                                 <li><a href="#">Mi Carrito</a></li>
                                                                                 <li><a href="#">Historial de compras</a></li>
-                                                                                <li><a href="#" class="active">Mis productos / servicios</a></li>
+                                                                                <li><a href="#" class="active">Mis códigos de servicios</a></li>
                                                                       </ul>
                                                             </div>
                                                   </sidebar>
                                                   <div class="col-md-9 col-sm-12 col-xs-12 lst-subcategory products-services">
                                                             <div class="row">
-                                                                      <div class="col-md-12 hidden-sm hidden-xs"><h3>Mis productos / servicios</h3></div>
+                                                                      <div class="col-md-12 hidden-sm hidden-xs"><h3>Mis códigos de servicios</h3></div>
                                                                       <div class="col-md-12">
                                                                                 <div class="row">
                                                                                           <div class="subMenu hidden-lg hidden-md">
@@ -125,12 +125,12 @@
                                                                       </div>
                                                                       <div class="col-md-12">
                                                                                 <div class="row">
-                                                                                          <form action="my-products-services_submit" method="get" accept-charset="utf-8">
+                                                                                          <form class="frm-services" action="my-products-services_submit" method="get" accept-charset="utf-8">
                                                                                                     <div class="form-group">
-                                                                                                              <div class="col-sm-10">
+                                                                                                              <div class="col-sm-10 col-xs-8">
                                                                                                                    <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Agregar código de servicio">
                                                                                                               </div>
-                                                                                                              <div class="col-sm-2">
+                                                                                                              <div class="col-sm-2 col-xs-4">
                                                                                                                         <button type="submit" class="btn">Agregar</button>
                                                                                                               </div>
                                                                                                     </div>
@@ -138,18 +138,23 @@
                                                                                 </div>
                                                                       </div>
                                                                       <div class="col-md-12">
-                                                                                <table class="table" id="purchaseHistory">
+                                                                                <table class="table table-code-services" id="purchaseHistory">
                                                                                           <thead>
                                                                                                     <tr>
-                                                                                                              <th>Productos/Servicios</th>
-                                                                                                              <th>Cantidad</th>
+                                                                                                              <th>Servicios</th>
+                                                                                                              <th>Código</th>
                                                                                                               <th>Estado</th>
                                                                                                     </tr>
                                                                                           </thead>
                                                                                           <tbody>
                                                                                                     <tr>
-                                                                                                              <td class="td-first"><img src="assets/img/tarjeta-regalo.png" class="pull-left img-responsive">(Monto para tarjeta de regalo)</td>
-                                                                                                              <td class="td-middle"></td>
+                                                                                                              <td class="td-first"><img src="assets/img/tarjeta-regalo.png" class="pull-left img-responsive">Monto para tarjeta de regalo</td>
+                                                                                                              <td class="td-middle">FG008998</td>
+                                                                                                              <td class="td-last">En proceso</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                              <td class="td-first"><img src="assets/img/tarjeta-regalo.png" class="pull-left img-responsive">Monto para tarjeta de regalo</td>
+                                                                                                              <td class="td-middle">FG008998</td>
                                                                                                               <td class="td-last">En proceso</td>
                                                                                                     </tr>
                                                                                           </tbody>

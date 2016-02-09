@@ -100,7 +100,7 @@
                                                                                 <li><a href="#">Favoritos</a></li>
                                                                                 <li><a href="#">Mi Carrito</a></li>
                                                                                 <li><a href="#">Historial de compras</a></li>
-                                                                                <li><a href="#" class="active">Mis productos / servicios</a></li>
+                                                                                <li><a href="#" class="active">Mis códigos de servicios</a></li>
                                                                       </ul>
                                                             </div>
                                                             <div class="row marginTopBottom">
@@ -127,7 +127,8 @@
                                                             </div>
                                                   </sidebar>
                                                   <div class="col-md-9 col-sm-12 col-xs-12 lst-subcategory cart">
-                                                            <div class="row">
+                                                            <!-- <div class="row"> -->
+
                                                                       <div class="col-md-12 hidden-sm hidden-xs"><h3>Mi carrito<img src="assets/img/cart-empty.png"></h3></div>
                                                                       <div class="col-md-12">
                                                                                 <div class="row">
@@ -150,15 +151,6 @@
                                                                                           <form action="my-products-services_submit" method="get" accept-charset="utf-8">
                                                                                                     <!-- CART & GIFT CARD -->
                                                                                                     <section class="border-section cart-giftCard">
-                                                                                                              <div class="form-group alert fade in" role="alert">
-                                                                                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                                                                                                  <span aria-hidden="true">&times;</span>
-                                                                                                                        </button>
-                                                                                                                        <div class="help-block">Tarjeta de regalo</div>
-                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-8"><img src="assets/img/tarjeta-regalo.png" class="pull-left">Monto para tarjeta de regalo</div>
-                                                                                                                        <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
-                                                                                                                        <div class="col-md-3 col-sm-3 col-xs-3 price i text-right">S/9.00</div>
-                                                                                                              </div>
                                                                                                               <div class="form-group products alert fade in" role="alert">
                                                                                                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                                                                                                   <span aria-hidden="true">&times;</span>
@@ -203,7 +195,26 @@
                                                                                                                                   </div>
                                                                                                                         </div>
                                                                                                                         <div class="extra">
-                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="my-address"></div>
+                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="my-address">
+                                                                                                                                            <div class="chk">
+                                                                                                                                                      <label>
+                                                                                                                                                                <input type="checkbox" class="btn-checkbox" value="" data-extra="#send-gift">
+                                                                                                                                                                Recibir envuelto en regalo
+                                                                                                                                                      </label>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="sub-extra" id="send-gift">
+                                                                                                                                                      <div class="col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                                                <div class="form-group">
+                                                                                                                                                                          <input type="text" class="form-control" placeholder="* Nombre del destinatario...">
+                                                                                                                                                                          <input type="text" class="form-control" placeholder="* Mensaje personal en la tarjeta...">
+                                                                                                                                                                          <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar <span class="glyphicon glyphicon glyphicon-triangle-bottom"></span></button></p>
+                                                                                                                                                                </div>
+                                                                                                                                                      </div>
+                                                                                                                                                      <div class="col-md-8 col-sm-8 col-xs-8">Caja y tarjeta de diseño (+ Info)</div>
+                                                                                                                                                      <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
+                                                                                                                                                      <div class="col-md-3 col-sm-3 col-xs-3 price text-right">S/ 5.00</div>
+                                                                                                                                            </div>
+                                                                                                                                  </div>
                                                                                                                                   <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="gift">
                                                                                                                                             <div class="col-md-8 col-sm-8 col-xs-12">
                                                                                                                                                       <div class="form-group">
@@ -291,21 +302,27 @@
                                                                                                     <!-- /AMOUNTS -->
                                                                                                     <section class="amounts border-section">
                                                                                                               <div class="cart-igv">
-                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Carrito(con IGV):</div>
-                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">S/ 18.00</div>
-                                                                                                              </div>
-                                                                                                              <div class="col-md-12 border-section"></div>
-                                                                                                              <div class="cart-sin-igv">
-                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Carrito (sin IGV):</div>
-                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">S/ 15.25</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Descuentos</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price"></div>
                                                                                                               </div>
                                                                                                               <div class="discount">
-                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Descuento de Año Nuevo(-5%):</div>
-                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">- S/ 0.76</div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Descuento por año nuevo(5%)</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">-S/ 2.50</div>
                                                                                                               </div>
+                                                                                                              <div class="discount">
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Descuento por usuario especial(6%)</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">-S/ 3.00</div>
+                                                                                                              </div>
+                                                                                                              <div class="discount">
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Tarjela de Regalo(S/ 10.00)</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">-S/ 10.00</div>
+                                                                                                                        <p><br><br></p>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-12 border-section"></div>
                                                                                                               <div class="subtotal">
+                                                                                                                        <p></p>
                                                                                                                         <div class="col-md-8 col-sm-8 col-xs-7 text-right price">Subtotal:</div>
-                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">= S/ 14.49</div>
+                                                                                                                        <div class="col-md-4 col-sm-4 col-xs-5 text-right price">S/ 14.49</div>
                                                                                                               </div>
                                                                                                               <div class="igv">
                                                                                                                         <div class="col-md-8 col-sm-8 col-xs-7 text-right price">IGV (18%):</div>
@@ -400,7 +417,7 @@
                                                                                 </div>
                                                                       </div>
 
-                                                            </div>
+                                                            <!--</div>-->
                                                   </div>
                                         </div>
                               </div>
@@ -467,6 +484,18 @@
                                                             $('.factura-boleta .extra .more-info').removeClass('show');
                                                             $('#'+value).addClass('show');
                                                   });
+                                        });
+                                        // INPUT CHK
+                                        $(".btn-checkbox").on( 'change', function() {
+                                             if( $(this).is(':checked') ) {
+                                                // Hacer algo si el checkbox ha sido seleccionado
+                                                var group = $(this).attr('data-extra');
+                                                $(group).addClass('show');
+                                             } else {
+                                                // Hacer algo si el checkbox ha sido deseleccionado
+                                                var group = $(this).attr('data-extra');
+                                                $(group).removeClass('show');
+                                             }
                                         });
                               });
                     </script>
