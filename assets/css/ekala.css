@@ -46,21 +46,15 @@ input[type="radio"]:checked {
 .btn-radio {
   border: 2px solid #8acac8 !important; }
 
-.btn-checkbox {
-  border: 2px solid #8acac8 !important;
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  -ms-border-radius: 0 !important;
-  -o-border-radius: 0 !important;
-  border-radius: 0 !important; }
-
+/*.btn-checkbox{
+          border: 2px solid #8acac8 !important;
+          @include borderRadius(0 !important); } */
 .btn-radio:checked {
   background-color: #8acac8 !important;
   border: 2px solid #8acac8 !important; }
 
-.btn-checkbox:checked {
-  background-color: #8acac8 !important; }
-
+/*.btn-checkbox:checked{
+          background-color: #8acac8 !important; }*/
 .img-center {
   margin: 0 auto; }
 
@@ -146,17 +140,17 @@ p {
         padding-right: 10px;
         color: #8acac8; }
 
-#gift p, #delivery p, #place p, #my-address p {
+#gift p, #delivery p, #place p, #my-address p, #boleta p, #factura p {
   font-size: 14px;
   line-height: 16px;
   color: #8acac8; }
-#gift .form-group .help-block, #delivery .form-group .help-block, #place .form-group .help-block, #my-address .form-group .help-block {
+#gift .form-group .help-block, #delivery .form-group .help-block, #place .form-group .help-block, #my-address .form-group .help-block, #boleta .form-group .help-block, #factura .form-group .help-block {
   line-height: 20px;
   font-style: italic;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 300; }
-#gift .form-select, #delivery .form-select, #place .form-select, #my-address .form-select {
+#gift .form-select, #delivery .form-select, #place .form-select, #my-address .form-select, #boleta .form-select, #factura .form-select {
   position: relative;
   display: block;
   float: left;
@@ -164,7 +158,7 @@ p {
   background-color: #f0fafa;
   margin-bottom: 10px;
   padding: 0 10px 0 0; }
-  #gift .form-select select, #delivery .form-select select, #place .form-select select, #my-address .form-select select {
+  #gift .form-select select, #delivery .form-select select, #place .form-select select, #my-address .form-select select, #boleta .form-select select, #factura .form-select select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -182,15 +176,15 @@ p {
     -ms-border-radius: 0px !important;
     -o-border-radius: 0px !important;
     border-radius: 0px !important; }
-    #gift .form-select select:focus, #delivery .form-select select:focus, #place .form-select select:focus, #my-address .form-select select:focus {
+    #gift .form-select select:focus, #delivery .form-select select:focus, #place .form-select select:focus, #my-address .form-select select:focus, #boleta .form-select select:focus, #factura .form-select select:focus {
       outline: 0px; }
-#gift .form-control, #delivery .form-control, #place .form-control, #my-address .form-control {
+#gift .form-control, #delivery .form-control, #place .form-control, #my-address .form-control, #boleta .form-control, #factura .form-control {
   margin-bottom: 10px;
   box-shadow: none;
   font-style: italic;
   background-color: #f0fafa;
   border: 0; }
-#gift .btn, #delivery .btn, #place .btn, #my-address .btn {
+#gift .btn, #delivery .btn, #place .btn, #my-address .btn, #boleta .btn, #factura .btn {
   border: 0;
   border-bottom: 1px solid;
   font-style: italic;
@@ -199,7 +193,7 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 300; }
-  #gift .btn span, #delivery .btn span, #place .btn span, #my-address .btn span {
+  #gift .btn span, #delivery .btn span, #place .btn span, #my-address .btn span, #boleta .btn span, #factura .btn span {
     margin-left: 5px;
     font-size: 12px; }
 
@@ -338,7 +332,8 @@ p {
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
-  width: 100% !important; }
+  width: 100% !important;
+  text-shadow: 0 !important; }
   .carousel .carousel-inner .item .carousel-caption .tenor {
     height: 100%;
     display: -webkit-flex;
@@ -440,6 +435,13 @@ p {
 .register .contact > .radio label {
   padding-left: 0 !important;
   width: 100%; }
+.register .contact > h3 {
+  font-size: 20px !important;
+  color: #999;
+  text-align: left;
+  border-bottom: 0;
+  margin-bottom: 0;
+  line-height: 0px; }
 
 .information {
   padding-top: 30px;
@@ -619,21 +621,22 @@ p {
     border-bottom: 1px solid #d9c3ab; }
     .information .sidebar-submenu .list-account li:first-child {
       border-top: 1px solid #d9c3ab; }
-  .information .sidebar-feature .item-feature {
-    cursor: pointer; }
-    .information .sidebar-feature .item-feature h6, .information .sidebar-feature .item-feature a {
-      color: #a3a8ac;
-      text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      font-weight: 300; }
-    .information .sidebar-feature .item-feature h5 {
-      display: none;
-      color: #a3a8ac;
-      text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      font-weight: 300; }
+  .information .sidebar-feature {
+    margin-bottom: 20px; }
+    .information .sidebar-feature .item-feature {
+      cursor: pointer; }
+      .information .sidebar-feature .item-feature h6, .information .sidebar-feature .item-feature a {
+        color: #a3a8ac;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 300; }
+      .information .sidebar-feature .item-feature h5 {
+        color: #a3a8ac;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 300; }
   .information .info-category .item-category {
     margin-bottom: 10px; }
     .information .info-category .item-category hr {
@@ -747,10 +750,12 @@ p {
     padding: 15px 0;
     display: block; }
   .favorites form .border-section, .products-services form .border-section, .cart form .border-section {
+    position: relative;
+    width: 100%;
+    float: left;
     border-bottom: 1px solid #8acac8; }
   .favorites form .cart-send, .products-services form .cart-send, .cart form .cart-send {
-    background-color: #a4a9af;
-    padding: 20px 0 10px; }
+    padding: 0 0 10px; }
     .favorites form .cart-send .btn, .products-services form .cart-send .btn, .cart form .cart-send .btn {
       color: #fff !important;
       border: 0 !important;
@@ -811,8 +816,23 @@ p {
   padding: 40px;
   background-color: #FDFBF8;
   border: 5px solid #8ACAC8; }
+  .favorites .thanks img, .products-services .thanks img, .cart .thanks img {
+    margin-right: 0 !important; }
   .favorites .thanks h4, .products-services .thanks h4, .cart .thanks h4 {
     color: #8ACAC8; }
+  .favorites .thanks .btn, .products-services .thanks .btn, .cart .thanks .btn {
+    background-color: #8acac8;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 700; }
+    .favorites .thanks .btn:focus, .favorites .thanks .btn:hover, .products-services .thanks .btn:focus, .products-services .thanks .btn:hover, .cart .thanks .btn:focus, .cart .thanks .btn:hover {
+      color: #fff; }
 .favorites .frm-services > .form-group > div:first-child, .products-services .frm-services > .form-group > div:first-child, .cart .frm-services > .form-group > div:first-child {
   padding-right: 0px; }
 .favorites .frm-services > .form-group > div:last-child, .products-services .frm-services > .form-group > div:last-child, .cart .frm-services > .form-group > div:last-child {
@@ -825,6 +845,11 @@ p {
   float: left;
   display: block;
   font-size: 20px; }
+  .cart form .price .info-dscto {
+    font-size: 14px;
+    line-height: 0px;
+    bottom: 25px;
+    position: absolute; }
 .cart form section .cart-igv {
   position: relative;
   float: left;
@@ -863,7 +888,7 @@ p {
     margin-bottom: 0;
     color: #8acac8; }
 .cart form .factura-boleta {
-  padding: 0 15px; }
+  padding: 8px 15px 0; }
   .cart form .factura-boleta .form-group > div:first-child {
     padding-right: 15px !important; }
   .cart form .factura-boleta .form-group > div:last-child {
@@ -918,6 +943,9 @@ p {
     text-decoration: underline; }
     .cart form .end-and-pay .info a:hover, .cart form .end-and-pay .info a:focus {
       text-decoration: none; }
+.cart form .end-and-pay .btn {
+  background-color: #8acac8;
+  color: #fff; }
 .cart form .form-group {
   line-height: 40px;
   color: #8acac8;
@@ -929,7 +957,8 @@ p {
     padding: 0 !important; }
 .cart form .alert {
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  padding-bottom: 15px !important; }
   .cart form .alert .close {
     right: 0; }
 .cart form .products .price {
@@ -1017,17 +1046,20 @@ p {
     font-size: 14px;
     font-weight: 500; }
 
-.table-striped {
-  border-spacing: 0px !important; }
-  .table-striped tbody tr td {
-    border: 0px !important; }
-    .table-striped tbody tr td a {
-      text-decoration: none !important;
-      color: #333 !important; }
-  .table-striped tbody tr {
-    background-color: #dcf0f0 !important; }
-  .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f0fafa !important; }
+.table-striped a {
+  text-decoration: none !important;
+  color: #333 !important; }
+  .table-striped a:hover, .table-striped a:focus {
+    text-decoration: underline; }
+.table-striped .tr {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #dcf0f0 !important; }
+  .table-striped .tr div[class*="col"] {
+    padding: 8px 15px; }
+.table-striped .tr:nth-of-type(odd) {
+  background-color: #f0fafa !important; }
 
 .modal-content {
   padding: 50px 50px 20px;
@@ -1058,7 +1090,7 @@ p {
     -o-border-radius: 0px;
     border-radius: 0px;
     font-family: 'Lato', sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700; }
     .modal-content .btn:focus, .modal-content .btn:hover {
       color: #fff; }
@@ -1330,6 +1362,7 @@ footer {
       top: 9px; }
 
   .information h3 {
+    border-bottom: 0px !important;
     font-size: 20px; }
   .information .products .info-products .relations .item .number-spinner {
     width: 65%;
@@ -1363,10 +1396,7 @@ footer {
       float: left;
       padding-right: 5px;
       display: inline-block; }
-    .information .products .sidebar-feature .item-feature h6 {
-      display: none; }
     .information .products .sidebar-feature .item-feature h5 {
-      display: block;
       color: #8acac8;
       text-align: justify;
       font-family: 'Lato', sans-serif;
@@ -1406,7 +1436,35 @@ footer {
     margin-bottom: 5px !important; }
 
   .addCart {
-    margin-left: -2px !important; } }
+    margin-left: -2px !important; }
+
+  .gift > .radio > label img {
+    display: none; }
+
+  .cart form section .discount {
+    padding-bottom: 12px; }
+    .cart form section .discount .price {
+      font-size: 16px; }
+
+  .cart form section .subtotal .price, .cart form section .igv .price {
+    font-size: 16px !important; }
+
+  .cart form section .total-cost {
+    font-size: 18px; }
+
+  .cart form .products .price {
+    text-align: right;
+    font-size: 16px;
+    line-height: 46px; }
+    .cart form .products .price .info-dscto {
+      bottom: 0;
+      width: 80px;
+      right: 12px; }
+    .cart form .products .price .form-control {
+      line-height: 12px; }
+    .cart form .products .price .number-spinner {
+      width: 50px;
+      margin-top: 15px; } }
 @media (min-width: 361px) and (max-width: 480px) {
   #carousel .carousel-inner .item .carousel-caption .tenor {
     font-size: 100% !important;
@@ -1424,6 +1482,9 @@ footer {
   .cart-giftCard .col-md-8 {
     line-height: 20px; }
 
+  .gift > .radio > label img {
+    display: none; }
+
   .cart h3 {
     border-bottom: 0 !important; }
 
@@ -1431,7 +1492,10 @@ footer {
     border-bottom: 0 !important; }
 
   .cart form .factura-boleta .form-group div[class*="col-"] {
-    padding: 0px !important; } }
+    padding: 0px !important; }
+
+  .information h3 {
+    border-top: 0px !important; } }
 @media screen and (max-width: 767px) {
   .container {
     padding-right: 0 !important;
@@ -1453,9 +1517,11 @@ footer {
     header .navbar {
       min-height: auto !important; }
       header .navbar #navbar li {
-        padding-bottom: 2px;
-        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-top: 1px;
         padding-right: 0px !important; }
+        header .navbar #navbar li a {
+          margin-bottom: 0px !important; }
     header .brand {
       padding: 5px 0;
       margin-top: 5px !important; }
@@ -1504,7 +1570,7 @@ footer {
       margin: 10px 0 20px;
       padding: 0 15px; }
   .information .sidebar-feature {
-    padding: 20px 0;
+    padding: 20px 10px;
     background-color: #f8fcfc; }
   .information .info-product h3 {
     border-bottom: 0px; }

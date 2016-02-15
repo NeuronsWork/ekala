@@ -45,14 +45,14 @@ input[type="radio"]:checked{
           border: 2px solid #d9c3ab; }
 .btn-radio{
           border: 2px solid #8acac8 !important; }
-.btn-checkbox{
+/*.btn-checkbox{
           border: 2px solid #8acac8 !important;
-          @include borderRadius(0 !important); }
+          @include borderRadius(0 !important); } */
 .btn-radio:checked{
           background-color: #8acac8 !important;
           border: 2px solid #8acac8 !important; }
-.btn-checkbox:checked{
-          background-color: #8acac8 !important; }
+/*.btn-checkbox:checked{
+          background-color: #8acac8 !important; }*/
 .img-center{
           margin: 0 auto; }
 .marginTopBottom{
@@ -100,7 +100,7 @@ p{
                                                   text-align: right;
                                                   color: #8acac8;
                                                   font-style: italic;
-                                                  @include fontLato(17px, 500);}
+                                                  @include fontLato(17px, 500); }
                                         .form-control{
                                                   @include borderRadius(0px !important);
                                                   border: 0;
@@ -129,7 +129,7 @@ p{
           }
 }
 // GIFT / DELIVERY / PLACE
-#gift, #delivery, #place, #my-address{
+#gift, #delivery, #place, #my-address, #boleta, #factura{
           p{
                     font-size: 14px;
                     line-height: 16px;
@@ -326,6 +326,7 @@ p{
                                         left: 0 !important;
                                         top: 0 !important;
                                         width: 100% !important;
+                                        text-shadow: 0 !important;
                                         .tenor{
                                                   height: 100%;
                                                   display: -webkit-flex;
@@ -413,6 +414,13 @@ p{
                               padding-left: 0 !important;
                               width: 100%; }
           }
+          .contact > h3{
+          font-size: 20px!important;
+         color: #999;
+         text-align: left;
+         border-bottom: 0;
+         margin-bottom: 0;
+         line-height: 0px; }
 }
 // INFORMATION
 .information{
@@ -481,7 +489,8 @@ p{
                                                             @include fontLato(15px, 300); }
                                                   .price{
                                                             color: #a3a8ac;
-                                                            @include fontLato(15px, 300); }
+                                                            @include fontLato(15px, 300);
+                                                  }
                                                   a > img{
                                                             width: 24px; }
                                         }
@@ -603,6 +612,7 @@ p{
                     }
           }
           .sidebar-feature{
+                    margin-bottom: 20px;
                     .item-feature{
                               cursor: pointer;
                               h6, a{
@@ -610,7 +620,7 @@ p{
                                         text-align: center;
                                         @include fontLato(20px, 300); }
                               h5{
-                                        display: none;
+                                        //display: none;
                                         color: #a3a8ac;
                                         text-align: center;
                                         @include fontLato(20px, 300);
@@ -730,10 +740,12 @@ p{
                               padding: 15px 0;
                               display: block; }
                     .border-section{
+                              position: relative;
+                              width: 100%;
+                              float: left;
                               border-bottom: 1px solid #8acac8; }
                     .cart-send{
-                              background-color: #a4a9af;
-                              padding: 20px 0 10px;
+                              padding: 0 0 10px;
                               .btn{
                                         color: #fff !important;
                                         border: 0 !important;
@@ -794,8 +806,18 @@ p{
                     padding: 40px;
                     background-color: #FDFBF8;
                     border: 5px solid #8ACAC8;
+                    img{
+                              margin-right: 0 !important; }
                     h4{
                               color: #8ACAC8; }
+                    .btn{
+                              background-color: #8acac8;
+                              color: #fff;
+                              @include borderRadius(0px);
+                              @include fontLato(22px, 700);
+                              &:focus, &:hover{
+                                        color: #fff; }
+                    }
           }
           .frm-services > .form-group > div:first-child{
                     padding-right: 0px; }
@@ -811,7 +833,13 @@ p{
                               position: relative;
                               float: left;
                               display: block;
-                              font-size: 20px; }
+                              font-size: 20px;
+                              .info-dscto{
+                                        font-size: 14px;
+                                       line-height: 0px;
+                                       bottom: 25px;
+                                       position: absolute; }
+                    }
                     section{
                               .cart-igv{
                                         position: relative;
@@ -860,7 +888,7 @@ p{
                               }
                     }
                     .factura-boleta{
-                              padding: 0 15px;
+                              padding: 8px 15px 0;
                               .form-group{
                                         > div:first-child{
                                                   padding-right: 15px !important; }
@@ -912,6 +940,9 @@ p{
                                                                  text-decoration: none; }
                                              }
                                    }
+                                   .btn{
+                                             background-color: #8acac8;
+                                             color: #fff; }
                     }
                     .form-group{
                               line-height: 40px;
@@ -926,6 +957,7 @@ p{
                     .alert{
                               padding-left: 0;
                               padding-right: 0;
+                              padding-bottom: 15px !important;
                               .close{
                                         right: 0;
                               }
@@ -1019,16 +1051,21 @@ p{
           }
 }
 .table-striped{
-          border-spacing: 0px !important;
-          tbody tr td{
-                    border: 0px !important;
-                    a{
-                              text-decoration: none !important;
-                              color: #333 !important; }
+          a{
+                    text-decoration: none !important;
+                    color: #333 !important;
+                    &:hover, &:focus{
+                              text-decoration: underline; }
           }
-          tbody tr{
-                    background-color: #dcf0f0 !important; }
-          tbody tr:nth-of-type(odd){
+          .tr{
+                    position: relative;
+                    width: 100%;
+                    float: left;
+                    background-color: #dcf0f0 !important;
+                    div[class*="col"]{
+                              padding: 8px 15px; }
+          }
+          .tr:nth-of-type(odd){
                     background-color: #f0fafa !important; }
 }
 // MODAL
@@ -1048,7 +1085,7 @@ p{
                     background-color: #8acac8;
                     color: #fff;
                     @include borderRadius(0px);
-                    @include fontLato(26px, 700);
+                    @include fontLato(22px, 700);
                     &:focus, &:hover{
                               color: #fff; }
           }
@@ -1299,6 +1336,7 @@ footer{
           }
           .information{
                     h3{
+                              border-bottom: 0px !important;
                               font-size: 20px; }
                     .products{
                               .info-products .relations .item .number-spinner{
@@ -1338,10 +1376,8 @@ footer{
                                                             float: left;
                                                             padding-right: 5px;
                                                             display: inline-block; }
-                                                  h6{
-                                                            display: none; }
                                                   h5{
-                                                            display: block;
+                                                            //display: block;
                                                             color: #8acac8;
                                                             text-align: justify;
                                                             @include fontLato(12px, 300);
@@ -1390,6 +1426,31 @@ footer{
                margin-bottom: 5px !important; }
           .addCart{
                     margin-left: -2px !important; }
+          .gift > .radio > label img{
+                    display: none; }
+          .cart form section .discount{
+                    padding-bottom: 12px;
+                    .price{
+                              font-size: 16px; }
+          }
+          .cart form section .subtotal .price, .cart form section .igv .price{
+                    font-size: 16px !important; }
+          .cart form section .total-cost{
+                    font-size: 18px; }
+          .cart form .products .price{
+                    text-align: right;
+                    font-size: 16px;
+                    line-height: 46px;
+                    .info-dscto{
+                              bottom: 0;
+                              width: 80px;
+                              right: 12px; }
+                    .form-control{
+                              line-height: 12px; }
+                    .number-spinner{
+                              width: 50px;
+                              margin-top: 15px; }
+          }
 }
 @media (min-width: 361px) and (max-width: 480px){
           #carousel{
@@ -1422,6 +1483,8 @@ footer{
                     .col-md-8{
                               line-height: 20px; }
           }
+          .gift > .radio > label img{
+                    display: none; }
           .cart h3{
                     border-bottom: 0 !important;
           }
@@ -1434,6 +1497,8 @@ footer{
                                         padding: 0px !important; }
                     }
           }
+          .information h3{
+               border-top: 0px !important; }
 }
 @media screen and (max-width: 767px) {
           .container{
@@ -1447,6 +1512,7 @@ footer{
                              height: 4px !important;
                              background-color: #e1f2f2; }
           }
+
           header{
                     padding-left: 0 !important;
                     padding-right: 0 !important;
@@ -1455,9 +1521,12 @@ footer{
                     .navbar{
                               min-height: auto !important;
                               #navbar li{
-                                        padding-bottom: 2px;
-                                        padding-top: 2px;
-                                        padding-right: 0px !important; }
+                                        padding-bottom: 1px;
+                                        padding-top: 1px;
+                                        padding-right: 0px !important;
+                                        a{
+                                                  margin-bottom: 0px !important; }
+                              }
                     }
                     .brand{
                               padding: 5px 0;
@@ -1520,7 +1589,7 @@ footer{
                               }
                     }
                     .sidebar-feature{
-                              padding: 20px 0;
+                              padding: 20px 10px;
                               background-color: #f8fcfc; }
                     .info-product{
                               h3{
