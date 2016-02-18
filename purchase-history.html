@@ -122,58 +122,131 @@
                                                                                 </div>
                                                                       </div>
                                                             </div>
-                                                            <table class="table" id="purchaseHistory" cellspacing="10">
-                                                                      <thead>
-                                                                                <tr>
-                                                                                          <td>#</td>
-                                                                                          <td>Comprobante</td>
-                                                                                          <td>Día de pago</td>
-                                                                                          <td>Nº de operacion</td>
-                                                                                          <td>Importe</td>
-                                                                                          <td>Estado</td>
-                                                                                          <td></td>
-                                                                                </tr>
-                                                                      </thead>
-                                                                      <tbody>
-                                                                                <tr>
-                                                                                          <td>1</td>
-                                                                                          <td>E - 000125</td>
-                                                                                          <td>18/11/2015</td>
-                                                                                          <td>00-1589436784545-1</td>
-                                                                                          <td>S/33.00</td>
-                                                                                          <td class="paid">Pagado</td>
-                                                                                          <td><a href="#">ver</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                          <td>2</td>
-                                                                                          <td>E - 000125</td>
-                                                                                          <td>18/11/2015</td>
-                                                                                          <td>00-1589436784545-1</td>
-                                                                                          <td>S/33.00</td>
-                                                                                          <td>Entregado</td>
-                                                                                          <td><a href="#">ver</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                          <td>3</td>
-                                                                                          <td>E - 000125</td>
-                                                                                          <td>18/11/2015</td>
-                                                                                          <td>00-1589436784545-1</td>
-                                                                                          <td>S/33.00</td>
-                                                                                          <td>Entregado</td>
-                                                                                          <td><a href="#">ver</a></td>
-                                                                                </tr>
-                                                                      </tbody>
-                                                            </table>
+                                                            <div class="table-purshase col-md-12">
+                                                                      <div class="row">
+                                                                                <div class="body">
+                                                                                          <div class="col-md-5">
+                                                                                                    <div class="col-md-2"><p>#</p></div>
+                                                                                                    <div class="col-md-5"><p>Comprobante</p></div>
+                                                                                                    <div class="col-md-5"><p>Día de pago</p></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-3">
+                                                                                                    <div class="col-md-12"><p>Nro. de Operación</p></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-4">
+                                                                                                    <div class="col-md-5"><p>Importe</p></div>
+                                                                                                    <div class="col-md-5"><p>Estado</p></div>
+                                                                                          </div>
+                                                                                </div>
+                                                                                <div class="item alert fade in" role="alert">
+                                                                                          <div class="col-md-5">
+                                                                                                    <div class="col-md-2"><div class="border"><p><label>#</label>1</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Comprobante</label>E - 000125</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Día de pago</label>18/11/2015</p></div></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-3">
+                                                                                                    <div class="col-md-12">
+                                                                                                              <div class="border">
+                                                                                                                        <input type="text" name="codigo" placeholder="ingresar codigo....">
+                                                                                                                        <button class="btn" id="btn-send">Enviar</button>
+                                                                                                              </div>
+                                                                                                    </div>
+                                                                                          </div>
+                                                                                          <div class="col-md-4">
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Importe</label>S/9999.00</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p class="paid"><label>Estado</label>Pendiente</p></div></div>
+                                                                                                    <div class="col-md-2 view">
+                                                                                                              <div class="border">
+                                                                                                                        <p><a href="#ver">ver</a></p>
+                                                                                                              </div>
+                                                                                                    </div>
+                                                                                          </div>
+                                                                                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                          </button>
+                                                                                          <div class="btn-view"><a href="#">ver</a></div>
+                                                                                </div>
+                                                                                <div class="item">
+                                                                                          <div class="col-md-5">
+                                                                                                    <div class="col-md-2"><div class="border"><p><label>#</label>2</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Comprobante</label>E - 000125</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Día de pago</label>18/11/2015</p></div></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-3">
+                                                                                                    <div class="col-md-12"><div class="border"><p><label>Nro. Operación</label>00-158943678455-1</p></div></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-4">
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Importe</label>S/9999.00</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Estado</label>Entregado</p></div></div>
+                                                                                                    <div class="col-md-2 view">
+                                                                                                              <div class="border">
+                                                                                                                        <p><a href="#ver">ver</a></p>
+                                                                                                              </div>
+                                                                                                    </div>
+                                                                                          </div>
+                                                                                          <div class="btn-view"><a href="#">ver</a></div>
+                                                                                </div>
+                                                                                <div class="item">
+                                                                                          <div class="col-md-5">
+                                                                                                    <div class="col-md-2"><div class="border"><p><label>#</label>3</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Comprobante</label>E - 000125</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Día de pago</label>18/11/2015</p></div></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-3">
+                                                                                                    <div class="col-md-12"><div class="border"><p><label>Nro. Operación</label>00-158943678455-1</p></div></div>
+                                                                                          </div>
+                                                                                          <div class="col-md-4">
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Importe</label>S/9999.00</p></div></div>
+                                                                                                    <div class="col-md-5"><div class="border"><p><label>Estado</label>Entregado</p></div></div>
+                                                                                                    <div class="col-md-2 view">
+                                                                                                              <div class="border">
+                                                                                                                        <p><a href="#ver">ver</a></p>
+                                                                                                              </div>
+                                                                                                    </div>
+                                                                                          </div>
+                                                                                          <div class="btn-view"><a href="#">ver</a></div>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+                                                            <div class="col-md-12 info-purshaseHistory">
+                                                                      <div class="row">
+                                                                                <a type="" class="btn text-center" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                                                          Información para pagar <span class="pull-right glyphicon glyphicon-triangle-bottom"></span>
+                                                                                </a>
+                                                                                <div class="collapse" id="collapseExample">
+                                                                                          <section class="end-and-pay">
+                                                                                                    <ul class="list-unstyled">
+                                                                                                              <li class="list"><span>1</span>Revisa el valor del carrito que deseas pagar en la casilla <label>Importe</label> de la tabla superior.
+                                                                                                              Puedes pagar uno o varios a la vez.</li>
+                                                                                                              <li class="list"><span>2</span>Realiza un depósito por el importe a la siguiente cuenta bancaria:</li>
+                                                                                                              <li class="text-center">Banco: Continental</li>
+                                                                                                              <li class="text-center">Titular: Es Aromaterapia EIRL</li>
+                                                                                                              <li class="text-center">RUC: 248461877</li>
+                                                                                                              <li class="text-center">Nº de cuenta: 15-47896457978 54 98</li>
+                                                                                                              <li class="text-center">Código interbancario: 01 15478964579785498 1</li>
+                                                                                                              <li class="list"><span>3</span>Anota el numero de <ins>operación bancaria</ins> que aparesca en el comprobante de tu pago, e ingresalo
+                                                                                                              haciendo click en la casilla <label>Ingresar codigo</label>(tabla superior) en el carrito(s) que corresponda.</li>
+                                                                                                    </ul>
+                                                                                                    <div class="col-md-12 info">
+                                                                                                              <p>* Luego de enviar el codigo de operacon bancaria le enviaremos un correo con el detalle de su compra, y despues de verificar
+                                                                                                              el pago procederemos segun las condiciones que eligio en su carrito</p>
+                                                                                                              <p>* Puede revisar el <b>estado de su compra</b> en esta misma pagina.</p>
+                                                                                                    </div>
+                                                                                          </section>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+                                                            <hr>
                                                             <p class="text-justify">*Los estados de su orden son los siguientes:</p>
                                                             <ul class="list-unstyled">
-                                                                      <li><strong>Pendiente:</strong> Cuando envía el número de operación del pago.</li>
-                                                                      <li><strong>Pagado:</strong> Este proceso puede demorar hasta 24 si se hace mediante transferencia interbancaria.</li>
-                                                                      <li><strong>Enviado:</strong> Cuando ya despachamos los productos: vía mensajería o vía e-mail, según se requiera.</li>
+                                                                      <li><strong>Pendiente:</strong> Cuando esta pendiente el envío del número de la operación bancaria que confirma el pago ese carrito.</li>
+                                                                      <li><strong>En revisión:</strong> Cuando comprobamos que el pago se a relizado correctamente. Este proceso puede demorar hasta 24 si se hace mediante transferencia interbancaria.</li>
+                                                                      <li><strong>Enviado:</strong> Cuando ya despachamos los productos que requieren entrega a domicilio o envios como regalo a terceras personas.</li>
                                                                       <li><strong>Entregado:</strong>  Cuando se confirma la recepción del envio por parte del cliente.</li>
                                                             </ul>
                                                             <p>El tiempo necesario para completar este proceso está incluido en el tiempo de entrega total que figura
                                                             en su orden de compra. Este proceso continua de forma automática. Para resolver sus dudas o preguntas
-                                                            puede comunicarse con nostros desde el formulario de contacto, gustosamente le atenderemos.
+                                                            puede comunicarse con nostros desde el formulario de contacto o escribirnos al contacto <a href="mailto:contacto@ekale.pe" class="link-verde">contacto@ekale.pe</a>, gustosamente le atenderemos.
                                                             </p>
                                                   </div>
                                         </div>
@@ -193,6 +266,22 @@
                               </div>
                     </footer>
                     <!-- /FOOTER -->
+                    <!-- MODAL -->
+                    <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                              <div class="modal-dialog modal-md">
+                                        <div class="modal-content">
+                                                  <p class="text-center">
+                                                            <img src="assets/img/logo.png" class="img-center">
+                                                  </p>
+                                                  <h3 class="text-center">¡Muchas gracias por su compra!</h3>
+                                                  <p class="text-center">A continuación revisaremos los datos y prepararemos su orden para el recojo o envío a domicilio.</p>
+                                                  <p class="text-center">Además, hemos enviado un resumen de la orden al correo electrónico que figura en esta cuenta de usuario.
+                                                  Cualquier duda no dude en comunicarse con nosotros.</p>
+                                                  <p class="text-right"><button type="button" class="btn" data-dismiss="modal" aria-label="Close">Aceptar</button></p>
+                                        </div>
+                              </div>
+                    </div>
+                    <!-- /MODAL -->
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                     <script src="assets/js/jquery.min.js"></script>
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -202,6 +291,10 @@
                     <script>
                               $(document).ready(function(){
                                         $('#purchaseHistory').stacktable();
+                                        // MODAL ENVIO
+                                        $('#btn-send').click(function(){
+                                                  $('.bs-example-modal-md').modal('show')
+                                        });
                               })
                     </script>
           </body>

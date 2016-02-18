@@ -234,7 +234,7 @@
                                                                                                                                                                           <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar <span class="glyphicon glyphicon glyphicon-triangle-bottom"></span></button></p>
                                                                                                                                                                 </div>
                                                                                                                                                       </div>
-                                                                                                                                                      <div class="col-md-8 col-sm-8 col-xs-8">Caja y tarjeta de diseño (+ Info)</div>
+                                                                                                                                                      <div class="col-md-8 col-sm-8 col-xs-8 lh22">Envoltura de producto S/ 5.00<br>Envoltura de tarjeta S/ 2.00</div>
                                                                                                                                                       <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
                                                                                                                                                       <div class="col-md-3 col-sm-3 col-xs-3 price text-right">S/ 5.00</div>
                                                                                                                                             </div>
@@ -248,7 +248,7 @@
                                                                                                                                                                 <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar <span class="glyphicon glyphicon glyphicon-triangle-bottom"></span></button></p>
                                                                                                                                                       </div>
                                                                                                                                             </div>
-                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-8">Caja y tarjeta de diseño (+ Info)</div>
+                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-8 lh22">Envoltura de producto S/ 5.00<br>Envoltura de tarjeta S/ 2.00</div>
                                                                                                                                             <div class="col-md-1 col-sm-1 col-xs-1 price text-center">=</div>
                                                                                                                                             <div class="col-md-3 col-sm-3 col-xs-3 price text-right">S/ 5.00</div>
                                                                                                                                             <div class="col-md-8 col-sm-8 col-xs-12">
@@ -365,7 +365,7 @@
                                                                                                                                   <div class="radio">
                                                                                                                                             <label>
                                                                                                                                                       <input type="radio" class="btn-radio" name="optionsRadios4" id="optionsRadios1" value="option1" data-extra="boleta">
-                                                                                                                                                      Boleto
+                                                                                                                                                      Boleta
                                                                                                                                             </label>
                                                                                                                                   </div>
                                                                                                                         </div>
@@ -407,10 +407,16 @@
                                                                                                     </section>
                                                                                                     <section class="cart-send">
                                                                                                               <div class="form-group text-center">
-                                                                                                                        <button type="button" class="btn" id="btn-send">Terminar y pagar</button>
+                                                                                                                        <button type="button" class="btn" id="btn-send">Iniciar proceso de pago</button>
                                                                                                               </div>
                                                                                                     </section>
                                                                                                     <section class="end-and-pay">
+                                                                                                              <p class="info-1">
+                                                                                                                        Al presionar este botón se enviara este carrito al <a href="#">Historial de compras y pendientes</a> donde podrá iniciar el proceso
+                                                                                                                        de pago en el momento que desee .<ins>Tambien se reiniciara esta pagina para que pueda armar un carrito nuevo</ins>.
+                                                                                                              </p>
+                                                                                                    </section>
+                                                                                                    <!--<section class="end-and-pay">
                                                                                                               <h5>Terminar y pagar</h5>
                                                                                                               <ul class="list-unstyled">
                                                                                                                         <li class="list"><span>1</span>Abre una nueva pestaña en tu navegador (Explorer, Google,Modzila, etc.) e ingresa a tu  banco.</li>
@@ -441,7 +447,7 @@
                                                                                                                         confirmando la validez del proceso, y procederemos según las condiciones que eligió.</p>
                                                                                                                         <p>* Puede revisar el estado de su compra desde <a href="#">Mi cuenta</a> > <a href="#">Historial de compra</a>.</p>
                                                                                                               </div>
-                                                                                                    </section>
+                                                                                                    </section>-->
                                                                                           </form>
                                                                                 </div>
                                                                       </div>
@@ -465,22 +471,6 @@
                               </div>
                     </footer>
                     <!-- /FOOTER -->
-                    <!-- MODAL -->
-                    <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                              <div class="modal-dialog modal-md">
-                                        <div class="modal-content">
-                                                  <h3 class="text-center">¡Muchas gracias por su compra!</h3>
-                                                  <p class="text-center">A continuación revisaremos los datos y prepararemos su orden para el recojo o envío a domicilio.</p>
-                                                  <p class="text-center">Además, hemos enviado un resumen de la orden al correo electrónico que figura en esta cuenta de usuario.
-                                                  Cualquier duda no dude en comunicarse con nosotros.</p>
-                                                  <p class="text-center">
-                                                            <img src="assets/img/logo.png" class="img-center">
-                                                  </p>
-                                                  <p class="text-right"><button type="button" class="btn" data-dismiss="modal" aria-label="Close">Aceptar</button></p>
-                                        </div>
-                              </div>
-                    </div>
-                    <!-- /MODAL -->
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                     <script src="assets/js/jquery.min.js"></script>
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -488,10 +478,6 @@
                     <script src="assets/js/ekala.js"></script>
                     <script>
                               $(document).ready(function(){
-                                        // MODAL ENVIO
-                                        $('#btn-send').click(function(){
-                                                  $('.bs-example-modal-md').modal('show')
-                                        });
                                         // INPUT RADIO
                                         $(".address").find("input[type='radio']").each(function(){
                                                   $(this).change(function(){
