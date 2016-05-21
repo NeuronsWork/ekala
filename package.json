@@ -8,10 +8,18 @@
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^1.1.1",
     "grunt-uncss": "^0.4.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://enjey11@github.com/NeuronsWork/ekala.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeuronsWork/ekala/issues"
+  },
+  "homepage": "https://github.com/NeuronsWork/ekala#readme"
 }

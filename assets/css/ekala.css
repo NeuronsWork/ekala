@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+body {
+  overflow-x: hidden; }
+
+.show {
+  display: block; }
+
 * {
   outline: none !important;
   outline-offset: 0; }
@@ -49,9 +55,6 @@ input[type="radio"]:checked {
 .btn-radio {
   border: 2px solid #8acac8 !important; }
 
-/*.btn-checkbox{
-          border: 2px solid #8acac8 !important;
-          @include borderRadius(0 !important); } */
 .btn-radio:checked {
   background-color: #8acac8 !important;
   border: 2px solid #8acac8 !important; }
@@ -60,6 +63,9 @@ input[type="radio"]:checked {
           background-color: #8acac8 !important; }*/
 .img-center {
   margin: 0 auto; }
+
+.block {
+  display: block !important; }
 
 .marginTopBottom {
   margin-top: 15px;
@@ -89,6 +95,21 @@ input[type="radio"]:checked {
 
 p {
   text-align: justify; }
+
+.product-number {
+  width: 30%; }
+
+textarea.form-control {
+  resize: none;
+  overflow: hidden;
+  height: 40px;
+  min-height: 40px; }
+
+.more-info, .sub-extra {
+  display: none !important; }
+
+hr {
+  kmargin-bottom: 10px !important; }
 
 #login, #recoveryPwd {
   background-color: #e0f4f3;
@@ -143,17 +164,17 @@ p {
         padding-right: 10px;
         color: #8acac8; }
 
-#gift p, #delivery p, #place p, #my-address p, #boleta p, #factura p {
+#gift p, #cover-gift p, #delivery p, #place p, #my-address p, #boleta p, #factura p {
   font-size: 14px;
   line-height: 16px;
   color: #8acac8; }
-#gift .form-group .help-block, #delivery .form-group .help-block, #place .form-group .help-block, #my-address .form-group .help-block, #boleta .form-group .help-block, #factura .form-group .help-block {
+#gift .form-group .help-block, #cover-gift .form-group .help-block, #delivery .form-group .help-block, #place .form-group .help-block, #my-address .form-group .help-block, #boleta .form-group .help-block, #factura .form-group .help-block {
   line-height: 20px;
   font-style: italic;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 300; }
-#gift .form-select, #delivery .form-select, #place .form-select, #my-address .form-select, #boleta .form-select, #factura .form-select {
+#gift .form-select, #cover-gift .form-select, #delivery .form-select, #place .form-select, #my-address .form-select, #boleta .form-select, #factura .form-select {
   position: relative;
   display: block;
   float: left;
@@ -161,7 +182,7 @@ p {
   background-color: #f0fafa;
   margin-bottom: 10px;
   padding: 0 10px 0 0; }
-  #gift .form-select select, #delivery .form-select select, #place .form-select select, #my-address .form-select select, #boleta .form-select select, #factura .form-select select {
+  #gift .form-select select, #cover-gift .form-select select, #delivery .form-select select, #place .form-select select, #my-address .form-select select, #boleta .form-select select, #factura .form-select select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -179,15 +200,15 @@ p {
     -ms-border-radius: 0px !important;
     -o-border-radius: 0px !important;
     border-radius: 0px !important; }
-    #gift .form-select select:focus, #delivery .form-select select:focus, #place .form-select select:focus, #my-address .form-select select:focus, #boleta .form-select select:focus, #factura .form-select select:focus {
+    #gift .form-select select:focus, #cover-gift .form-select select:focus, #delivery .form-select select:focus, #place .form-select select:focus, #my-address .form-select select:focus, #boleta .form-select select:focus, #factura .form-select select:focus {
       outline: 0px; }
-#gift .form-control, #delivery .form-control, #place .form-control, #my-address .form-control, #boleta .form-control, #factura .form-control {
+#gift .form-control, #cover-gift .form-control, #delivery .form-control, #place .form-control, #my-address .form-control, #boleta .form-control, #factura .form-control {
   margin-bottom: 10px;
   box-shadow: none;
   font-style: italic;
   background-color: #f0fafa;
   border: 0; }
-#gift .btn, #delivery .btn, #place .btn, #my-address .btn, #boleta .btn, #factura .btn {
+#gift .btn, #cover-gift .btn, #delivery .btn, #place .btn, #my-address .btn, #boleta .btn, #factura .btn {
   border: 0;
   border-bottom: 1px solid;
   font-style: italic;
@@ -196,9 +217,11 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 300; }
-  #gift .btn span, #delivery .btn span, #place .btn span, #my-address .btn span, #boleta .btn span, #factura .btn span {
+  #gift .btn span, #cover-gift .btn span, #delivery .btn span, #place .btn span, #my-address .btn span, #boleta .btn span, #factura .btn span {
     margin-left: 5px;
     font-size: 12px; }
+#gift .chk label input[type=checkbox], #cover-gift .chk label input[type=checkbox], #delivery .chk label input[type=checkbox], #place .chk label input[type=checkbox], #my-address .chk label input[type=checkbox], #boleta .chk label input[type=checkbox], #factura .chk label input[type=checkbox] {
+  margin: 0 !important; }
 
 .mi-cuenta {
   font-style: italic;
@@ -228,10 +251,13 @@ p {
 #navbar {
   border-bottom: 1px solid #64c8c8;
   padding: 0; }
+  #navbar ul ul {
+    border-top: 2px solid #64c8c8 !important; }
   #navbar li {
     padding-right: 5px; }
     #navbar li a {
       background-color: #f0fafa;
+      padding: 10px 0;
       font-family: 'Lato', sans-serif;
       font-size: 17px;
       font-weight: 500;
@@ -279,7 +305,7 @@ p {
   position: relative;
   width: 100%;
   display: block;
-  padding: 0 15px;
+  padding: 0;
   margin-bottom: 15px; }
   .subMenu ul {
     position: relative;
@@ -415,6 +441,8 @@ p {
     .register .form-group .radio label {
       font-weight: 300 !important; }
   .register .form-group hr {
+    margin-top: 20px;
+    margin-bottom: 10px;
     border-top: 0;
     border-bottom: 1px solid #d9c3ab; }
 .register .terminos {
@@ -429,6 +457,8 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 500; }
+  .register .terms input[type=checkbox] {
+    margin-left: 0px !important; }
 .register .preferences .list-unstyled {
   margin-top: 10px;
   display: none; }
@@ -573,6 +603,13 @@ a.link-verde {
           line-height: 20px; }
     .information .products .info-product .redes {
       margin: 10px 0; }
+      .information .products .info-product .redes span {
+        color: #7c848c;
+        display: block;
+        margin-bottom: 5px;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        font-weight: 300; }
       .information .products .info-product .redes a img {
         height: 24px; }
     .information .products .info-product .relations, .information .products .info-product .comments {
@@ -581,19 +618,21 @@ a.link-verde {
       .information .products .info-product .relations h4, .information .products .info-product .comments h4 {
         text-align: center;
         padding: 5px 0;
-        margin: 10px;
+        margin: 15px;
         border-bottom: 1px solid #8acac8; }
       .information .products .info-product .relations .item .number-spinner, .information .products .info-product .comments .item .number-spinner {
         float: left; }
     .information .products .info-product .comments h4 {
       margin-bottom: 0; }
+    .information .products .info-product .comments form.form-horizontal .form-group {
+      margin: 0px; }
     .information .products .info-product .comments form.form-horizontal .control-label {
       padding-top: 0;
       padding-left: 0;
-      padding-right: 10px; }
+      padding-right: 0px; }
     .information .products .info-product .comments .form-group > div[class*='col-'] {
       padding-right: 10px;
-      padding-left: 10px; }
+      padding-left: 0px; }
     .information .products .info-product .comments .form-control, .information .products .info-product .comments .btn {
       background-color: #FFF1E3;
       border: 0px;
@@ -650,23 +689,25 @@ a.link-verde {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         font-weight: 300; }
-  .information .info-category .item-category {
-    margin-bottom: 10px; }
-    .information .info-category .item-category hr {
-      border-top: 5px solid #f0fafa;
-      border-bottom: none;
-      margin-top: 1px; }
-    .information .info-category .item-category h3 {
-      text-align: center;
-      border-bottom: 0; }
-      .information .info-category .item-category h3 a {
-        color: #64c8c8;
-        text-decoration: none;
-        font-family: 'Lato', sans-serif;
-        font-size: 15px;
-        font-weight: 500; }
-      .information .info-category .item-category h3:after {
-        border-color: transparent !important; }
+  .information .info-category {
+    padding-right: 0; }
+    .information .info-category .item-category {
+      margin-bottom: 10px; }
+      .information .info-category .item-category hr {
+        border-top: 5px solid #f0fafa;
+        border-bottom: none;
+        margin-top: 1px; }
+      .information .info-category .item-category h3 {
+        text-align: center;
+        border-bottom: 0; }
+        .information .info-category .item-category h3 a {
+          color: #64c8c8;
+          text-decoration: none;
+          font-family: 'Lato', sans-serif;
+          font-size: 15px;
+          font-weight: 500; }
+        .information .info-category .item-category h3:after {
+          border-color: transparent !important; }
   .information .lst-subcategory .info-purshaseHistory {
     margin-bottom: 20px; }
     .information .lst-subcategory .info-purshaseHistory a {
@@ -682,17 +723,20 @@ a.link-verde {
     color: #333 !important; }
     .information .lst-subcategory .end-and-pay li span {
       color: #fff;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-      -o-border-radius: 50px;
-      border-radius: 50px;
       padding: 1px 8px 3px;
       margin-right: 5px;
       margin-bottom: 20px;
       float: left;
       display: block;
-      background-color: #8acac8; }
+      background-color: #8acac8;
+      position: absolute;
+      left: 0;
+      top: -3px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px; }
     .information .lst-subcategory .end-and-pay li label {
       color: #fff;
       display: initial;
@@ -703,6 +747,8 @@ a.link-verde {
     margin-top: 10px;
     margin-bottom: 15px;
     color: #8acac8 !important;
+    position: relative;
+    padding-left: 30px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 500; }
@@ -740,6 +786,7 @@ a.link-verde {
     border-top: 0;
     border-bottom: 5px solid #f0fafa; }
   .information .lst-subcategory .item-subcategory h5 {
+    height: 42px;
     color: #8acac8;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -784,6 +831,62 @@ a.link-verde {
   .information .lst-subcategory .item-subcategory .no-msg {
     background-color: #fff;
     color: #fff; }
+  .information .lst-subcategory .items-history .item-history {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    float: left;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    line-height: 60px;
+    border-bottom: 1px solid #8acac8;
+    color: #8acac8;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+    .information .lst-subcategory .items-history .item-history h6 {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-weight: 300; }
+  .information .lst-subcategory .items-history .box-history {
+    border: 1px solid #8acac8;
+    padding: 5px;
+    position: relative;
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 20px; }
+    .information .lst-subcategory .items-history .box-history h5, .information .lst-subcategory .items-history .box-history p {
+      color: #8acac8;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 300; }
+      .information .lst-subcategory .items-history .box-history h5 span, .information .lst-subcategory .items-history .box-history p span {
+        color: #ccc; }
+    .information .lst-subcategory .items-history .box-history h5 {
+      font-weight: 500; }
+  .information .lst-subcategory .items-history .subtotal-history {
+    display: block;
+    position: relative;
+    color: #8acac8;
+    padding: 10px 0 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+    .information .lst-subcategory .items-history .subtotal-history hr {
+      margin: 5px 0;
+      border-top-color: #d9c3ab; }
+  .information .lst-subcategory .items-history .total-history {
+    color: #d9c3ab;
+    padding: 5px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+    .information .lst-subcategory .items-history .total-history hr {
+      margin: 5px 0;
+      border-top-color: #d9c3ab; }
   .information .my-account h3 {
     margin: 0 0 20px;
     text-align: center;
@@ -820,29 +923,29 @@ a.link-verde {
     right: 20px;
     font-weight: 300;
     color: #64c8c8; }
-.favorites form, .products-services form, .cart form {
+.favorites form, .favorites div.form, .products-services form, .products-services div.form, .cart form, .cart div.form {
   margin-bottom: 30px;
   width: 100%;
   position: relative;
   float: left; }
-  .favorites form section, .products-services form section, .cart form section {
+  .favorites form section, .favorites div.form section, .products-services form section, .products-services div.form section, .cart form section, .cart div.form section {
     width: 100%;
     position: relative;
     float: left;
     padding: 15px 0;
     display: block; }
-  .favorites form .border-section, .products-services form .border-section, .cart form .border-section {
+  .favorites form .border-section, .favorites div.form .border-section, .products-services form .border-section, .products-services div.form .border-section, .cart form .border-section, .cart div.form .border-section {
     position: relative;
     width: 100%;
     float: left;
     border-bottom: 1px solid #8acac8; }
-  .favorites form .cart-send, .products-services form .cart-send, .cart form .cart-send {
+  .favorites form .cart-send, .favorites div.form .cart-send, .products-services form .cart-send, .products-services div.form .cart-send, .cart form .cart-send, .cart div.form .cart-send {
     padding: 0 0 10px; }
-    .favorites form .cart-send .btn, .products-services form .cart-send .btn, .cart form .cart-send .btn {
+    .favorites form .cart-send .btn, .favorites div.form .cart-send .btn, .products-services form .cart-send .btn, .products-services div.form .cart-send .btn, .cart form .cart-send .btn, .cart div.form .cart-send .btn {
       color: #fff !important;
       border: 0 !important;
       background-color: #8acac8 !important; }
-  .favorites form .form-group .form-control, .products-services form .form-group .form-control, .cart form .form-group .form-control {
+  .favorites form .form-group .form-control, .favorites div.form .form-group .form-control, .products-services form .form-group .form-control, .products-services div.form .form-group .form-control, .cart form .form-group .form-control, .cart div.form .form-group .form-control {
     border: 2px solid #8acac8;
     padding: 8px 12px;
     height: 37px;
@@ -851,7 +954,7 @@ a.link-verde {
     -ms-border-radius: 0px !important;
     -o-border-radius: 0px !important;
     border-radius: 0px !important; }
-  .favorites form .form-group .btn, .products-services form .form-group .btn, .cart form .form-group .btn {
+  .favorites form .form-group .btn, .favorites div.form .form-group .btn, .products-services form .form-group .btn, .products-services div.form .form-group .btn, .cart form .form-group .btn, .cart div.form .form-group .btn {
     color: #8acac8;
     border: 2px solid #8acac8;
     background-color: #fff;
@@ -924,85 +1027,95 @@ a.link-verde {
     color: #fff;
     width: 100%; }
 
-.cart form .price {
+.cart .form .price {
   position: relative;
   float: left;
   display: block;
   font-size: 20px; }
-  .cart form .price .info-dscto {
+  .cart .form .price .info-dscto {
     font-size: 14px;
     line-height: 0px;
     bottom: 25px;
     position: absolute; }
-.cart form section .cart-igv {
+  .cart .form .price label {
+    font-weight: 300; }
+.cart .form section .cart-igv {
   position: relative;
   float: left;
   width: 100%;
   display: block;
   padding-bottom: 15px;
   color: #8acac8; }
-.cart form section .cart-sin-igv, .cart form section .discount, .cart form section .subtotal, .cart form section .igv {
+.cart .form section .cart-sin-igv, .cart .form section .discount, .cart .form section .subtotal, .cart .form section .igv {
   position: relative;
   float: left;
   width: 100%;
   display: block;
   padding: 2px 0;
   color: #8acac8; }
-.cart form section .discount {
+.cart .form section .discount {
   font-weight: 300;
   color: #a3a8ac; }
-.cart form section .total-cost {
+  .cart .form section .discount .price .radio {
+    margin: 0 !important; }
+.cart .form section .total-cost {
   position: relative;
   float: left;
   width: 100%;
   display: block;
   font-size: 28px;
   color: #8acac8; }
-.cart form .address .form-group .extra > .more-info, .cart form .address .form-group .extra > .more-info > .sub-extra, .cart form .delivery-place .form-group .extra > .more-info, .cart form .delivery-place .form-group .extra > .more-info > .sub-extra, .cart form .factura-boleta .form-group .extra > .more-info, .cart form .factura-boleta .form-group .extra > .more-info > .sub-extra {
+.cart .form .address .form-group .extra .more-info,
+.cart .form .address .form-group .extra .more-info .sub-extra, .cart .form .delivery-place .form-group .extra .more-info,
+.cart .form .delivery-place .form-group .extra .more-info .sub-extra, .cart .form .factura-boleta .form-group .extra .more-info,
+.cart .form .factura-boleta .form-group .extra .more-info .sub-extra {
   display: none; }
-  .cart form .address .form-group .extra > .more-info .chk > label, .cart form .address .form-group .extra > .more-info > .sub-extra .chk > label, .cart form .delivery-place .form-group .extra > .more-info .chk > label, .cart form .delivery-place .form-group .extra > .more-info > .sub-extra .chk > label, .cart form .factura-boleta .form-group .extra > .more-info .chk > label, .cart form .factura-boleta .form-group .extra > .more-info > .sub-extra .chk > label {
+  .cart .form .address .form-group .extra .more-info .chk > label,
+  .cart .form .address .form-group .extra .more-info .sub-extra .chk > label, .cart .form .delivery-place .form-group .extra .more-info .chk > label,
+  .cart .form .delivery-place .form-group .extra .more-info .sub-extra .chk > label, .cart .form .factura-boleta .form-group .extra .more-info .chk > label,
+  .cart .form .factura-boleta .form-group .extra .more-info .sub-extra .chk > label {
     font-weight: 300 !important;
     font-style: italic !important;
     color: #333; }
-.cart form .address .form-group .radio label, .cart form .delivery-place .form-group .radio label, .cart form .factura-boleta .form-group .radio label {
+.cart .form .address .form-group .radio label, .cart .form .delivery-place .form-group .radio label, .cart .form .factura-boleta .form-group .radio label {
   color: #737373; }
-  .cart form .address .form-group .radio label p, .cart form .delivery-place .form-group .radio label p, .cart form .factura-boleta .form-group .radio label p {
+  .cart .form .address .form-group .radio label p, .cart .form .delivery-place .form-group .radio label p, .cart .form .factura-boleta .form-group .radio label p {
     padding: 5px 0;
     line-height: 15px;
     margin-bottom: 0;
     color: #8acac8; }
-.cart form .factura-boleta {
+.cart .form .factura-boleta {
   padding: 8px 15px 0; }
-  .cart form .factura-boleta .form-group > div:first-child {
+  .cart .form .factura-boleta .form-group > div:first-child {
     padding-right: 15px !important; }
-  .cart form .factura-boleta .form-group > div:last-child {
+  .cart .form .factura-boleta .form-group > div:last-child {
     padding-left: 15px !important; }
-  .cart form .factura-boleta .form-group .form-control {
+  .cart .form .factura-boleta .form-group .form-control {
     margin-bottom: 5px;
     margin-top: 5px;
     width: 100%; }
-.cart form .form-group {
+.cart .form .form-group {
   line-height: 40px;
   color: #8acac8;
   width: 100%;
   float: left;
   position: relative;
   padding: 0 !important; }
-  .cart form .form-group div[class*="col-"] {
+  .cart .form .form-group div[class*="col-"] {
     padding: 0 !important; }
-.cart form .alert {
+.cart .form .alert {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 15px !important; }
-  .cart form .alert .close {
+  .cart .form .alert .close {
     right: 0; }
-.cart form .products .price {
+.cart .form .products .price {
   line-height: 100px; }
-  .cart form .products .price .number-spinner {
+  .cart .form .products .price .number-spinner {
     margin-top: 40px; }
-  .cart form .products .price .btn {
+  .cart .form .products .price .btn {
     border: 0; }
-  .cart form .products .price .form-control {
+  .cart .form .products .price .form-control {
     padding: 0; }
 
 .lst-products .item {
@@ -1103,6 +1216,9 @@ a.link-verde {
     font-size: 14px;
     font-weight: 500; }
 
+html:click .btn-codigo {
+  display: none; }
+
 .table-purshase {
   margin-bottom: 20px; }
   .table-purshase a {
@@ -1150,16 +1266,23 @@ a.link-verde {
             color: #8acac8; }
           .table-purshase .row .item > div > div input[type="text"]::-webkit-input-placeholder {
             color: #8acac8; }
+          .table-purshase .row .item > div > div input[type="text"]:focus + button {
+            display: block; }
         .table-purshase .row .item > div > div .btn {
-          display: block;
+          display: none;
           color: #8acac8;
           border: 0px;
-          background-color: transparent;
+          background-color: #fff;
           font-style: italic;
           text-decoration: underline;
+          position: absolute;
+          right: 5px;
+          top: 3px;
           font-family: 'Lato', sans-serif;
           font-size: 14px;
           font-weight: 500; }
+          .table-purshase .row .item > div > div .btn:hover, .table-purshase .row .item > div > div .btn:focus {
+            display: block; }
         .table-purshase .row .item > div > div .border {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -1415,11 +1538,11 @@ footer {
   padding: 5px 4px 6px 6px; }
 
 #ppy1 .ppy-extcaption {
-  width: 240px;
+  width: 200px;
   display: block; }
 
 #ppy1 .ppy-imglist li {
-  width: 240px;
+  width: 200px;
   height: 270px; }
 
 /* popeye example 1 */
@@ -1429,7 +1552,7 @@ footer {
   margin: 0 20px 10px 0; }
 
 #ppy1 .ppy-stage {
-  width: 240px;
+  width: 200px;
   height: 173px; }
 
 #ppy1.ppy-expanded {
@@ -1486,6 +1609,7 @@ footer {
   .blog .sidebar-submenu ul li {
     padding: 7px 0 !important; }
   .blog .sidebar-submenu ul li a {
+    line-height: 22px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 500; }
@@ -1518,11 +1642,49 @@ footer {
     font-weight: 700; }
   .blog .lst-post .post .redes {
     margin: 10px 0; }
+    .blog .lst-post .post .redes > span {
+      margin: 0 !important; }
+    .blog .lst-post .post .redes .comp {
+      font-size: initial !important;
+      margin: 0 !important;
+      color: #a3a9ac !important; }
     .blog .lst-post .post .redes a img {
       margin: 0 !important;
       height: 24px; }
 
 @media screen and (max-width: 360px) {
+  .information .lst-subcategory .item-subcategory h5 {
+    min-height: 32px; }
+
+  .blog .lst-post .post .redes > span:last-child {
+    margin-top: 25px !important; }
+
+  .cart .form .price,
+  .cart .form section .total-cost {
+    font-size: 16px !important; }
+
+  .product-number {
+    width: 40% !important; }
+
+  .information .products h2 {
+    margin-bottom: 20px !important; }
+
+  .subMenu {
+    padding: 0 15px !important; }
+
+  .mrgDatos {
+    padding-left: 0 !important;
+    padding-right: 0px !important; }
+
+  .information .products h2.mrg0h2 {
+    margin-bottom: 0 !important; }
+
+  .lh20 {
+    line-height: 20px; }
+
+  .marg15px {
+    margin: 0 -15px; }
+
   .pLeft0 {
     padding-left: 5px !important; }
 
@@ -1625,7 +1787,7 @@ footer {
   .lst-subcategory {
     padding: 0 !important; }
     .lst-subcategory .item-subcategory {
-      padding: 0 5px; }
+      padding: 0 5px !important; }
       .lst-subcategory .item-subcategory .number-spinner {
         width: 67% !important; }
       .lst-subcategory .item-subcategory .discount {
@@ -1649,28 +1811,28 @@ footer {
   .gift > .radio > label img {
     display: none; }
 
-  .cart form section .discount {
+  .cart .form section .discount {
     padding-bottom: 12px; }
-    .cart form section .discount .price {
+    .cart .form section .discount .price {
       font-size: 16px; }
 
-  .cart form section .subtotal .price, .cart form section .igv .price {
+  .cart .form section .subtotal .price, .cart .form section .igv .price {
     font-size: 16px !important; }
 
-  .cart form section .total-cost {
+  .cart .form section .total-cost {
     font-size: 18px; }
 
-  .cart form .products .price {
+  .cart .form .products .price {
     text-align: right;
     font-size: 16px;
     line-height: 46px; }
-    .cart form .products .price .info-dscto {
+    .cart .form .products .price .info-dscto {
       bottom: 0;
       width: 80px;
-      right: 12px; }
-    .cart form .products .price .form-control {
+      right: 0px; }
+    .cart .form .products .price .form-control {
       line-height: 12px; }
-    .cart form .products .price .number-spinner {
+    .cart .form .products .price .number-spinner {
       width: 50px;
       margin-top: 15px; }
 
@@ -1684,8 +1846,74 @@ footer {
       border: 0px !important; }
 
   .blog .lst-post .post h4 {
-    font-size: 18px !important; } }
+    font-size: 18px !important; }
+
+  .post .redes > span.pull-left > span {
+    display: block; }
+
+  .post .redes > span.pull-right {
+    margin-top: 25px; }
+
+  .cart form .address .form-group .radio label,
+  .cart form .delivery-place .form-group .radio label {
+    line-height: 16px; }
+    .cart form .address .form-group .radio label .btn-radio,
+    .cart form .delivery-place .form-group .radio label .btn-radio {
+      margin-top: -7px !important; }
+
+  .information .products .info-product .comments h4 {
+    margin: 0 !important; }
+
+  .information .products .info-product .comments form {
+    padding: 0 !important; }
+
+  .cart form .price .info-dscto {
+    text-align: left;
+    width: 100px; }
+
+  .total {
+    font-size: 18px !important; }
+
+  .cart .form .address .form-group .radio label,
+  .cart .form .delivery-place .form-group .radio label,
+  .cart .form .factura-boleta .form-group .radio label {
+    color: #737373;
+    line-height: 20px; }
+
+  .btn-radio {
+    top: 0 !important; }
+
+  .items-history {
+    font-size: 14px;
+    padding: 0 !important; }
+    .items-history .item-history {
+      line-height: 40px !important; }
+      .items-history .item-history .col-xs-4 {
+        width: 29%; }
+      .items-history .item-history span {
+        display: block;
+        line-height: 20px;
+        font-size: 11px; } }
 @media (min-width: 361px) and (max-width: 480px) {
+  .information .lst-subcategory .item-subcategory h5 {
+    min-height: 32px; }
+
+  .lst-subcategory {
+    padding: 0 !important; }
+
+  .information .products h2 {
+    margin-bottom: 20px !important; }
+
+  /*.subMenu{ padding: 0 15px !important; }*/
+  .mrgDatos {
+    padding: 0 !important; }
+
+  .mrg20 {
+    margin-bottom: 20px !important; }
+
+  .lh20 {
+    line-height: 20px; }
+
   #carousel .carousel-inner .item .carousel-caption .tenor {
     font-size: 100% !important;
     line-height: 120%;
@@ -1708,15 +1936,41 @@ footer {
   .cart h3 {
     border-bottom: 0 !important; }
 
-  .delivery-place {
-    border-bottom: 0 !important; }
-
-  .cart form .factura-boleta .form-group div[class*="col-"] {
+  /*.delivery-place{
+            border-bottom: 0 !important;
+  }*/
+  .cart .form .factura-boleta .form-group div[class*="col-"] {
     padding: 0px !important; }
 
   .information h3 {
-    border-top: 0px !important; } }
+    border-top: 0px !important; }
+
+  .cart .form .price .info-dscto {
+    text-align: left;
+    width: 100px; }
+
+  .cart .form .price,
+  .cart .form section .total-cost {
+    font-size: 16px !important; }
+
+  .total {
+    font-size: 18px !important; }
+
+  .items-history {
+    font-size: 14px;
+    padding: 0 !important; }
+    .items-history .item-history {
+      line-height: 40px !important; }
+      .items-history .item-history .col-xs-4 {
+        width: 29%; }
+      .items-history .item-history span {
+        display: block;
+        line-height: 20px;
+        font-size: 11px; } }
 @media screen and (max-width: 767px) {
+  div[id*="group"] {
+    margin-left: 30px; }
+
   .container {
     padding-right: 0 !important;
     padding-left: 0 !important; }
@@ -1932,7 +2186,7 @@ footer {
     position: relative;
     width: 100%;
     display: block;
-    padding: 0 15px;
+    padding: 0 !important;
     margin-bottom: 15px; }
     .subMenu ul {
       position: relative;
@@ -1951,11 +2205,16 @@ footer {
         .subMenu ul li a {
           padding-left: 0;
           text-align: left;
-          border-bottom: 1px solid #8acac8; }
+          border-bottom: 1px solid #8acac8;
+          line-height: 30px; }
           .subMenu ul li a:hover, .subMenu ul li a:focus {
             background-color: transparent; }
           .subMenu ul li a span {
-            line-height: 2; }
+            line-height: 2;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -19px; }
         .subMenu ul li:hover, .subMenu ul li:focus {
           cursor: pointer; }
         .subMenu ul li a {
@@ -1969,7 +2228,11 @@ footer {
           .subMenu ul li ul li a {
             border-bottom: 0; }
 
-  .cart form .factura-boleta .form-group div[class*="col-"] {
+  .lst-post {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  .cart .form .factura-boleta .form-group div[class*="col-"] {
     padding: 0px !important; }
 
   .ppy-placeholder, .ppy-expanded, .ppy-stage, .ppy-active {
@@ -1980,8 +2243,30 @@ footer {
 
   .ppy-placeholder {
     height: initial !important;
-    min-height: 173px; } }
+    min-height: 173px; }
+
+  .product-number {
+    width: 20%; }
+
+  .information .products h2 {
+    margin-bottom: 20px; }
+
+  .information .info-category {
+    padding: 0; }
+
+  .mrg15 {
+    padding: 0 15px !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
+  .lst-post {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+
+  .my-account, .favorites, .lst-subcategory, .products-services {
+    padding: 0 !important; }
+
+  .cart .form .products .price:last-child {
+    float: right !important; }
+
   #carousel {
     margin-bottom: 10px; }
     #carousel .carousel-inner .item .carousel-caption {
@@ -1999,7 +2284,22 @@ footer {
   .lst-products .item {
     margin-bottom: 5px; }
     .lst-products .item .img-responsive {
-      width: 100%; } }
+      width: 100%; }
+
+  .information .products h2 {
+    margin-bottom: 20px; }
+
+  .information .info-category {
+    padding: 0; }
+
+  .register .preferences .list-unstyled {
+    margin-left: 40px; }
+
+  .register .terminos .radio label {
+    padding-left: 10px; }
+
+  .information .products .info-products img {
+    margin-bottom: 20px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 956px !important; } }
