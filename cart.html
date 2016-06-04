@@ -111,13 +111,13 @@
                                                   </div>
                                                   <sidebar class="col-md-3 col-sm-12 col-xs-12 sidebar-submenu sidebar-feature">
                                                             <div class="row hidden-xs hidden-sm">
-                                                                      <ul class="list-unstyled list-account">
-                                                                                <li><a href="#">Mis datos</a></li>
-                                                                                <li><a href="#">Favoritos</a></li>
-                                                                                <li><a href="#">Mi Carrito</a></li>
-                                                                                <li><a href="#">Historial de compras y pedidos</a></li>
-                                                                                <li><a href="#" class="active">Mis códigos de servicios</a></li>
-                                                                      </ul>
+                                                                 <ul class="list-unstyled list-account">
+                                                                      <li><a href="#">Mis datos</a></li>
+                                                                      <li><a href="#">Favoritos</a></li>
+                                                                      <li><a href="#">Mi Carrito</a></li>
+                                                                      <li><a href="#">Historial de compras y pedidos</a></li>
+                                                                      <li><a href="#" class="active">Mis códigos de servicios</a></li>
+                                                                 </ul>
                                                             </div>
                                                             <div class="row">
                                                                       <div class="col-md-12 col-sm-3 col-xs-6 item-feature">
@@ -276,61 +276,78 @@
                                                                                                     <!-- /ADDRESS -->
                                                                                                     <!-- DELIVERY-PLACE -->
                                                                                                     <section class="border-section delivery-place">
-                                                                                                              <h3>Lugar y tiempo de entrega</h3>
-                                                                                                              <div class="form-group">
-                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 place">
-                                                                                                                                  <div class="radio">
-                                                                                                                                            <label>
-                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios1" value="option1" data-extra="place">
-                                                                                                                                                      Recoger en tienda
-                                                                                                                                            </label>
-                                                                                                                                  </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="col-md-6 col-sm-6 col-xs-6 delivery">
-                                                                                                                                  <div class="radio">
-                                                                                                                                            <label>
-                                                                                                                                                      <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios2" value="option2" data-extra="delivery">
-                                                                                                                                                      Entrega a domicilio
-                                                                                                                                            </label>
-                                                                                                                                  </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="extra">
-                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="place">
-                                                                                                                                            <p>L - V:    9h - 13h  / 14h - 17h</p>
-                                                                                                                                            <p>S:           9h - 13h</p>
-                                                                                                                                            <p class="help-block"><button class="btn pull-left">Guardar</button></p>
-                                                                                                                                  </div>
-                                                                                                                                  <div class="col-md-12 col-sm-12 col-xs=12 more-info" id="delivery">
-                                                                                                                                            <div class="col-md-8 col-md-8 col-xs-12">
-                                                                                                                                                      <div class="form-group">
-                                                                                                                                                                <div class="form-select">
-                                                                                                                                                                          <select name="">
-                                                                                                                                                                               <option value="1">* Elige provincia</option>
-                                                                                                                                                                               <option value="2">Provincia</option>
-                                                                                                                                                                               <option value="3">Provincia</option>
-                                                                                                                                                                               <option value="3">Provincia</option>
-                                                                                                                                                                               <option value="3">Provincia</option>
-                                                                                                                                                                          </select>
-                                                                                                                                                                </div>
-                                                                                                                                                                <div class="form-select">
-                                                                                                                                                                          <select name="">
-                                                                                                                                                                               <option value="1">* Elige ciudad</option>
-                                                                                                                                                                               <option value="2">ciudad 1</option>
-                                                                                                                                                                               <option value="3">ciudad 2</option>
-                                                                                                                                                                               <option value="3">ciudad 3</option>
-                                                                                                                                                                               <option value="3">ciudad 4</option>
-                                                                                                                                                                          </select>
-                                                                                                                                                                </div>
-                                                                                                                                                                <input type="text" class="form-control" placeholder="* Dirección de entrega...">
-                                                                                                                                                                <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar</button></p>
-                                                                                                                                                      </div>
-                                                                                                                                            </div>
-                                                                                                                                            <div class="col-md-8 col-sm-8 col-xs-7 lh20">Tiempo:      De 3 a 4 dias laborables.</div>
-                                                                                                                                            <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
-                                                                                                                                            <div class="col-md-3 col-sm-3 col-xs-4 price text-right">S/ 15.00</div>
-                                                                                                                                  </div>
-                                                                                                                        </div>
+                                                                                                         <h3>Lugar y tiempo de entrega</h3>
+                                                                                                         <div class="form-group">
+                                                                                                              <div class="col-md-12 col-sm-12 col-xs-12 place">
+                                                                                                                   <div class="radio">
+                                                                                                                        <label>
+                                                                                                                             <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios1" value="option1" data-extra="place">
+                                                                                                                             Recoger en tienda
+                                                                                                                        </label>
+                                                                                                                   </div>
                                                                                                               </div>
+                                                                                                              <div class="extra">
+                                                                                                                   <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="place">
+                                                                                                                        <p>L - V:    9h - 13h  / 14h - 17h</p>
+                                                                                                                        <p>S:           9h - 13h</p>
+                                                                                                                        <p class="help-block"><button class="btn pull-left">Guardar</button></p>
+                                                                                                                   </div>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-12 col-sm-12 col-xs-12 delivery">
+                                                                                                                   <div class="radio">
+                                                                                                                        <label>
+                                                                                                                             <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios2" value="option2" data-extra="delivery">
+                                                                                                                             Entrega a domicilio
+                                                                                                                        </label>
+                                                                                                                   </div>
+                                                                                                              </div>
+                                                                                                              <div class="extra">
+                                                                                                                   <div class="col-md-12 col-sm-12 col-xs=12 more-info" id="delivery">
+                                                                                                                        <div class="col-md-8 col-md-8 col-xs-12">
+                                                                                                                             <div class="form-group">
+                                                                                                                                  <div class="form-select">
+                                                                                                                                       <select name="">
+                                                                                                                                            <option value="1">* Elige provincia</option>
+                                                                                                                                            <option value="2">Provincia</option>
+                                                                                                                                            <option value="3">Provincia</option>
+                                                                                                                                            <option value="3">Provincia</option>
+                                                                                                                                            <option value="3">Provincia</option>
+                                                                                                                                       </select>
+                                                                                                                                  </div>
+                                                                                                                                  <div class="form-select">
+                                                                                                                                       <select name="">
+                                                                                                                                            <option value="1">* Elige ciudad</option>
+                                                                                                                                            <option value="2">ciudad 1</option>
+                                                                                                                                            <option value="3">ciudad 2</option>
+                                                                                                                                            <option value="3">ciudad 3</option>
+                                                                                                                                            <option value="3">ciudad 4</option>
+                                                                                                                                       </select>
+                                                                                                                                  </div>
+                                                                                                                                  <input type="text" class="form-control" placeholder="* Dirección de entrega...">
+                                                                                                                                  <p class="help-block">* Campos obligatorios <button class="btn pull-right">Guardar</button></p>
+                                                                                                                             </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-md-8 col-sm-8 col-xs-7 lh20">Tiempo:      De 3 a 4 dias laborables.</div>
+                                                                                                                        <div class="col-md-1 col-sm-1 col-xs-1 price">=</div>
+                                                                                                                        <div class="col-md-3 col-sm-3 col-xs-4 price text-right">S/ 15.00</div>
+                                                                                                                   </div>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-12 col-sm-12 col-xs-12 venta-email">
+                                                                                                                   <div class="radio">
+                                                                                                                        <label>
+                                                                                                                             <input type="radio" class="btn-radio" name="optionsRadios3" id="optionsRadios3" value="option3" data-extra="venta-email">
+                                                                                                                             Venta por email
+                                                                                                                        </label>
+                                                                                                                   </div>
+                                                                                                              </div>
+                                                                                                              <div class="extra">
+                                                                                                                   <div class="col-md-12 col-sm-12 col-xs-12 more-info" id="venta-email">
+                                                                                                                        <p>El correo electrónico que se utilizará para la venta on-line es el mismo que se uso para esta cuenta de usuario</p>
+                                                                                                                        <p>S:           9h - 13h</p>
+                                                                                                                        <p class="help-block"><button class="btn pull-left">Guardar</button></p>
+                                                                                                                   </div>
+                                                                                                              </div>
+                                                                                                         </div>
                                                                                                     </section>
                                                                                                     <!-- /DELIVERY-PLACE -->
                                                                                                     <!-- /AMOUNTS -->
